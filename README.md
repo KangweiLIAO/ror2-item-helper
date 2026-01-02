@@ -50,6 +50,12 @@ This will:
 - Refresh local icons in `public/icons/` and update `public/items-assets.json`
 - Generate `public/data/items.json` with `icon` paths (items + equipments)
 
+### Deploying on Vercel (fetch new data every build)
+
+This repo includes a `vercel-build` script, so **Vercel will run `npm run fetch-items` on every deployment build automatically**.
+
+If you have a custom Vercel **Build Command** set in the dashboard, remove it (or set it to `npm run vercel-build`) so it doesn't bypass the `vercel-build` script.
+
 Useful flags (passed after `--`):
 
 ```bash

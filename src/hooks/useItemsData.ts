@@ -34,10 +34,9 @@ export function useItemsData(locale: Locale = "en") {
       try {
         setLoading(true)
         setError(null)
-        // We want data pipeline updates (items+equipments) to reflect without requiring a hard refresh.
-        // In dev, `force-cache` can make the UI appear "stuck" on an older items.json.
-        const cache = process.env.NODE_ENV === "development" ? "no-store" : "force-cache"
-        const res = await fetch("/data/items.json", { cache })
+        // Ensure redeploys/pipeline updates (items + equipment) show up without requiring a hard refresh.
+        // `force-cache` can leave the browser stuck on an older /data/items.json after a redeploy.
+        const res = await fetch("/data/items.json", { cache: "no-cache" })
         if (!res.ok) throw new Error(`Failed to load items.json (${res.status})`)
         const data = (await res.json()) as Ror2ItemRaw[]
         if (cancelled) return
