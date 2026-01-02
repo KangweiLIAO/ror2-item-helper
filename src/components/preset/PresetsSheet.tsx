@@ -3,6 +3,7 @@
 import * as React from "react"
 import { XIcon } from "lucide-react"
 import { toast } from "sonner"
+import { useDraggable, useDroppable } from "@dnd-kit/core"
 
 import type { Preset } from "@/lib/presets"
 import type { UiItem } from "@/lib/ror2-items"
@@ -32,6 +33,162 @@ const VisuallyHidden = ({ children }: { children: React.ReactNode }) => (
   }}>{children}</span>
 );
 
+function DraggablePresetItem({
+  item,
+  desktop,
+  onRemove,
+}: {
+  item: UiItem
+  desktop: boolean
+  onRemove: () => void
+}) {
+  const style = rarityStyle(item.rarity)
+  const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
+    id: `item:${item.id}`,
+    disabled: !desktop,
+  })
+
+  return (
+    <div
+      ref={setNodeRef}
+      className={cn(
+        "group relative size-12 rounded-xl bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset",
+        style.ring,
+        style.glow,
+        desktop && "cursor-grab",
+        // We use DragOverlay for the moving preview; keep the original tile in place.
+        isDragging && "cursor-grabbing opacity-20"
+      )}
+      title={item.name}
+      {...attributes}
+      {...listeners}
+    >
+      <img
+        src={item.icon}
+        alt={item.name}
+        className={cn(
+          "h-full w-full object-contain p-1.5",
+          "transition-transform duration-150 ease-out",
+          desktop && "group-hover:scale-[1.06]",
+          isDragging && "scale-[1.03]"
+        )}
+        draggable={false}
+      />
+      <button
+        type="button"
+        className="absolute -top-1 -right-1 grid size-5 place-items-center rounded-full bg-background/90 text-foreground shadow"
+        onPointerDown={(e) => e.stopPropagation()}
+        onClick={onRemove}
+      >
+        <XIcon className="size-3" />
+      </button>
+    </div>
+  )
+}
+
+function PresetCard({
+  preset,
+  desktop,
+  itemsById,
+  locale,
+  t,
+  onLoadPresetIntoCurrent,
+  onRenamePreset,
+  onDeletePreset,
+  onRemoveItemFromPreset,
+}: {
+  preset: Preset
+  desktop: boolean
+  itemsById: Map<string, UiItem>
+  locale: string
+  t: (key: string, vars?: Record<string, unknown>) => string
+  onLoadPresetIntoCurrent: (presetId: string) => void
+  onRenamePreset: (presetId: string, name: string) => void
+  onDeletePreset: (presetId: string) => void
+  onRemoveItemFromPreset: (presetId: string, itemId: string) => void
+}) {
+  const { isOver, setNodeRef } = useDroppable({
+    id: `preset:${preset.id}`,
+    disabled: !desktop,
+  })
+
+  return (
+    <div
+      ref={setNodeRef}
+      className={cn(
+        "rounded-lg border p-4",
+        isOver && "border-dashed border-primary/60 bg-primary/5"
+      )}
+    >
+      <div className="flex flex-col gap-3">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div className="flex-1">
+            <input
+              value={preset.name}
+              onChange={(e) => onRenamePreset(preset.id, e.target.value)}
+              className="h-9 w-full rounded-md border bg-background px-3 text-sm font-medium outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
+            />
+            <div className="mt-1 text-xs text-muted-foreground">
+              {t("presets.meta", {
+                count: preset.itemIds.length,
+                date: new Date(preset.createdAt).toLocaleDateString(
+                  locale === "zh-CN" ? "zh-CN" : "en"
+                ),
+              })}
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="default"
+              onClick={() => onLoadPresetIntoCurrent(preset.id)}
+            >
+              {t("presets.load")}
+            </Button>
+            <Button
+              variant="outline"
+              onClick={async () => {
+                try {
+                  const url = buildShareUrl(preset.itemIds)
+                  await copyToClipboard(url)
+                  toast.success(t("share.copied"))
+                } catch {
+                  toast.error(t("share.copyFailed"))
+                }
+              }}
+            >
+              {t("share.share")}
+            </Button>
+            <Button variant="destructive" onClick={() => onDeletePreset(preset.id)}>
+              {t("presets.delete")}
+            </Button>
+          </div>
+        </div>
+
+        {preset.itemIds.length === 0 ? (
+          <div className="text-sm text-muted-foreground">
+            {t("presets.itemsEmpty")}
+          </div>
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            {preset.itemIds.map((id) => {
+              const it = itemsById.get(id)
+              if (!it) return null
+              return (
+                <DraggablePresetItem
+                  key={id}
+                  item={it}
+                  desktop={desktop}
+                  onRemove={() => onRemoveItemFromPreset(preset.id, id)}
+                />
+              )
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
 function buildShareUrl(itemIds: string[]) {
   const origin = typeof window !== "undefined" ? window.location.origin : ""
   const pathname = typeof window !== "undefined" ? window.location.pathname : "/"
@@ -48,7 +205,6 @@ async function copyToClipboard(text: string) {
   }
   // Fallback: open a prompt so the user can copy manually.
   // (This avoids introducing a full toast/provider system just for this action.)
-  // eslint-disable-next-line no-alert
   window.prompt("Copy URL", text)
 }
 
@@ -59,11 +215,7 @@ export function PresetsSheet({
   onLoadPresetIntoCurrent,
   onRenamePreset,
   onDeletePreset,
-  onAddItemToPreset,
   onRemoveItemFromPreset,
-  onDragStartItem,
-  canAcceptDrop,
-  readDraggedItemId,
 }: {
   trigger: React.ReactNode
   presets: Preset[]
@@ -71,11 +223,7 @@ export function PresetsSheet({
   onLoadPresetIntoCurrent: (presetId: string) => void
   onRenamePreset: (presetId: string, name: string) => void
   onDeletePreset: (presetId: string) => void
-  onAddItemToPreset: (presetId: string, itemId: string) => void
   onRemoveItemFromPreset: (presetId: string, itemId: string) => void
-  onDragStartItem: (e: React.DragEvent, itemId: string) => void
-  canAcceptDrop: (e: React.DragEvent) => boolean
-  readDraggedItemId: (e: React.DragEvent) => string | null
 }) {
   const desktop = React.useMemo(() => isProbablyDesktop(), [])
   const [open, setOpen] = React.useState(false)
@@ -110,111 +258,21 @@ export function PresetsSheet({
             ) : (
               <div className="flex flex-col gap-3">
                 {presets.map((p) => (
-                  <div
+                  <PresetCard
                     key={p.id}
-                    className="rounded-lg border p-4"
-                    onDragOver={(e) => {
-                      if (!desktop) return;
-                      if (!canAcceptDrop(e)) return;
-                      e.preventDefault();
+                    preset={p}
+                    desktop={desktop}
+                    itemsById={itemsById}
+                    locale={locale}
+                    t={t}
+                    onLoadPresetIntoCurrent={(id) => {
+                      onLoadPresetIntoCurrent(id)
+                      setOpen(false)
                     }}
-                    onDrop={(e) => {
-                      if (!desktop) return;
-                      const id = readDraggedItemId(e);
-                      if (!id) return;
-                      e.preventDefault();
-                      onAddItemToPreset(p.id, id);
-                    }}
-                  >
-                    <div className="flex flex-col gap-3">
-                      <div className="flex flex-wrap items-start justify-between gap-3">
-                        <div className="flex-1">
-                          <input
-                            value={p.name}
-                            onChange={(e) => onRenamePreset(p.id, e.target.value)}
-                            className="h-9 w-full rounded-md border bg-background px-3 text-sm font-medium outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
-                          />
-                          <div className="mt-1 text-xs text-muted-foreground">
-                            {t("presets.meta", {
-                              count: p.itemIds.length,
-                              date: new Date(p.createdAt).toLocaleDateString(
-                                locale === "zh-CN" ? "zh-CN" : "en"
-                              ),
-                            })}
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Button
-                            variant="default"
-                            onClick={() => {
-                              onLoadPresetIntoCurrent(p.id);
-                              setOpen(false);
-                            }}
-                          >
-                            {t("presets.load")}
-                          </Button>
-                          <Button
-                            variant="outline"
-                            onClick={async () => {
-                              try {
-                                const url = buildShareUrl(p.itemIds);
-                                await copyToClipboard(url);
-                                toast.success(t("share.copied"));
-                              } catch {
-                                toast.error(t("share.copyFailed"));
-                              }
-                            }}
-                          >
-                            {t("share.share")}
-                          </Button>
-                          <Button variant="destructive" onClick={() => onDeletePreset(p.id)}>
-                            {t("presets.delete")}
-                          </Button>
-                        </div>
-                      </div>
-
-                      {p.itemIds.length === 0 ? (
-                        <div className="text-sm text-muted-foreground">
-                          {t("presets.itemsEmpty")}
-                        </div>
-                      ) : (
-                        <div className="flex flex-wrap gap-2">
-                          {p.itemIds.map((id) => {
-                            const it = itemsById.get(id);
-                            if (!it) return null;
-                            const style = rarityStyle(it.rarity);
-                            return (
-                              <div
-                                key={id}
-                                className={cn(
-                                  "relative size-12 rounded-xl bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset",
-                                  style.ring,
-                                  style.glow
-                                )}
-                                draggable={desktop}
-                                onDragStart={(e) => onDragStartItem(e, id)}
-                                title={it.name}
-                              >
-                                <img
-                                  src={it.icon}
-                                  alt={it.name}
-                                  className="h-full w-full object-contain p-1.5"
-                                  draggable={false}
-                                />
-                                <button
-                                  type="button"
-                                  className="absolute -top-1 -right-1 grid size-5 place-items-center rounded-full bg-background/90 text-foreground shadow"
-                                  onClick={() => onRemoveItemFromPreset(p.id, id)}
-                                >
-                                  <XIcon className="size-3" />
-                                </button>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  </div>
+                    onRenamePreset={onRenamePreset}
+                    onDeletePreset={onDeletePreset}
+                    onRemoveItemFromPreset={onRemoveItemFromPreset}
+                  />
                 ))}
               </div>
             )}

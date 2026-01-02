@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { CheckIcon, InfoIcon } from "lucide-react"
+import { useDraggable } from "@dnd-kit/core"
 
 import type { UiItem } from "@/lib/ror2-items"
 import { clampToThreeLines, isProbablyDesktop, rarityStyle } from "@/lib/ror2-items"
@@ -15,31 +16,38 @@ export function ItemIcon({
   item,
   selected,
   onClick,
-  onDragStart,
   onOpenDetails,
 }: {
   item: UiItem
   selected: boolean
   onClick: () => void
-  onDragStart: (e: React.DragEvent) => void
   onOpenDetails: () => void
 }) {
   const style = rarityStyle(item.rarity)
   const desktop = React.useMemo(() => isProbablyDesktop(), [])
   const { t, locale } = useI18n()
+  const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
+    id: `item:${item.id}`,
+    disabled: !desktop,
+  })
 
   const content = (
     <button
       type="button"
+      ref={setNodeRef}
       className={cn(
         "group relative aspect-square w-full overflow-hidden rounded-xl bg-zinc-950/5 dark:bg-white/5",
         "ring-2 ring-inset transition",
         style.ring,
         style.glow,
-        selected && "ring-4 ring-inset ring-primary/70"
+        selected && "ring-4 ring-inset ring-primary/70",
+        desktop && "cursor-grab",
+        // We use DragOverlay for the moving preview; keep the original tile in place.
+        // When dragging, make it mostly transparent so it looks like a placeholder.
+        isDragging && "cursor-grabbing opacity-20"
       )}
-      draggable={desktop}
-      onDragStart={onDragStart}
+      {...attributes}
+      {...listeners}
       onClick={desktop ? onClick : onOpenDetails}
       onDoubleClick={() => {
         if (!desktop) return
@@ -56,7 +64,12 @@ export function ItemIcon({
       <img
         src={item.icon}
         alt={item.name}
-        className="h-full w-full object-contain p-1"
+        className={cn(
+          "h-full w-full object-contain p-1",
+          "transition-transform duration-150 ease-out",
+          desktop && "group-hover:scale-[1.06]",
+          isDragging && "scale-[1.03]"
+        )}
         loading="lazy"
         draggable={false}
       />

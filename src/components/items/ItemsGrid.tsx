@@ -10,13 +10,11 @@ export function ItemsGrid({
   selectedIds,
   onToggleSelected,
   onOpenDetails,
-  onDragStartItem,
 }: {
   items: UiItem[]
   selectedIds: Set<string>
   onToggleSelected: (id: string) => void
   onOpenDetails: (id: string) => void
-  onDragStartItem: (e: React.DragEvent, itemId: string) => void
 }) {
   return (
     <div className="grid grid-cols-6 gap-2 sm:grid-cols-8 sm:gap-3 md:grid-cols-10 lg:grid-cols-12">
@@ -27,7 +25,6 @@ export function ItemsGrid({
             key={it.id}
             item={it}
             selected={selected}
-            onDragStart={(e) => onDragStartItem(e, it.id)}
             onOpenDetails={() => onOpenDetails(it.id)}
             onClick={() => onToggleSelected(it.id)}
           />

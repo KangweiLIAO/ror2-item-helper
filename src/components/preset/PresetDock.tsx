@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { XIcon } from "lucide-react"
+import { useDroppable } from "@dnd-kit/core"
 
 import type { UiItem } from "@/lib/ror2-items"
 import { isProbablyDesktop, rarityStyle } from "@/lib/ror2-items"
@@ -15,8 +16,7 @@ export function PresetDock({
   onClear,
   onSave,
   onRemoveOne,
-  onDropAdd,
-  onCanAcceptDrop,
+  activeItemId,
   rightSlot,
 }: {
   itemsById: Map<string, UiItem>
@@ -24,35 +24,39 @@ export function PresetDock({
   onClear: () => void
   onSave: () => void
   onRemoveOne: (id: string) => void
-  onDropAdd: (e: React.DragEvent) => void
-  onCanAcceptDrop: (e: React.DragEvent) => boolean
+  activeItemId: string | null
   rightSlot?: React.ReactNode
 }) {
   const desktop = React.useMemo(() => isProbablyDesktop(), [])
   const { t } = useI18n()
+  const { isOver, setNodeRef } = useDroppable({
+    id: "dock",
+    disabled: !desktop,
+  })
+  const showPlaceholder = !!activeItemId && isOver && !currentIds.includes(activeItemId)
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t bg-background/92 backdrop-blur">
       <div className="mx-auto w-full max-w-[1100px] px-3 py-2 sm:px-4">
-        {desktop ? <div className="mb-1 text-xs font-medium text-muted-foreground">{t("dock.dropHint")}</div> : null}
         <div className="flex items-stretch gap-2">
           <div className="min-w-0 flex-1">
             <div
-              className={cn("rounded-md border bg-background px-2 py-2", "min-h-12")}
-              onDragOver={(e) => {
-                if (!desktop) return
-                if (!onCanAcceptDrop(e)) return
-                e.preventDefault()
-              }}
-              onDrop={(e) => {
-                if (!desktop) return
-                onDropAdd(e)
-              }}
+              ref={setNodeRef}
+              className={cn(
+                "rounded-md border bg-background px-2 py-2",
+                "min-h-12",
+                showPlaceholder && "border-dashed border-primary/60 bg-primary/5"
+              )}
             >
               <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
                 <div className="min-w-0">
                   {currentIds.length === 0 ? (
-                    <div className="text-xs text-muted-foreground">{t("dock.empty")}</div>
+                    <div className="flex items-center gap-2">
+                      <div className="text-xs text-muted-foreground">{t("dock.empty")}</div>
+                      {showPlaceholder ? (
+                        <div className="size-10 shrink-0 rounded-lg border-2 border-dashed border-primary/60 bg-background/60" />
+                      ) : null}
+                    </div>
                   ) : (
                     <div className="flex items-center gap-2 overflow-x-auto pb-1">
                       {currentIds.map((id) => {
@@ -80,6 +84,9 @@ export function PresetDock({
                           </div>
                         )
                       })}
+                      {showPlaceholder ? (
+                        <div className="size-10 shrink-0 rounded-lg border-2 border-dashed border-primary/60 bg-background/60" />
+                      ) : null}
                     </div>
                   )}
                 </div>
