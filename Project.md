@@ -58,12 +58,17 @@
 * 支持通过 **URL 分享 Preset**
 * 方案：
 
-  * 将 preset JSON 压缩（如 base64 / lz-string）
-  * 放入 URL query / hash
+  * ✅ MVP 采用 **URL query（Option A）**：重复参数 `share=<itemId>`（不依赖分隔符，健壮性更好）
+  * ❌ MVP 不做后端/短链（Vercel 直接部署静态即可）
 * 打开分享链接后：
 
-  * 自动解析 preset
-  * 进入“只读 Preset 视图”或直接加载为当前选择
+  * 自动解析 `share` 参数为 itemIds
+  * 弹出“Shared preset”预览对话框（不会自动覆盖/修改当前选择）
+  * 提供明确按钮：
+    * `Save to my presets`：导入为本地 preset（自动生成名称）
+    * `Close`：不做任何更改
+  * 成功保存后：从 URL 中移除 `share` 参数（避免刷新重复弹窗）
+  * 分享链接 **不锁语言**：当 URL 含 `share` 时，不会自动写入 `?lang=`（避免用户复制链接后意外语言固定）
 
 ---
 
@@ -187,14 +192,23 @@ python grep_icons.py --only-missing
     * Rename / Delete
     * 直接编辑 preset items：点击每个 item 的 **x** 移除
     * 桌面端支持从 grid **drag 到 preset 卡片**以添加 item
+    * **Share：在 preset 卡片上点击 Share → 自动复制 URL，并 toast 提示 “URL copied”**
 
 * **健壮性/数据清洗**
   * 处理 `items.json` 中 `internalName: null`：前端会为 item 生成稳定 `id`（避免 React key 冲突）
   * **移除无 description 的 items**（不会出现在 UI 中）
 
-### ⏳ 未开始 / 待实现
+### ✅ 已完成（URL 分享 Preset，无后端）
 
-* **URL 分享 Preset**
+* **分享链接格式（Option A）**
+  * `/?share=<itemId>&share=<itemId>...`
+  * `itemId` 使用前端 `UiItem.id`（优先 internalName），不包含语言文案
+* **打开分享链接**
+  * 自动解析并弹出 “Shared preset” 预览对话框
+  * `Save to my presets`：导入为本地 preset（不修改当前选择）
+  * 导入成功后移除 `share` 参数
+* **No language lock**
+  * URL 含 `share` 时，不会自动写入 `?lang=`，避免链接被语言固定
 
 ### ✅ 已完成（中文本地化 / zh-CN）
 
@@ -210,3 +224,13 @@ python grep_icons.py --only-missing
   * `?lang=zh-CN` 时展示中文 item `name/description`（桌面 hover tooltip、移动端详情 sheet、桌面详情 dialog 全覆盖）
   * 翻译数据来源：基于 fandom 的英文描述做逐条中文翻译（可继续人工微调）
   * 翻译文件：`public/data/items.zh-CN.overrides.json`（按 item `id`/`internalName` 做 key）
+
+---
+
+## MVP Status
+
+✅ **MVP 已完成**
+
+### Post-MVP ideas（可选）
+* 更短的分享链接（需要后端/存储，如 Vercel KV / Postgres）
+* 分享“当前选择”（不保存为 preset 也能分享）

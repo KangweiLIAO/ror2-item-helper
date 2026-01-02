@@ -124,7 +124,13 @@ export function ItemDetailsSheet({
               </div>
             ) : null}
             <div className="mt-auto">
-              <Button className="w-full" onClick={onToggleSelected}>
+              <Button
+                className="w-full"
+                onClick={() => {
+                  onToggleSelected()
+                  onOpenChange(false)
+                }}
+              >
                 {selected ? t("details.remove") : t("details.add")}
               </Button>
             </div>

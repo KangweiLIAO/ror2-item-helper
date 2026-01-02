@@ -40,6 +40,9 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 
   // If URL is missing/invalid lang, write a stable one so share links preserve language.
   React.useEffect(() => {
+    // IMPORTANT: For share links, we do NOT auto-write ?lang= into the URL.
+    // Otherwise a user opening a share link would "language-lock" it when they copy the URL.
+    if (searchParams.getAll("share").length > 0) return
     const fromQuery = normalizeLocale(searchParams.get("lang"))
     if (fromQuery) return
     const inferred = inferBrowserLocale()

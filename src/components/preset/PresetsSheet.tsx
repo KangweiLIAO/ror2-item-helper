@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { XIcon } from "lucide-react"
+import { toast } from "sonner"
 
 import type { Preset } from "@/lib/presets"
 import type { UiItem } from "@/lib/ror2-items"
@@ -30,6 +31,26 @@ const VisuallyHidden = ({ children }: { children: React.ReactNode }) => (
     border: 0
   }}>{children}</span>
 );
+
+function buildShareUrl(itemIds: string[]) {
+  const origin = typeof window !== "undefined" ? window.location.origin : ""
+  const pathname = typeof window !== "undefined" ? window.location.pathname : "/"
+  const sp = new URLSearchParams()
+  for (const id of itemIds) sp.append("share", id)
+  const qs = sp.toString()
+  return `${origin}${pathname}${qs ? `?${qs}` : ""}`
+}
+
+async function copyToClipboard(text: string) {
+  if (typeof navigator !== "undefined" && navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text)
+    return
+  }
+  // Fallback: open a prompt so the user can copy manually.
+  // (This avoids introducing a full toast/provider system just for this action.)
+  // eslint-disable-next-line no-alert
+  window.prompt("Copy URL", text)
+}
 
 export function PresetsSheet({
   trigger,
@@ -63,7 +84,14 @@ export function PresetsSheet({
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>{trigger}</SheetTrigger>
-      <SheetContent side="bottom" className="h-[85vh]">
+      <SheetContent
+        side="bottom"
+        className="h-[85vh]"
+        onOpenAutoFocus={(e) => {
+          // Prevent Radix from auto-focusing the first input (preset name) when opening the sheet.
+          e.preventDefault();
+        }}
+      >
         {/* Add an accessible hidden title for the dialog */}
         <VisuallyHidden>
           <SheetTitle>{t("app.presets")}</SheetTitle>
@@ -86,16 +114,16 @@ export function PresetsSheet({
                     key={p.id}
                     className="rounded-lg border p-4"
                     onDragOver={(e) => {
-                      if (!desktop) return
-                      if (!canAcceptDrop(e)) return
-                      e.preventDefault()
+                      if (!desktop) return;
+                      if (!canAcceptDrop(e)) return;
+                      e.preventDefault();
                     }}
                     onDrop={(e) => {
-                      if (!desktop) return
-                      const id = readDraggedItemId(e)
-                      if (!id) return
-                      e.preventDefault()
-                      onAddItemToPreset(p.id, id)
+                      if (!desktop) return;
+                      const id = readDraggedItemId(e);
+                      if (!id) return;
+                      e.preventDefault();
+                      onAddItemToPreset(p.id, id);
                     }}
                   >
                     <div className="flex flex-col gap-3">
@@ -109,39 +137,57 @@ export function PresetsSheet({
                           <div className="mt-1 text-xs text-muted-foreground">
                             {t("presets.meta", {
                               count: p.itemIds.length,
-                              date: new Date(p.createdAt).toLocaleDateString(locale === "zh-CN" ? "zh-CN" : "en"),
+                              date: new Date(p.createdAt).toLocaleDateString(
+                                locale === "zh-CN" ? "zh-CN" : "en"
+                              ),
                             })}
                           </div>
                         </div>
                         <div className="flex items-center gap-2">
                           <Button
-                            variant="secondary"
+                            variant="default"
                             onClick={() => {
-                              onLoadPresetIntoCurrent(p.id)
-                              setOpen(false)
+                              onLoadPresetIntoCurrent(p.id);
+                              setOpen(false);
                             }}
                           >
                             {t("presets.load")}
+                          </Button>
+                          <Button
+                            variant="outline"
+                            onClick={async () => {
+                              try {
+                                const url = buildShareUrl(p.itemIds);
+                                await copyToClipboard(url);
+                                toast.success(t("share.copied"));
+                              } catch {
+                                toast.error(t("share.copyFailed"));
+                              }
+                            }}
+                          >
+                            {t("share.share")}
                           </Button>
                           <Button variant="destructive" onClick={() => onDeletePreset(p.id)}>
                             {t("presets.delete")}
                           </Button>
                         </div>
                       </div>
-                      
+
                       {p.itemIds.length === 0 ? (
-                        <div className="text-sm text-muted-foreground">{t("presets.itemsEmpty")}</div>
+                        <div className="text-sm text-muted-foreground">
+                          {t("presets.itemsEmpty")}
+                        </div>
                       ) : (
                         <div className="flex flex-wrap gap-2">
                           {p.itemIds.map((id) => {
-                            const it = itemsById.get(id)
-                            if (!it) return null
-                            const style = rarityStyle(it.rarity)
+                            const it = itemsById.get(id);
+                            if (!it) return null;
+                            const style = rarityStyle(it.rarity);
                             return (
                               <div
                                 key={id}
                                 className={cn(
-                                  "relative size-12 overflow-hidden rounded-xl bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset",
+                                  "relative size-12 rounded-xl bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset",
                                   style.ring,
                                   style.glow
                                 )}
@@ -163,7 +209,7 @@ export function PresetsSheet({
                                   <XIcon className="size-3" />
                                 </button>
                               </div>
-                            )
+                            );
                           })}
                         </div>
                       )}
@@ -176,6 +222,6 @@ export function PresetsSheet({
         </div>
       </SheetContent>
     </Sheet>
-  )
+  );
 }
 

@@ -1,50 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## RoR2 Items Helper (Preset Browser)
 
-## Getting Started
+A fast, shareable **Risk of Rain 2 item browser** that lets you pick items, save them as **presets**, and share presets via URL — **no backend required**.
 
-First, run the development server:
+### Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Browse items**: icon grid + quick search (name/description) + rarity filters
+- **Item details**:
+  - Desktop: hover tooltip; double-click opens a details dialog
+  - Mobile: tap opens a bottom sheet with details
+- **Presets (localStorage)**:
+  - Save current selection as a preset
+  - Load (replace current selection), rename, delete
+  - Edit preset items directly (remove items)
+  - Desktop: drag items from grid onto a preset card to add
+- **Share presets via URL (no backend)**:
+  - Format: `/?share=<itemId>&share=<itemId>...`
+  - Opening a share link shows a preview dialog; user can import into local presets
+  - After import, the app removes `share` params to avoid repeated popups
+- **Localization**:
+  - `?lang=en` or `?lang=zh-CN`
+  - If missing, follows browser language and writes `lang` into the URL for shareability
+  - zh-CN item name/description overrides live in `public/data/items.zh-CN.overrides.json`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js** (App Router) + **React** + **TypeScript**
+- **Tailwind CSS**
+- **Radix UI** primitives + small UI helpers
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Attribution
 
-## Data
+Item data and icons are sourced from the Risk of Rain 2 Wiki (Fandom)  
+https://riskofrain2.fandom.com/
 
-- Update `public/data/items.json`:
-
-```bash
-npm run fetch-items
-```
-
-## Localization
-
-- **Switch language**: `?lang=en` or `?lang=zh-CN` (if missing, it follows browser language and writes `lang` into the URL for shareability).
-- **UI localization**: built-in message dictionary in `src/i18n/messages.ts`.
-- **Item name/description (zh-CN)**: curated translations in `public/data/items.zh-CN.overrides.json` (keyed by item id / internalName).
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Wiki content is community-contributed and licensed under CC BY-NC-SA, unless otherwise noted.
+This is a non-commercial, fan-made project and is not affiliated with Fandom or the game’s developers.

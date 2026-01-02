@@ -74,7 +74,7 @@ export function ItemIcon({
   if (!desktop) return content
 
   return (
-    <Tooltip>
+    <Tooltip delayDuration={300}>
       <TooltipTrigger asChild>{content}</TooltipTrigger>
       <TooltipContent sideOffset={8} className="max-w-[340px] rounded-lg px-3 py-2 text-xs">
         <div className="flex items-start justify-between gap-3">

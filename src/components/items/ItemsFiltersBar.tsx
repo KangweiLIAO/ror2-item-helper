@@ -1,12 +1,14 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { SearchIcon } from "lucide-react"
+import * as React from "react";
+import { SearchIcon } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { useI18n } from "@/i18n/LocaleProvider"
-import { rarityLabel } from "@/i18n/ror2"
-import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { useI18n } from "@/i18n/LocaleProvider";
+import { rarityLabel } from "@/i18n/ror2";
+import { rarityStyle } from "@/lib/ror2-items";
+import { cn } from "@/lib/utils";
 
 export function ItemsFiltersBar({
   query,
@@ -19,17 +21,17 @@ export function ItemsFiltersBar({
   totalCount,
   currentSelectedCount,
 }: {
-  query: string
-  onQueryChange: (next: string) => void
-  rarities: Set<string>
-  allRarities: string[]
-  onToggleRarity: (rarity: string, checked: boolean) => void
-  onReset: () => void
-  showingCount: number
-  totalCount: number
-  currentSelectedCount: number
+  query: string;
+  onQueryChange: (next: string) => void;
+  rarities: Set<string>;
+  allRarities: string[];
+  onToggleRarity: (rarity: string, checked: boolean) => void;
+  onReset: () => void;
+  showingCount: number;
+  totalCount: number;
+  currentSelectedCount: number;
 }) {
-  const { locale, setLocale, t } = useI18n()
+  const { locale, setLocale, t } = useI18n();
 
   return (
     <div className="sticky top-0 z-30 border-b bg-background/85 backdrop-blur">
@@ -76,7 +78,7 @@ export function ItemsFiltersBar({
               />
             </div>
 
-            <Button variant="secondary" onClick={onReset}>
+            <Button variant="default" onClick={onReset}>
               {t("filters.reset")}
             </Button>
           </div>
@@ -89,7 +91,9 @@ export function ItemsFiltersBar({
                 type="button"
                 className={cn(
                   "px-2 py-1 text-xs",
-                  locale === "en" ? "bg-accent text-foreground" : "bg-background text-muted-foreground"
+                  locale === "en"
+                    ? "bg-accent text-foreground"
+                    : "bg-background text-muted-foreground"
                 )}
                 onClick={() => setLocale("en")}
               >
@@ -99,7 +103,9 @@ export function ItemsFiltersBar({
                 type="button"
                 className={cn(
                   "px-2 py-1 text-xs",
-                  locale === "zh-CN" ? "bg-accent text-foreground" : "bg-background text-muted-foreground"
+                  locale === "zh-CN"
+                    ? "bg-accent text-foreground"
+                    : "bg-background text-muted-foreground"
                 )}
                 onClick={() => setLocale("zh-CN")}
               >
@@ -114,19 +120,21 @@ export function ItemsFiltersBar({
               <div className="flex flex-nowrap gap-2 overflow-x-auto pb-1 -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible">
                 {allRarities.map((r) => {
                   const checked = rarities.has(r);
+                  const style = rarityStyle(r);
                   return (
                     <label
                       key={r}
                       className={cn(
-                        "flex shrink-0 cursor-pointer items-center gap-2 rounded-md border px-2 py-1 text-sm transition",
-                        checked ? "bg-accent" : "bg-background",
+                        "flex shrink-0 cursor-pointer items-center gap-2 rounded-md px-2 py-1 text-sm transition",
+                        "select-none ring-2 ring-inset",
+                        style.ring,
+                        checked ? cn("bg-accent", style.glow) : "bg-background",
                         "select-none"
                       )}
                     >
-                      <input
-                        type="checkbox"
+                      <Checkbox
                         checked={checked}
-                        onChange={(e) => onToggleRarity(r, e.target.checked)}
+                        onCheckedChange={(v) => onToggleRarity(r, v === true)}
                       />
                       <span className="text-sm">{rarityLabel(locale, r)}</span>
                     </label>
@@ -145,5 +153,3 @@ export function ItemsFiltersBar({
     </div>
   );
 }
-
-
