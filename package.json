@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "vercel-build": "npm run fetch-items && next build",
     "start": "next start",
     "lint": "eslint",
     "fetch-items": "node scripts/fetch-items-data.mjs"
