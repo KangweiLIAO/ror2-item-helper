@@ -33,40 +33,22 @@ export function ItemsFiltersBar({
 }) {
   const { locale, setLocale, t } = useI18n();
 
+  const brandHref = `/?lang=${encodeURIComponent(locale)}`;
+
   return (
     <div className="sticky top-0 z-30 border-b bg-background/85 backdrop-blur">
       <div className="mx-auto w-full max-w-[1100px] px-3 py-3 sm:px-4">
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <div className="hidden items-center gap-2 sm:flex">
-              <span className="text-xs text-muted-foreground">{t("filters.language")}</span>
-              <div className="flex overflow-hidden rounded-md border">
-                <button
-                  type="button"
-                  className={cn(
-                    "px-2 py-1 text-xs",
-                    locale === "en"
-                      ? "bg-accent text-foreground"
-                      : "bg-background text-muted-foreground"
-                  )}
-                  onClick={() => setLocale("en")}
-                >
-                  {t("filters.lang.en")}
-                </button>
-                <button
-                  type="button"
-                  className={cn(
-                    "px-2 py-1 text-xs",
-                    locale === "zh-CN"
-                      ? "bg-accent text-foreground"
-                      : "bg-background text-muted-foreground"
-                  )}
-                  onClick={() => setLocale("zh-CN")}
-                >
-                  {t("filters.lang.zh-CN")}
-                </button>
-              </div>
-            </div>
+            <a
+              href={brandHref}
+              className="flex items-center gap-2 rounded-md px-2 py-1 transition-colors hover:bg-accent/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              aria-label="Sharky's"
+              title="Sharky's"
+            >
+              <img src="/favicon.png" alt="" className="size-8 rounded-sm" draggable={false} />
+              <span className="hidden text-lg font-semibold leading-none sm:inline">Sharky&apos;s</span>
+            </a>
 
             <div className="relative flex-1">
               <SearchIcon className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
@@ -78,39 +60,43 @@ export function ItemsFiltersBar({
               />
             </div>
 
-            <Button variant="default" onClick={onReset}>
+            <Button variant="default" onClick={onReset} className="h-10">
               {t("filters.reset")}
             </Button>
-          </div>
 
-          {/* Mobile language switch (avoid crowding the top row) */}
-          <div className="flex items-center justify-between gap-2 sm:hidden">
-            <span className="text-xs text-muted-foreground">{t("filters.language")}</span>
-            <div className="flex overflow-hidden rounded-md border">
-              <button
-                type="button"
-                className={cn(
-                  "px-2 py-1 text-xs",
-                  locale === "en"
-                    ? "bg-accent text-foreground"
-                    : "bg-background text-muted-foreground"
-                )}
-                onClick={() => setLocale("en")}
+            <div className="flex items-stretch gap-2">
+              <div
+                className="flex h-10 overflow-hidden rounded-md border"
+                aria-label={t("filters.language")}
+                title={t("filters.language")}
               >
-                {t("filters.lang.en")}
-              </button>
-              <button
-                type="button"
-                className={cn(
-                  "px-2 py-1 text-xs",
-                  locale === "zh-CN"
-                    ? "bg-accent text-foreground"
-                    : "bg-background text-muted-foreground"
-                )}
-                onClick={() => setLocale("zh-CN")}
-              >
-                {t("filters.lang.zh-CN")}
-              </button>
+                <button
+                  type="button"
+                  aria-pressed={locale === "en"}
+                  className={cn(
+                    "h-full px-3 text-xs",
+                    locale === "en"
+                      ? "bg-accent text-foreground"
+                      : "bg-background text-muted-foreground"
+                  )}
+                  onClick={() => setLocale("en")}
+                >
+                  {t("filters.lang.en")}
+                </button>
+                <button
+                  type="button"
+                  aria-pressed={locale === "zh-CN"}
+                  className={cn(
+                    "h-full px-3 text-xs",
+                    locale === "zh-CN"
+                      ? "bg-accent text-foreground"
+                      : "bg-background text-muted-foreground"
+                  )}
+                  onClick={() => setLocale("zh-CN")}
+                >
+                  {t("filters.lang.zh-CN")}
+                </button>
+              </div>
             </div>
           </div>
 

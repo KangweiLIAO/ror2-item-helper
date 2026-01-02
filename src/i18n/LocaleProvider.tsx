@@ -10,7 +10,7 @@ import { MESSAGES, formatMessage } from "@/i18n/messages"
 type I18nContextValue = {
   locale: Locale
   setLocale: (next: Locale) => void
-  t: (key: string, params?: Record<string, string | number>) => string
+  t: (key: string, params?: Record<string, unknown>) => string
 }
 
 const I18nContext = React.createContext<I18nContextValue | null>(null)
@@ -60,7 +60,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
   )
 
   const t = React.useCallback(
-    (key: string, params?: Record<string, string | number>) => {
+    (key: string, params?: Record<string, unknown>) => {
       const template = MESSAGES[locale]?.[key] ?? MESSAGES.en[key] ?? key
       return formatMessage(template, params)
     },
