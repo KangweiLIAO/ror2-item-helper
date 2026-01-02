@@ -1,0 +1,179 @@
+Clover	57 Leaf Clover	Legendary	All random effects are rolled +1 (+1 per stack) times for a favorable outcome.
+Syringe	Soldier's Syringe	Common	Increases attack speed by 15% (+15% per stack).
+Bear	Tougher Times	Common	15% (+15% per stack) chance to block incoming damage. Unaffected by luck.
+Behemoth	Brilliant Behemoth	Legendary	All your attacks explode in a 4m (+2.5m per stack) radius for a bonus 60% TOTAL damage to nearby enemies.
+Missile	AtG Missile Mk. 1	Uncommon	10% chance to fire a missile that deals 300% (+300% per stack) TOTAL damage.
+ExplodeOnDeath	Will-o'-the-wisp	Uncommon	On killing an enemy, spawn a lava pillar in a 12m (+2.4m per stack) radius for 350% (+280% per stack) base damage.
+Dagger	Ceremonial Dagger	Legendary	Killing an enemy fires out 3 homing daggers that deal 150% (+150% per stack) base damage.
+Tooth	Monster Tooth	Common	Killing an enemy spawns a healing orb that heals for 8 plus an additional 2% (+2% per stack) of maximum health.
+CritGlasses	Lens-Maker's Glasses	Common	Your attacks have a 10% (+10% per stack) chance to 'Critically Strike', dealing double damage.
+Hoof	Paul's Goat Hoof	Common	Increases movement speed by 14% (+14% per stack).
+Feather	Hopoo Feather	Uncommon	Gain +1 (+1 per stack) maximum jump count.
+ChainLightning	Ukulele	Uncommon	25% chance to fire chain lightning for 80% TOTAL damage on up to 3 (+2 per stack) targets within 20m (+2m per stack).
+Seed	Leeching Seed	Uncommon	Dealing damage heals you for 1 (+1 per stack) health.
+Icicle	Frost Relic	Legendary	Killing an enemy surrounds you with an ice storm that deals 1200% damage per second and slows enemies by 80% for 1.5s. The storm grows with every kill, increasing its radius by 2m. Stacks up to 18m (+12m per stack).
+GhostOnKill	Happiest Mask	Legendary	Killing enemies has a 7% chance to spawn a ghost of the killed enemy with 1500% damage. Lasts 30s (+30s per stack).
+Mushroom	Bustling Fungus	Common	After standing still for 1 second, create a zone that heals for 4.5% (+2.25% per stack) of your health every second to all allies within 3m (+1.5m per stack).
+Crowbar	Crowbar	Common	Deal +75% (+75% per stack) damage to enemies above 90% health.
+AttackSpeedOnCrit	Predatory Instincts	Uncommon	Gain 5% critical chance. Critical strikes increase attack speed by 12%. Maximum cap of 36% (+24% per stack) attack speed.
+BleedOnHit	Tri-Tip Dagger	Common	10% (+10% per stack) chance to bleed an enemy for 240% base damage.
+SprintOutOfCombat	Red Whip	Uncommon	Leaving combat boosts your movement speed by 30% (+30% per stack).
+FallBoots	H3AD-5T v2	Legendary	Increase jump height. Creates a 5m-100m radius kinetic explosion on hitting the ground, dealing 1000%-10000% base damage that scales up with fall distance. Recharges in 10 (-50% per stack) seconds.
+WardOnLevel	Warbanner	Common	On level up or starting the Teleporter event, drop a banner that strengthens all allies within 16m (+8m per stack). Raise attack and movement speed by 30%.
+WarCryOnMultiKill	Berzerker's Pauldron	Uncommon	Killing 4 enemies within 1 second sends you into a frenzy for 6s (+4s per stack). Increases movement speed by 50% and attack speed by 100%.
+Phasing	Old War Stealthkit	Uncommon	Falling below 25% health causes you to gain 40% movement speed and invisibility for 5s. Recharges every 30 seconds (-50% per stack).
+HealOnCrit	Harvester's Scythe	Uncommon	Gain 5% critical chance. Critical strikes heal for 8 (+4 per stack) health.
+HealWhileSafe	Cautious Slug	Common	Increases base health regeneration by +3 hp/s (+3 hp/s per stack) while outside of combat.
+JumpBoost	Wax Quail	Uncommon	Jumping while sprinting boosts you forward by 10m (+10m per stack).
+PersonalShield	Personal Shield Generator	Common	Gain a shield equal to 8% (+8% per stack) of your maximum health. Recharges outside of danger.
+NovaOnHeal	N'kuhana's Opinion	Legendary	Store 100% (+100% per stack) of healing as Soul Energy. After your Soul Energy reaches 10% of your maximum health, fire a skull that deals 250% of your Soul Energy as damage.
+Medkit	Medkit	Common	2 seconds after getting hurt, heal for 20 plus an additional 5% (+5% per stack) of maximum health.
+EquipmentMagazine	Fuel Cell	Uncommon	Hold an additional equipment charge (+1 per stack). Reduce equipment cooldown by 15% (+15% per stack).
+Infusion	Infusion	Uncommon	Killing an enemy increases your health permanently by 1 (+1 per stack), up to a maximum of 100 (+100 per stack) health.
+ShockNearby	Unstable Tesla Coil	Legendary	Fire out lightning that hits 3 (+2 per stack) enemies for 200% base damage every 0.5s. The Tesla Coil switches off every 10 seconds.
+IgniteOnKill	Gasoline	Common	Killing an enemy ignites all enemies within 12m (+4m per stack) for 150% base damage. Additionally, enemies burn for 150% (+75% per stack) base damage.
+BounceNearby	Sentient Meat Hook	Legendary	20% (+20% per stack) chance on hit to fire homing hooks at up to 10 (+5 per stack) enemies for 100% TOTAL damage.
+Firework	Bundle of Fireworks	Common	Activating an interactable launches 8 (+4 per stack) fireworks that deal 300% base damage.
+Bandolier	Bandolier	Uncommon	18% (+10% per stack) chance on kill to drop an ammo pack that resets all skill cooldowns.
+StunChanceOnHit	Stun Grenade	Common	5% (+5% on stack) chance on hit to stun enemies for 2 seconds.
+LunarDagger	Shaped Glass	Lunar	Increase base damage by 100% (+100% per stack). Reduce maximum health by 50% (+50% per stack).
+GoldOnHit	Brittle Crown	Lunar	30% chance on hit to gain 2 (+2 per stack) gold. Scales over time. Lose gold on taking damage equal to 100% (+100% per stack) of the maximum health percentage you lost.
+ShieldOnly	Transcendence	Lunar	Convert all but 1 health into regenerating shields. Gain 50% (+25% per stack) maximum health.
+AlienHead	Alien Head	Legendary	Reduce skill cooldowns by 25% (+25% per stack).
+Talisman	Soulbound Catalyst	Legendary	Kills reduce equipment cooldown by 4s (+2s per stack).
+Knurl	Titanic Knurl	Boss	Increase maximum health by 40 (+40 per stack) and base health regeneration by +1.6 hp/s (+1.6 hp/s per stack).
+BeetleGland	Queen's Gland	Boss	Every 30 seconds, summon a Beetle Guard with bonus 300% damage and 100% health. Can have up to 1 (+1 per stack) Guards at a time.
+SprintBonus	Energy Drink	Common	Sprint speed is improved by 25% (+25% per stack).
+SecondarySkillMagazine	Backup Magazine	Common	Add +1 (+1 per stack) charge of your Secondary skill.
+StickyBomb	Sticky Bomb	Common	5% (+5% per stack) chance on hit to attach a bomb to an enemy, detonating for 180% TOTAL damage.
+TreasureCache	Rusted Key	Common	A hidden cache containing an item (80%/20%) will appear in a random location on each stage. Opening the cache consumes this item.
+BossDamageBonus	Armor-Piercing Rounds	Common	Deal an additional 20% damage (+20% per stack) to bosses.
+SprintArmor	Rose Buckler	Uncommon	Increase armor by 30 (+30 per stack) while sprinting.
+IceRing	Runald's Band	Uncommon	Hits that deal more than 400% damage also blasts enemies with a runic ice blast, slowing them by 80% for 3s (+3s per stack) and dealing 250% (+250% per stack) TOTAL damage. Recharges every 10 seconds.
+FireRing	Kjaro's Band	Uncommon	Hits that deal more than 400% damage also blasts enemies with a runic flame tornado, dealing 300% (+300% per stack) TOTAL damage over time. Recharges every 10 seconds.
+SlowOnHit	Chronobauble	Uncommon	Slow enemies on hit for -60% movement speed for 2s (+2s per stack).
+ExtraLife	Dio's Best Friend	Legendary	Upon death, this item will be consumed and you will return to life with 3 seconds of invulnerability.
+ExtraLifeConsumed	Dio's Best Friend (Consumed)	Untiered	A spent item with no remaining power.
+UtilitySkillMagazine	Hardlight Afterburner	Legendary	Add +2 (+2 per stack) charges of your Utility skill. Reduces Utility skill cooldown by 33%.
+HeadHunter	Wake of Vultures	Legendary	Gain the power of any killed elite monster for 8s (+5s per stack).
+KillerEliteFrenzy	Brainstalks	Legendary	Upon killing an elite monster, enter a frenzy for 4s (+4s per stack) where skills have 0.5s cooldowns.
+IncreaseHealing	Rejuvenation Rack	Legendary	Heal +100% (+100% per stack) more.
+RepeatHeal	Corpsebloom	Lunar	Heal +100% (+100% per stack) more. All healing is applied over time. Can heal for a maximum of 10% (-50% per stack) of your health per second.
+AutoCastEquipment	Gesture of the Drowned	Lunar	Reduce Equipment cooldown by 50% (+15% per stack). Forces your Equipment to activate whenever it is off cooldown.
+ExecuteOnLowHealthElite	Old Guillotine	Uncommon	Instantly kill Elite monsters below 13% (+13% per stack) health.
+EnergizedOnEquipmentUse	War Horn	Uncommon	Activating your Equipment gives you +70% attack speed for 8s (+4s per stack).
+BarrierOnOverHeal	Aegis	Legendary	Healing past full grants you a temporary barrier for 50% (+50% per stack) of the amount you healed.
+TonicAffliction	Tonic Affliction	Untiered	Reduce ALL stats by -5% (-5% per stack).
+TitanGoldDuringTP	Halcyon Seed	Boss	Summon Aurelionite during the teleporter event. It has 100% (+50% per stack) damage and 100% (+100% per stack) health.
+SprintWisp	Little Disciple	Boss	Fire a tracking wisp for 300% (+300% per stack) damage. Fires every 1.6 seconds while sprinting. Fire rate increases with movement speed.
+BarrierOnKill	Topaz Brooch	Common	Gain a temporary barrier on kill for 15 health (+15 per stack).
+ArmorReductionOnHit	Shattering Justice	Legendary	After hitting an enemy 5 times, reduce their armor by 60 for 8 (+8 per stack) seconds.
+TPHealingNova	Lepton Daisy	Uncommon	Release a healing nova during the Teleporter event, healing all nearby allies for 50% of their maximum health. Occurs 1 (+1 per stack) times.
+NearbyDamageBonus	Focus Crystal	Common	Increase damage to enemies within 13m by 20% (+20% per stack).
+LunarUtilityReplacement	Strides of Heresy	Lunar	Replace your Utility Skill with Shadowfade. Fade away, becoming intangible and gaining +30% movement speed. Heal for 18.2% (+18.2% per stack) of your maximum health. Lasts 3 (+3 per stack) seconds.
+Thorns	Razorwire	Uncommon	Getting hit causes you to explode in a burst of razors, dealing 160% damage. Hits up to 5 (+2 per stack) targets in a 25m (+10m per stack) radius
+FlatHealth	Bison Steak	Common	Increases maximum health by 25 (+25 per stack).
+Pearl	Pearl	Boss	Increases maximum health by 10% (+10% per stack).
+ShinyPearl	Irradiant Pearl	Boss	Increases ALL stats by 10% (+10% per stack).
+BonusGoldPackOnKill	Ghor's Tome	Uncommon	4% (+4% on stack) chance on kill to drop a treasure worth $25. Scales over time.
+LaserTurbine	Resonance Disc	Legendary	Killing 4 enemies in 7 seconds charges the Resonance Disc. The disc launches itself toward a target for 300% base damage (+300% per stack), piercing all enemies it doesn't kill, and then explodes for 1000% base damage (+1000% per stack). Returns to the user, striking all enemies along the way for 300% base damage (+300% per stack).
+LunarPrimaryReplacement	Visions of Heresy	Lunar	Replace your Primary Skill with Hungering Gaze. Fire a flurry of tracking shards that detonate after a delay, dealing 120% base damage. Hold up to 12 charges (+12 per stack) that reload after 2 seconds (+2 per stack).
+NovaOnLowHealth	Genesis Loop	Boss	Falling below 25% health causes you to explode, dealing 6000% base damage. Recharges every 30 / (2 +1 per stack) seconds .
+LunarTrinket	Beads of Fealty	Lunar	Seems to do nothing... but...
+ArtifactKey	Artifact Key	Boss	A stone shard with immense power.
+ArmorPlate	Repulsion Armor Plate	Common	Reduce all incoming damage by 5 (+5 per stack). Cannot be reduced below 1.
+Squid	Squid Polyp	Uncommon	Activating an interactable summons a Squid Turret that attacks nearby enemies at 100% (+100% per stack) attack speed. Lasts 30 seconds.
+DeathMark	Death Mark	Uncommon	Enemies with 4 or more debuffs are marked for death, increasing damage taken by 50% from all sources for 7 (+7 per stack) seconds.
+Plant	Interstellar Desk Plant	Legendary	On kill, plant a healing fruit seed that grows into a plant after 5 seconds. The plant heals for 5% of maximum health every 0.5 second to all allies within 10m (+5.0m per stack). Lasts 10 seconds.
+Incubator	Ancestral Incubator	Untiered	7% chance (+1% per stack) on kill to summon an Ancestral Pod that distracts enemies. Once it fully grows, it will hatch into an allied Parent with 100% health (+100% per stack).
+FocusConvergence	Focused Convergence	Lunar	Teleporters charge 30% (+30% per stack) faster, but the size of the Teleporter zone is 50% (-50% per stack) smaller.
+FireballsOnHit	Molten Perforator	Boss	10% chance on hit to call forth 3 magma balls from an enemy, dealing 300% (+300% per stack) damage each.
+LightningStrikeOnHit	Charged Perforator	Boss	10% chance on hit to down a lightning strike, dealing 500% (+500% per stack) damage.
+BleedOnHitAndExplode	Shatterspleen	Boss	Gain 5% critical chance. Critical Strikes bleed enemies for 240% base damage. Bleeding enemies explode on death for 400% (+400% per stack) damage, plus an additional 15% (+15% per stack) of their maximum health.
+SiphonOnLowHealth	Mired Urn	Boss	While in combat, the nearest 1 (+1 per stack) enemies to you within 13m will be 'tethered' to you, dealing 100% damage per second, applying tar, and healing you for 100% of the damage dealt.
+MonstersOnShrineUse	Defiant Gouge	Lunar	Using a Shrine summons enemies (stronger per stack) nearby. Scales over time.
+RandomDamageZone	Mercurial Rachis	Lunar	Creates a Ward of Power in a random location nearby that buffs both enemies and allies within 16m (+50% per stack), causing them to deal +50% damage.
+CaptainDefensiveMatrix	Defensive Microbots	Legendary	Shoot down 1 (+1 per stack) projectiles within 20m every 0.5 seconds. Recharge rate scales with attack speed.
+ScrapWhite	Item Scrap, White	Common	Does nothing. Prioritized when used with 3D Printers.
+ScrapGreen	Item Scrap, Green	Uncommon	Does nothing. Prioritized when used with 3D Printers.
+ScrapRed	Item Scrap, Red	Legendary	Does nothing. Prioritized when used with 3D Printers.
+ScrapYellow	Item Scrap, Yellow	Boss	Does nothing. Prioritized when used with 3D Printers.
+LunarBadLuck	Purity	Lunar	All skill cooldowns are reduced by 2 (+1 per stack) seconds. All random effects are rolled +1 (+1 per stack) times for an unfavorable outcome.
+LunarSecondaryReplacement	Hooks of Heresy	Lunar	Replace your Secondary Skill with Slicing Maelstrom. Charge up a projectile that deals 875% damage per second to nearby enemies, exploding after 3 seconds to deal 700% damage and root enemies for 3 (+3 per stack) seconds. Recharges after 5 (+5 per stack) seconds.
+RoboBallBuddy	Empathy Cores	Boss	Every 30 seconds, summon two Solus Probes that gain +100% (+100% per stack) damage per ally on your team.
+ParentEgg	Planula	Boss	Heal from incoming damage for 15 (+15 per stack).
+LunarSpecialReplacement	Essence of Heresy	Lunar	Replace your Special Skill with Ruin. Dealing damage adds a stack of Ruin for 10 (+10 per stack) seconds. Activating the skill detonates all Ruin stacks at unlimited range, dealing 300% damage plus 120% damage per stack of Ruin. Recharges after 8 (+8 per stack) seconds.
+AttackSpeedAndMoveSpeed	Mocha	Common	Increases attack speed by 7.5% (+7.5 per stack) and movement speed by 7% (+7% per stack).
+MissileVoid	Plasma Shrimp	Void	Gain a shield equal to 10% of your maximum health. While you have a shield, hitting an enemy fires a missile that deals 40% (+40% per stack) TOTAL damage. Corrupts all AtG Missile Mk. 1s.
+BearVoid	Safer Spaces	Void	Blocks incoming damage once. Recharges after 15 seconds (-10% per stack) Corrupts all Tougher Times.
+PrimarySkillShuriken	Shuriken	Uncommon	Activating your Primary skill also throws a shuriken that deals 400% (+100% per stack) base damage. You can hold up to 3 (+1 per stack) shurikens which all reload over 10 seconds.
+CritDamage	Laser Scope	Legendary	Critical Strikes deal an additional 100% damage (+100% per stack).
+DroneWeapons	Spare Drone Parts	Legendary	Gain Col. Droneman. Drones gain +50% (+50% per stack) attack speed and cooldown reduction. Drones gain 10% chance to fire a missile on hit, dealing 300% TOTAL damage. Drones gain an automatic chain gun that deals 6x100% damage, bouncing to 2 enemies.
+MoveSpeedOnKill	Hunter's Harpoon	Uncommon	Killing an enemy increases movement speed by 125%, fading over 1 (+0.5 per stack) seconds.
+StrengthenBurn	Ignition Tank	Uncommon	Ignite effects deal +300% (+300% per stack) more damage over time.
+HealingPotion	Power Elixir	Common	Taking damage to below 25% health consumes this item, healing you for 75% of maximum health.
+HealingPotionConsumed	Empty Bottle	Untiered	An empty container for an Elixir. Does nothing.
+PermanentDebuffOnHit	Symbiotic Scorpion	Legendary	100% chance on hit to reduce armor by 2 (+2 per stack) permanently.
+MoreMissile	Pocket I.C.B.M.	Legendary	All missile items and equipment fire an additional 2 missiles. Increase missile damage by 0% (+50% per stack)
+MushroomVoid	Weeping Fungus	Void	Heals for 2% (+2% per stack) of your health every second while sprinting. Corrupts all Bustling Fungi.
+HalfSpeedDoubleHealth	Stone Flux Pauldron	Lunar	Increase max health by 100% (+100% per stack). Reduce movement speed by 50% (+50% per stack).
+HalfAttackSpeedHalfCooldowns	Light Flux Pauldron	Lunar	Decrease skill cooldowns by 50% (+50% per stack). Decrease attack speed by 50% (+50% per stack).
+RandomlyLunar	Eulogy Zero	Lunar	Items have a 5% (+5% per stack) chance to become a Lunar item instead.
+ImmuneToDebuff	Ben's Raincoat	Legendary	Prevents 1 (+1 per stack) debuff and instead grants a temporary barrier for 10% of maximum health. Recharges every 5 seconds.
+RegeneratingScrap	Regenerating Scrap	Uncommon	Does nothing. Prioritized when used with Uncommon 3D Printers. At the start of each stage, it regenerates.
+RegeneratingScrapConsumed	Regenerating Scrap (Consumed)	Untiered	At the start of each stage, it transforms into Regenerating Scrap.
+CritGlassesVoid	Lost Seer's Lenses	Void	Your attacks have a 0.5% (+0.5% per stack) chance to instantly kill a non-Boss enemy. Corrupts all Lens-Maker's Glasses.
+ExplodeOnDeathVoid	Voidsent Flame	Void	Upon hitting an enemy at full health, spawn a lava pillar in a 12m (+2.4m per stack) radius for 260% (+156% per stack) base damage. Corrupts all Will-o'-the-wisps.
+BleedOnHitVoid	Needletick	Void	10% (+10% per stack) chance to collapse an enemy for 400% base damage. Corrupts all Tri-Tip Daggers.
+ChainLightningVoid	Polylute	Void	25% chance to fire lightning for 60% TOTAL damage up to 3 (+3 per stack) times. Corrupts all Ukuleles.
+TreasureCacheVoid	Encrusted Key	Void	A hidden cache containing an item (60%/30%/10%) will appear in a random location on each stage. Opening the cache consumes this item. Corrupts all Rusted Keys.
+CloverVoid	Benthic Bloom	Void	Upgrades 3 (+3 per stack) random items to items of the next higher rarity at the start of each stage. Corrupts all 57 Leaf Clovers.
+SlowOnHitVoid	Tentabauble	Void	5% (+5% per stack) chance on hit to root enemies for 1s (+1s per stack). Corrupts all Chronobaubles.
+EquipmentMagazineVoid	Lysate Cell	Void	Add +1 (+1 per stack) charge of your Special skill. Reduces Special skill cooldown by 33%. Corrupts all Fuel Cells.
+ExtraLifeVoid	Pluripotent Larva	Void	Upon death, this item will be consumed and you will return to life with 3 seconds of invulnerability, and all of your items that can be corrupted will be. Corrupts all Dio's Best Friends.
+ExtraLifeVoidConsumed	Pluripotent Larva (Consumed)	Untiered	A spent item with no remaining power.
+FragileDamageBonus	Delicate Watch	Common	Increase damage by 20% (+20% per stack). Taking damage to below 25% health breaks this item.
+FragileDamageBonusConsumed	Delicate Watch (Broken)	Untiered	...well, it's still right twice a day.
+OutOfCombatArmor	Oddly-shaped Opal	Common	Increase armor by 100 (+100 per stack) while out of danger.
+GoldOnHurt	Roll of Pennies	Common	Gain 3 (+3 per stack) gold on taking damage from an enemy. Scales over time.
+RandomEquipmentTrigger	Bottled Chaos	Legendary	Trigger a random equipment effect 1 (+1 per stack) time(s).
+FreeChest	Shipping Request Form	Uncommon	A delivery containing 2 items (79%/20%/1%) will appear in a random location on each stage. (Increases rarity chances of the items per stack).
+ElementalRingVoid	Singularity Band	Void	Hits that deal more than 400% damage also fire a black hole that draws enemies within 15m into its center. Lasts 5 seconds before collapsing, dealing 100% (+100% per stack) TOTAL damage. Recharges every 20 seconds. Corrupts all Runald's and Kjaro's Bands.
+LunarSun	Egocentrism	Lunar	Every 3 (-50% per stack) seconds, gain an orbiting bomb that detonates on impact for 360% damage, up to a maximum of 3 bombs (+1 per stack). Every 60 seconds, a random item is converted into this item.
+MinorConstructOnKill	Defense Nucleus	Boss	Killing elite monsters spawns an Alpha Construct with bonus 300% damage and 300% health. Limited to 4 (+4 per stack).
+VoidMegaCrabItem	Newly Hatched Zoea	Void	Every 60 (-50% per stack) seconds, gain a random Void ally. Can have up to 1 (+1 per stack) allies at a time. Corrupts all yellow items.
+BoostAllStats	Growth Nectar	Legendary	Grants 4% increase to ALL stats for each buff, up to a maximum of 4 (+4 per stack).
+ExtraShrineItem	Chance Doll	Uncommon	On Shrine of Chance success, 40% (+10% per stack) chance to get higher rarity items.
+KnockBackHitEnemies	Breaching Fin	Uncommon	Grounded enemies hit with any skill are launched and stunned. Enemies hit while airborne are launched again up to 2 times (+1 per stack). Launched enemies take increased damage by 10% from all sources per launch. Recharges after 15s.
+AttackSpeedPerNearbyAllyOrEnemy	Bolstering Lantern	Common	Increase your attack speed by 10% (+3.5% per stack) for up to 3 (+1 per stack) enemies and allies within 20 meters.
+IncreasePrimaryDamage	Luminous Shot	Uncommon	Activating Secondary skill stores up to 5 charges (+1 per stack). Requires 3 charges for your Primary skill to fire lightning strikes, dealing 175% TOTAL damage (+50% per stack) each. Reduces Secondary skill cooldown by 20%.
+LowerPricedChests	Sale Star	Uncommon	Gain an extra item on the first chest opened per stage. Each additional Sale Star increases the chance of getting more items by 5%.
+LowerPricedChestsConsumed	Sale Star (Consumed)	Untiered	At the start of each stage, it transforms into Sale Star.
+SpeedBoostPickup	Elusive Antlers	Common	Spawns orbs of energy nearby every 10s (-10% per stack), giving +12% movement speed up to 3 (+3 per stack) times for 12s.
+ItemDropChanceOnKill	Sonorous Whispers	Legendary	When a large monster is killed it will always drop an item. All elites have a 4% chance of dropping an item (+1% per stack).
+StunAndPierce	Electric Boomerang	Legendary	15% chance on hit to fire an electric boomerang that slices through enemies dealing 120% base damage (+120% per stack) and deals an additional 120% base damage per second and stuns all enemies hit. Can strike enemies on the way back.
+TriggerEnemyDebuffs	Noxious Thorn	Uncommon	Gain 10% chance to bleed an enemy. On killing an enemy, transfer 33% of every debuff stack to 1 enemy (+1 per stack) within 20m (+5m per stack).
+IncreaseDamageOnMultiKill	Chronic Expansion	Common	Killing an enemy increase your damage by 3.5 (+1% per stack), up to 10 (+5 per stack), for 7s. Dealing damage refreshes the timer.
+BarrageOnBoss	War Bonds	Legendary	During boss events, 5 missiles bombard the area, dealing 2.5% (+2.5% per stack) of boss' Max Health in damage. Before the boss event, gain additional missiles, up to a maximum of 20 (+5 per stack), per 50 gold gained. Gold requirement scales over time.
+DelayedDamage	Warped Echo	Common	The next source of damage is reduced by 20% and spread into 3 (+1 per stack) hits. All echoed damage is non-lethal except for the final hit. Recharges every 15s.
+TeleportOnLowHealth	Unstable Transmitter	Uncommon	Falling below 25% health gives you temporary barrier and a dimensional aura that bleeds and teleports away enemies for 8s. Enemies killed by the aura extend the duration by 1s. At the start of each stage, it regenerates
+TeleportOnLowHealthConsumed	Unstable Transmitter (Consumed)	Untiered	At the start of each stage, it transforms into Unstable Transmitter.
+ExtraStatsOnLevelUp	Prayer Beads	Uncommon	Grows by gaining experience, storing 20% (+5% per item stack) bonus stats (health, regeneration, and damage). On removal, gain all stored stats.
+MeteorAttackOnHighDamage	Runic Lens	Legendary	3% chance on hit to call a meteor strike, dealing 2000% base damage. Every 100% attack damage dealt increase the activation chance by 3% (+3% per stack) and damage by 150% (+50% per stack).
+OnLevelUpFreeUnlock	Longstanding Solitude	Lunar	On level up gain a free unlock for the next purchase (+1 free unlock per item stack) but all gold is converted to experience. Anything that costs gold is increased by 50% (+50% per item stack)
+BarrierOnCooldown	Eclipse Lite	Common	When a skill comes off cooldown, gain a temporary barrier for 1% (+0.25% per stack) of your maximum health per second of the skill's base cooldown.
+CritAtLowerElevation	Hiker's Boots	Common	Striking enemies from a higher elevation grants +1% (+1% per stack) critical strike chance and critical strike damage, up to 10 times. Lasts 10 seconds.
+DroneDropsDynamite	Box of Dynamite	Uncommon	Gain Lt. Droneboy. While in combat, your drones drop sticks of dynamite that detonate for 240% damage (+85% per stack), stunning enemies. Recharges after 10 seconds.
+SpeedOnPickup	Collector's Compulsion	Uncommon	Picking up an item or other collectible increases all stats by +3% for 20 seconds, up to 3 (+2 per stack) times. Barrels grant minor pickups.
+JumpDamageStrike	Faraday Spur	Uncommon	Moving around builds up charge, granting up to +160% movement speed and +200% jump height at 100%. At 25% charge or higher, jumping triggers an explosive discharge for 400% (+280% per stack) damage in a 5m to 32.3m (+7.5m per stack) area.
+ShieldBooster	Kinetic Dampener	Uncommon	Increases armor by 30 (+30 per stack) while you have a shield. When shield breaks, release a stunning pulse for 100% damage plus an amount equal to 100% (+10% per stack) of your max shield. Grants a shield for 4% of your max health.
+SharedSuffering	Networked Suffering	Legendary	Infect up to 4 (+2 per stack) enemies with a computer virus that duplicates 50% of all damage taken and sends it to a global damage pool. Every 3 seconds, ALL infected enemies suffer 100% pooled damage.
+PhysicsProjectile	Orphaned Core	Legendary	Gain a friendly Solus unit that launches itself at enemies for 400% (+400% per stack) damage. The unit inherits your movement speed items and deals more damage the faster it moves. The unit can be pet to cleanse negative effects. Recharges after 15 seconds.
+Duplicator	Substandard Duplicator	Legendary	Picking up an item gives you a temporary copy of itself. Temporary items last an additional 10 (+10 per stack) seconds.
+MasterBattery	Encrypted Cerebellum	Boss	Contains encrypted remnants of the Collective network. Needs to be decrypted before it can be returned.
+MasterCore	Exposed Cerebellum	Boss	A swarming data nexus representing the Collective network. Can be given to a powerful entity.
+ShockDamageAura	Faulty Conductor	Boss	Every 15 (-20% per stack) seconds, release a wave of electricity that energizes nearby allies for 7 seconds. Energized allies gain +30% attack and movement speed, and ALWAYS land critical strikes with electric items and attacks.
+ExtraEquipment	Functional Coupler	Boss	Hold 1 additional equipment (+1 per stack). Press the interact and equipment buttons to cycle through held equipment.
+PowerCube	Prison Matrix	Boss	Gain +50% armor. Can be placed in a Matrix Terminal.
+PowerPyramid	Sentry Key	Boss	Gain +15% move speed. Can be placed in a Sentry Terminal or used for decryption.
+TransferDebuffOnHit	Neutronium Weight	Lunar	Reduces your stats while in combat, but send this item to an enemy on hit. On death, this item will be sent to its holder's killer. Reduces damage by 30% (+10% per stack), attack speed by 30% (+10% per stack), movement speed by 30% (+10% per stack), and armor by 35 (+15 per stack).

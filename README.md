@@ -20,6 +20,20 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Data
+
+- Update `public/data/items.json`:
+
+```bash
+npm run fetch-items
+```
+
+## Localization
+
+- **Switch language**: `?lang=en` or `?lang=zh-CN` (if missing, it follows browser language and writes `lang` into the URL for shareability).
+- **UI localization**: built-in message dictionary in `src/i18n/messages.ts`.
+- **Item name/description (zh-CN)**: curated translations in `public/data/items.zh-CN.overrides.json` (keyed by item id / internalName).
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
