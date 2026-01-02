@@ -46,7 +46,7 @@ export function SavePresetDialog({
           />
         </div>
         <DialogFooter>
-          <Button variant="secondary" onClick={() => onOpenChange(false)}>
+          <Button variant="outline" onClick={() => onOpenChange(false)}>
             {t("common.cancel")}
           </Button>
           <Button onClick={onSave}>{t("common.save")}</Button>

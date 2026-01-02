@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { usePathname, useRouter, useSearchParams } from "next/navigation"
 
 import { Button } from "@/components/ui/button"
 import { ItemDetailsDialog, ItemDetailsSheet } from "@/components/items/ItemDetails"
@@ -12,11 +13,16 @@ import { SavePresetDialog } from "@/components/preset/SavePresetDialog"
 import { useItemsData } from "@/hooks/useItemsData"
 import { usePresets } from "@/hooks/usePresets"
 import { nextDefaultPresetName } from "@/lib/presets"
-import { RARITY_ORDER, isProbablyDesktop, normalizeText, uniq } from "@/lib/ror2-items"
+import { RARITY_ORDER, isProbablyDesktop, normalizeText, rarityStyle, uniq } from "@/lib/ror2-items"
 import { LocaleProvider, useI18n } from "@/i18n/LocaleProvider"
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { cn } from "@/lib/utils"
 
 function HomeInner() {
   const { t, locale } = useI18n()
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const pathname = usePathname()
   const { items, error: itemsError, loading } = useItemsData(locale)
   const [query, setQuery] = React.useState("")
   const [rarities, setRarities] = React.useState<Set<string>>(new Set())
@@ -127,6 +133,32 @@ function HomeInner() {
   const detailsItem = detailsItemId ? (itemsById.get(detailsItemId) ?? null) : null
   const detailsSelected = detailsItem ? currentItemIds.has(detailsItem.id) : false
 
+  const shareIds = React.useMemo(() => {
+    const raw = searchParams.getAll("share")
+    return raw.map((s) => s.trim()).filter(Boolean)
+  }, [searchParams])
+
+  const shareKey = React.useMemo(() => (shareIds.length ? shareIds.join("\u0001") : ""), [shareIds])
+  const [sharedOpen, setSharedOpen] = React.useState(false)
+  const [sharedLastKey, setSharedLastKey] = React.useState("")
+
+  React.useEffect(() => {
+    if (!shareKey) return
+    if (shareKey === sharedLastKey) return
+    setSharedLastKey(shareKey)
+    setSharedOpen(true)
+  }, [shareKey, sharedLastKey])
+
+  const sharedKnownIds = React.useMemo(() => shareIds.filter((id) => itemsById.has(id)), [shareIds, itemsById])
+  const sharedUnknownCount = React.useMemo(() => shareIds.length - sharedKnownIds.length, [shareIds.length, sharedKnownIds.length])
+
+  function removeShareFromUrl() {
+    const sp = new URLSearchParams(searchParams)
+    sp.delete("share")
+    const qs = sp.toString()
+    router.replace(`${pathname}${qs ? `?${qs}` : ""}`)
+  }
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <ItemsFiltersBar
@@ -234,6 +266,73 @@ function HomeInner() {
           setSaveDialogOpen(false)
         }}
       />
+
+      {/* Shared preset preview (import-only; does not touch current selection) */}
+      <Dialog open={sharedOpen && shareIds.length > 0} onOpenChange={setSharedOpen}>
+        <DialogContent className="max-w-xl">
+          <DialogHeader>
+            <DialogTitle>{t("shared.title")}</DialogTitle>
+            <DialogDescription>{t("shared.desc")}</DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-3">
+            <div className="text-sm text-muted-foreground">
+              {t("shared.itemsMeta", { known: sharedKnownIds.length, unknown: sharedUnknownCount })}
+            </div>
+
+            {sharedKnownIds.length === 0 ? (
+              <div className="rounded-md border p-4 text-sm text-muted-foreground">
+                {loading ? t("app.loadingItems") : t("shared.noValidItems")}
+              </div>
+            ) : (
+              <div className="rounded-lg border p-4">
+                <div className="flex flex-wrap gap-2">
+                  {sharedKnownIds.slice(0, 28).map((id) => {
+                    const it = itemsById.get(id)
+                    if (!it) return null
+                    const style = rarityStyle(it.rarity)
+                    return (
+                      <div
+                        key={id}
+                        className={cn(
+                          "relative size-12 overflow-hidden rounded-xl bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset",
+                          style.ring,
+                          style.glow
+                        )}
+                        title={it.name}
+                      >
+                        <img src={it.icon} alt={it.name} className="h-full w-full object-contain p-1.5" draggable={false} />
+                      </div>
+                    )
+                  })}
+                  {sharedKnownIds.length > 28 ? (
+                    <div className="grid size-12 place-items-center rounded-xl border bg-muted/40 text-xs text-muted-foreground">
+                      +{sharedKnownIds.length - 28}
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            )}
+          </div>
+
+          <DialogFooter>
+            <Button variant="default" onClick={() => setSharedOpen(false)}>
+              {t("shared.close")}
+            </Button>
+            <Button
+              onClick={() => {
+                const name = nextDefaultPresetName(presets, t("presets.defaultPrefix"))
+                createPreset(name, sharedKnownIds)
+                setSharedOpen(false)
+                removeShareFromUrl()
+              }}
+              disabled={sharedKnownIds.length === 0}
+            >
+              {t("shared.saveToMyPresets")}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }
