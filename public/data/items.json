@@ -19,6 +19,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/57 Leaf Clover.png"
   },
   {
@@ -41,6 +45,10 @@
         "add": "+15%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Soldier's Syringe.png"
   },
   {
@@ -64,6 +72,10 @@
         "add": "+15%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Tougher Times.png"
   },
   {
@@ -86,6 +98,10 @@
         "add": "+2.5m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Brilliant Behemoth.png"
   },
   {
@@ -108,6 +124,10 @@
         "add": "+300%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/AtG Missile Mk. 1.png"
   },
   {
@@ -137,6 +157,10 @@
         "add": "+2.4m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Will-o'-the-wisp.png"
   },
   {
@@ -161,6 +185,10 @@
         "add": "+150%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Ceremonial Dagger.png"
   },
   {
@@ -184,6 +212,10 @@
         "add": "+2%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Monster Tooth.png"
   },
   {
@@ -206,6 +238,10 @@
         "add": "+10%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Lens-Maker's Glasses.png"
   },
   {
@@ -228,6 +264,10 @@
         "add": "+14%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Paul's Goat Hoof.png"
   },
   {
@@ -251,6 +291,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Hopoo Feather.png"
   },
   {
@@ -279,6 +323,10 @@
         "add": "+2m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Ukulele.png"
   },
   {
@@ -301,6 +349,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Leeching Seed.png"
   },
   {
@@ -324,6 +376,10 @@
         "add": "+12m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Frost Relic.png"
   },
   {
@@ -348,6 +404,10 @@
         "add": "+30s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Happiest Mask.png"
   },
   {
@@ -377,6 +437,10 @@
         "add": "+1.5m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Bustling Fungus.png"
   },
   {
@@ -399,6 +463,10 @@
         "add": "+75%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Crowbar.png"
   },
   {
@@ -427,6 +495,10 @@
         "add": ""
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Predatory Instincts.png"
   },
   {
@@ -449,6 +521,10 @@
         "add": "+10%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Tri-Tip Dagger.png"
   },
   {
@@ -471,6 +547,10 @@
         "add": "+30%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Red Whip.png"
   },
   {
@@ -495,6 +575,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/H3AD-5T v2.png"
   },
   {
@@ -519,6 +603,10 @@
         "add": "+8m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Warbanner.png"
   },
   {
@@ -542,6 +630,10 @@
         "add": "+4s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Berzerker's Pauldron.png"
   },
   {
@@ -565,6 +657,10 @@
         "add": "-50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Old War Stealthkit.png"
   },
   {
@@ -593,6 +689,10 @@
         "add": ""
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Harvester's Scythe.png"
   },
   {
@@ -615,6 +715,10 @@
         "add": "+3"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Cautious Slug.png"
   },
   {
@@ -638,6 +742,10 @@
         "add": "+10m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Wax Quail.png"
   },
   {
@@ -660,6 +768,10 @@
         "add": "+8%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Personal Shield Generator.png"
   },
   {
@@ -682,6 +794,10 @@
         "add": "+100%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/N'kuhana's Opinion.png"
   },
   {
@@ -704,6 +820,10 @@
         "add": "+5%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Medkit.png"
   },
   {
@@ -734,6 +854,10 @@
         "add": "+15%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Fuel Cell.png"
   },
   {
@@ -764,6 +888,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Infusion.png"
   },
   {
@@ -787,6 +915,10 @@
         "add": "+2"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Unstable Tesla Coil.png"
   },
   {
@@ -816,6 +948,10 @@
         "add": "+4m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Gasoline.png"
   },
   {
@@ -838,7 +974,11 @@
         "stack": "Linear",
         "add": "+10%"
       }
-    ]
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "BoostHP",
@@ -860,7 +1000,11 @@
         "stack": "Linear",
         "add": "+10%"
       }
-    ]
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "Sentient Meat Hook",
@@ -888,6 +1032,10 @@
         "add": "+5"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Sentient Meat Hook.png"
   },
   {
@@ -912,6 +1060,10 @@
         "add": "+4"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Bundle of Fireworks.png"
   },
   {
@@ -935,6 +1087,10 @@
         "add": "+10%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Bandolier.png"
   },
   {
@@ -958,6 +1114,10 @@
         "add": "+5%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Stun Grenade.png"
   },
   {
@@ -986,6 +1146,10 @@
         "add": "-50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Shaped Glass.png"
   },
   {
@@ -1014,6 +1178,10 @@
         "add": "+100%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Brittle Crown.png"
   },
   {
@@ -1036,6 +1204,10 @@
         "add": "+25%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Transcendence.png"
   },
   {
@@ -1058,6 +1230,10 @@
         "add": "+25%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Alien Head.png"
   },
   {
@@ -1083,6 +1259,10 @@
         "add": "+2s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Soulbound Catalyst.png"
   },
   {
@@ -1112,6 +1292,10 @@
         "add": "+1.6"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Titanic Knurl.png"
   },
   {
@@ -1135,6 +1319,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Queen's Gland.png"
   },
   {
@@ -1149,7 +1337,11 @@
     "categories": [
       "Abandoned"
     ],
-    "stats": []
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "CritHeal",
@@ -1171,7 +1363,11 @@
         "stack": "None",
         "add": ""
       }
-    ]
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "CrippleWardOnLevel",
@@ -1193,7 +1389,11 @@
         "stack": "Linear",
         "add": "+8m"
       }
-    ]
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "Energy Drink",
@@ -1217,6 +1417,10 @@
         "add": "+25%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Energy Drink.png"
   },
   {
@@ -1239,6 +1443,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Backup Magazine.png"
   },
   {
@@ -1261,6 +1469,10 @@
         "add": "+5%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Sticky Bomb.png"
   },
   {
@@ -1278,6 +1490,10 @@
       "OnStageBeginEffect"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Rusted Key.png"
   },
   {
@@ -1301,6 +1517,10 @@
         "add": "+20%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Armor-Piercing Rounds.png"
   },
   {
@@ -1325,6 +1545,10 @@
         "add": "+30"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Rose Buckler.png"
   },
   {
@@ -1353,6 +1577,10 @@
         "add": "+250%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Runald's Band.png"
   },
   {
@@ -1375,6 +1603,10 @@
         "add": "+300%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Kjaro's Band.png"
   },
   {
@@ -1397,6 +1629,10 @@
         "add": "+2s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Chronobauble.png"
   },
   {
@@ -1419,6 +1655,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Dio's Best Friend.png"
   },
   {
@@ -1434,6 +1674,10 @@
       "Utility"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Dio's Best Friend (Consumed).png"
   },
   {
@@ -1456,6 +1700,10 @@
         "add": "+2"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Hardlight Afterburner.png"
   },
   {
@@ -1481,6 +1729,10 @@
         "add": "+5s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Wake of Vultures.png"
   },
   {
@@ -1505,6 +1757,10 @@
         "add": "+4s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Brainstalks.png"
   },
   {
@@ -1527,6 +1783,10 @@
         "add": "+100%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Rejuvenation Rack.png"
   },
   {
@@ -1555,6 +1815,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Corpsebloom.png"
   },
   {
@@ -1578,6 +1842,10 @@
         "add": "15%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Gesture of the Drowned.png"
   },
   {
@@ -1601,6 +1869,10 @@
         "add": "+13%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Old Guillotine.png"
   },
   {
@@ -1625,6 +1897,10 @@
         "add": "+4s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/War Horn.png"
   },
   {
@@ -1648,6 +1924,10 @@
         "add": "+50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Aegis.png"
   },
   {
@@ -1675,7 +1955,11 @@
         "stack": "None",
         "add": ""
       }
-    ]
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "Ghost",
@@ -1690,6 +1974,10 @@
       "Hidden"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/GhostGun In World.png"
   },
   {
@@ -1711,7 +1999,11 @@
         "stack": "Reciprocal",
         "add": "+1"
       }
-    ]
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "MageAttunement",
@@ -1725,7 +2017,11 @@
     "categories": [
       "Abandoned"
     ],
-    "stats": []
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "Tonic Affliction",
@@ -1747,6 +2043,10 @@
         "add": "-5%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Tonic Affliction.png"
   },
   {
@@ -1779,6 +2079,10 @@
         "add": "+50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Halcyon Seed.png"
   },
   {
@@ -1802,6 +2106,10 @@
         "add": "+300%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Little Disciple.png"
   },
   {
@@ -1826,6 +2134,10 @@
         "add": "+15"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Topaz Brooch.png"
   },
   {
@@ -1848,6 +2160,10 @@
         "add": "+8s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Shattering Justice.png"
   },
   {
@@ -1873,6 +2189,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Lepton Daisy.png"
   },
   {
@@ -1895,6 +2215,10 @@
         "add": "+20%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Focus Crystal.png"
   },
   {
@@ -1925,6 +2249,10 @@
         "add": "+3s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Strides of Heresy.png"
   },
   {
@@ -1946,7 +2274,11 @@
         "stack": "None",
         "add": ""
       }
-    ]
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item"
   },
   {
     "name": "Razorwire",
@@ -1975,6 +2307,10 @@
         "add": "+10m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Razorwire.png"
   },
   {
@@ -1997,6 +2333,10 @@
         "add": "+25"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Bison Steak.png"
   },
   {
@@ -2020,6 +2360,10 @@
         "add": "+10%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Pearl.png"
   },
   {
@@ -2081,6 +2425,10 @@
         "add": "+10%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Irradiant Pearl.png"
   },
   {
@@ -2104,6 +2452,10 @@
         "add": "+4%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Ghor's Tome.png"
   },
   {
@@ -2133,6 +2485,10 @@
         "add": "+1000%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Resonance Disc.png"
   },
   {
@@ -2163,6 +2519,10 @@
         "add": "+2s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Visions of Heresy.png"
   },
   {
@@ -2186,6 +2546,10 @@
         "add": "+50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Genesis Loop.png"
   },
   {
@@ -2199,6 +2563,10 @@
     "corrupt": null,
     "categories": [],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Beads of Fealty.png"
   },
   {
@@ -2214,6 +2582,10 @@
       "WorldUnique"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Artifact Key.png"
   },
   {
@@ -2236,6 +2608,10 @@
         "add": "+5"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Repulsion Armor Plate.png"
   },
   {
@@ -2260,6 +2636,10 @@
         "add": "+100%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Squid Polyp.png"
   },
   {
@@ -2282,6 +2662,10 @@
         "add": "+7s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Death Mark.png"
   },
   {
@@ -2305,6 +2689,10 @@
         "add": "+5m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Interstellar Desk Plant.png"
   },
   {
@@ -2334,6 +2722,10 @@
         "add": "+100%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Ancestral Incubator.png"
   },
   {
@@ -2365,6 +2757,10 @@
         "add": "+2"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Focused Convergence.png"
   },
   {
@@ -2387,6 +2783,10 @@
         "add": "+300%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Molten Perforator.png"
   },
   {
@@ -2409,6 +2809,10 @@
         "add": "+500%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Charged Perforator.png"
   },
   {
@@ -2443,6 +2847,10 @@
         "add": ""
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Shatterspleen.png"
   },
   {
@@ -2466,6 +2874,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Mired Urn.png"
   },
   {
@@ -2489,6 +2901,10 @@
         "add": "+40%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Defiant Gouge.png"
   },
   {
@@ -2511,6 +2927,10 @@
         "add": "+50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Mercurial Rachis.png"
   },
   {
@@ -2535,6 +2955,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Defensive Microbots.png"
   },
   {
@@ -2551,6 +2975,10 @@
       "Scrap"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Item Scrap, White.png"
   },
   {
@@ -2567,6 +2995,10 @@
       "Scrap"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Item Scrap, Green.png"
   },
   {
@@ -2583,6 +3015,10 @@
       "Scrap"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Item Scrap, Red.png"
   },
   {
@@ -2599,6 +3035,10 @@
       "Scrap"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Item Scrap, Yellow.png"
   },
   {
@@ -2627,6 +3067,10 @@
         "add": "-1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Purity.png"
   },
   {
@@ -2657,6 +3101,10 @@
         "add": "+5s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Hooks of Heresy.png"
   },
   {
@@ -2680,6 +3128,10 @@
         "add": "+100%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Empathy Cores.png"
   },
   {
@@ -2702,6 +3154,10 @@
         "add": "+15"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Planula.png"
   },
   {
@@ -2732,6 +3188,10 @@
         "add": "+8s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Essence of Heresy.png"
   },
   {
@@ -2761,6 +3221,10 @@
         "add": "+7%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Mocha.png"
   },
   {
@@ -2783,6 +3247,10 @@
         "add": "+40%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Plasma Shrimp.png"
   },
   {
@@ -2806,6 +3274,10 @@
         "add": "-10%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Safer Spaces.png"
   },
   {
@@ -2834,6 +3306,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Shuriken.png"
   },
   {
@@ -2856,6 +3332,10 @@
         "add": "+100%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Laser Scope.png"
   },
   {
@@ -2881,6 +3361,10 @@
         "add": "+50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Spare Drone Parts.png"
   },
   {
@@ -2904,6 +3388,10 @@
         "add": "+0.5s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Hunter's Harpoon.png"
   },
   {
@@ -2926,6 +3414,10 @@
         "add": "+300%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Ignition Tank.png"
   },
   {
@@ -2943,6 +3435,10 @@
       "AIBlacklist"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Power Elixir.png"
   },
   {
@@ -2958,6 +3454,10 @@
       "Healing"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Empty Bottle.png"
   },
   {
@@ -2980,6 +3480,10 @@
         "add": "+2"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Symbiotic Scorpion.png"
   },
   {
@@ -3008,6 +3512,10 @@
         "add": ""
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Pocket I.C.B.M..png"
   },
   {
@@ -3031,6 +3539,10 @@
         "add": "+2%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Weeping Fungus.png"
   },
   {
@@ -3059,6 +3571,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Stone Flux Pauldron.png"
   },
   {
@@ -3087,6 +3603,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Light Flux Pauldron.png"
   },
   {
@@ -3110,6 +3630,10 @@
         "add": "+5%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Eulogy Zero.png"
   },
   {
@@ -3139,6 +3663,10 @@
         "add": ""
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Ben's Raincoat.png"
   },
   {
@@ -3157,6 +3685,10 @@
       "OnStageBeginEffect"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Regenerating Scrap.png"
   },
   {
@@ -3173,6 +3705,10 @@
       "OnStageBeginEffect"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Regenerating Scrap (Consumed).png"
   },
   {
@@ -3195,6 +3731,10 @@
         "add": "+0.5%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Lost Seer's Lenses.png"
   },
   {
@@ -3223,6 +3763,10 @@
         "add": "+2.4m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Voidsent Flame.png"
   },
   {
@@ -3245,6 +3789,10 @@
         "add": "+10%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Needletick.png"
   },
   {
@@ -3267,6 +3815,10 @@
         "add": "+3"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Polylute.png"
   },
   {
@@ -3284,6 +3836,10 @@
       "OnStageBeginEffect"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Encrusted Key.png"
   },
   {
@@ -3307,6 +3863,10 @@
         "add": "+3"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Benthic Bloom.png"
   },
   {
@@ -3335,6 +3895,10 @@
         "add": "+1s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Tentabauble.png"
   },
   {
@@ -3357,6 +3921,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Lysate Cell.png"
   },
   {
@@ -3379,6 +3947,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Pluripotent Larva.png"
   },
   {
@@ -3394,6 +3966,10 @@
       "Utility"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Pluripotent Larva (Consumed).png"
   },
   {
@@ -3417,6 +3993,10 @@
         "add": "+20%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Delicate Watch.png"
   },
   {
@@ -3430,6 +4010,10 @@
     "corrupt": null,
     "categories": [],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Delicate Watch (Broken).png"
   },
   {
@@ -3452,6 +4036,10 @@
         "add": "+100"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Oddly-shaped Opal.png"
   },
   {
@@ -3475,6 +4063,10 @@
         "add": "+3"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Roll of Pennies.png"
   },
   {
@@ -3499,6 +4091,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Bottled Chaos.png"
   },
   {
@@ -3523,6 +4119,10 @@
         "add": ""
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Shipping Request Form.png"
   },
   {
@@ -3546,6 +4146,10 @@
         "add": "+100%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Singularity Band.png"
   },
   {
@@ -3575,6 +4179,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Egocentrism.png"
   },
   {
@@ -3598,6 +4206,10 @@
         "add": "+4"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Defense Nucleus.png"
   },
   {
@@ -3627,6 +4239,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Newly Hatched Zoea.png"
   },
   {
@@ -3650,6 +4266,10 @@
         "add": "+4"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Growth Nectar.png"
   },
   {
@@ -3676,6 +4296,10 @@
         "add": "+10%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Chance Doll.png"
   },
   {
@@ -3702,6 +4326,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Breaching Fin.png"
   },
   {
@@ -3731,6 +4359,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Bolstering Lantern.png"
   },
   {
@@ -3763,6 +4395,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Luminous Shot.png"
   },
   {
@@ -3788,6 +4424,10 @@
         "add": "+5%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Sale Star.png"
   },
   {
@@ -3804,6 +4444,10 @@
       "OnStageBeginEffect"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Sale Star (Consumed).png"
   },
   {
@@ -3834,6 +4478,10 @@
         "add": "+3"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Elusive Antlers.png"
   },
   {
@@ -3859,6 +4507,10 @@
         "add": "+1%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Sonorous Whispers.png"
   },
   {
@@ -3882,6 +4534,10 @@
         "add": "+124%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Electric Boomerang.png"
   },
   {
@@ -3911,6 +4567,10 @@
         "add": "+5m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Noxious Thorn.png"
   },
   {
@@ -3941,6 +4601,10 @@
         "add": "+5"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Chronic Expansion.png"
   },
   {
@@ -3971,6 +4635,10 @@
         "add": "+5"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/War Bonds.png"
   },
   {
@@ -3994,6 +4662,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Warped Echo.png"
   },
   {
@@ -4019,6 +4691,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Unstable Transmitter.png"
   },
   {
@@ -4035,6 +4711,10 @@
       "OnStageBeginEffect"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Unstable Transmitter (Consumed).png"
   },
   {
@@ -4060,6 +4740,10 @@
         "add": "+5%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Prayer Beads.png"
   },
   {
@@ -4089,6 +4773,10 @@
         "add": "+50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Runic Lens.png"
   },
   {
@@ -4125,6 +4813,10 @@
         "add": "+50%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Longstanding Solitude.png"
   },
   {
@@ -4148,6 +4840,10 @@
         "add": "+0.25%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Eclipse Lite.png"
   },
   {
@@ -4176,6 +4872,10 @@
         "add": "+1%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Hiker's Boots.png"
   },
   {
@@ -4198,6 +4898,10 @@
         "add": "+85%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Box of Dynamite.png"
   },
   {
@@ -4220,6 +4924,10 @@
         "add": "+2"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Collector's Compulsion.png"
   },
   {
@@ -4267,6 +4975,10 @@
         "add": "+7.5m"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Faraday Spur.png"
   },
   {
@@ -4297,6 +5009,10 @@
         "add": "+10"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Kinetic Dampener.png"
   },
   {
@@ -4319,6 +5035,10 @@
         "add": "+2"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Networked Suffering.png"
   },
   {
@@ -4342,6 +5062,10 @@
         "add": "+400%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Orphaned Core.png"
   },
   {
@@ -4365,6 +5089,10 @@
         "add": "+10s"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Substandard Duplicator.png"
   },
   {
@@ -4380,6 +5108,10 @@
       "WorldUnique"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Encrypted Cerebellum.png"
   },
   {
@@ -4395,6 +5127,10 @@
       "WorldUnique"
     ],
     "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Exposed Cerebellum.png"
   },
   {
@@ -4418,6 +5154,10 @@
         "add": "-20%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Faulty Conductor.png"
   },
   {
@@ -4440,6 +5180,10 @@
         "add": "+1"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Functional Coupler.png"
   },
   {
@@ -4462,6 +5206,10 @@
         "add": "+0"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Prison Matrix.png"
   },
   {
@@ -4484,6 +5232,10 @@
         "add": "+0%"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Sentry Key.png"
   },
   {
@@ -4524,6 +5276,758 @@
         "add": "-15"
       }
     ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
     "icon": "/icons/Neutronium Weight.png"
+  },
+  {
+    "name": "Disposable Missile Launcher",
+    "rarity": "Equipment",
+    "quote": "Fire a swarm of missiles.",
+    "description": "Fire a swarm of {{Color|d|12}} missiles that deal {{Color|d|12x300% damage}}.",
+    "internalName": "CommandMissile",
+    "localizationInternalName": "EQUIPMENT_COMMANDMISSILE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 1.5,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Disposable Missile Launcher.png"
+  },
+  {
+    "name": "Foreign Fruit",
+    "rarity": "Equipment",
+    "quote": "Heal on use.",
+    "description": "Instantly heal for {{Color|h|50% of your maximum health}}.",
+    "internalName": "Fruit",
+    "localizationInternalName": "EQUIPMENT_FRUIT",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Foreign Fruit.png"
+  },
+  {
+    "name": "Glowing Meteorite",
+    "rarity": "Lunar Equipment",
+    "quote": "Rain meteors from the sky, {{Color|#FF7F7F|hurting both enemies and allies.}}",
+    "description": "{{Color|d|Rain meteors}} from the sky, damaging ALL characters for {{Color|d|600% damage per blast}}. Lasts 20 seconds.",
+    "internalName": "Meteor",
+    "localizationInternalName": "EQUIPMENT_METEOR",
+    "unlock": "Moon Worshipper",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 140,
+    "duration": 20,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Glowing Meteorite.png"
+  },
+  {
+    "name": "Primordial Cube",
+    "rarity": "Equipment",
+    "quote": "Fire a black hole that draws enemies in.",
+    "description": "Fire a black hole that {{Color|u|draws enemies within 30m into its center}}. Lasts 10 seconds",
+    "internalName": "Blackhole",
+    "localizationInternalName": "EQUIPMENT_BLACKHOLE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 10,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Primordial Cube.png"
+  },
+  {
+    "name": "Ocular HUD",
+    "rarity": "Equipment",
+    "quote": "Gain 100% Critical Strike Chance for 8 seconds.",
+    "description": "Gain {{Color|d|+100% Critical Strike Chance}} for 8 seconds.",
+    "internalName": "CritOnUse",
+    "localizationInternalName": "EQUIPMENT_CRITONUSE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 8,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Ocular HUD.png"
+  },
+  {
+    "name": "The Back-up",
+    "rarity": "Equipment",
+    "quote": "Call drones for back up. Lasts 25 seconds.",
+    "description": "Call {{Color|d|4 Strike Drones}} to fight for you. Lasts 25 seconds.",
+    "internalName": "DroneBackUp",
+    "localizationInternalName": "EQUIPMENT_DRONEBACKUP",
+    "unlock": "Mechanic",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 100,
+    "duration": 25,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/The Back-up.png"
+  },
+  {
+    "name": "Preon Accumulator",
+    "rarity": "Equipment",
+    "quote": "Fire a ball of energy that electrocutes nearby enemies before detonating.",
+    "description": "Fires preon tendrils, zapping enemies within 35m for up to {{Color|d|600% damage/second}}. On contact, detonate in an enormous 20m explosion for {{Color|d|4000% damage}}.",
+    "internalName": "BFG",
+    "localizationInternalName": "EQUIPMENT_BFG",
+    "unlock": "REDACTED|[REDACTED]",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 140,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Preon Accumulator.png"
+  },
+  {
+    "name": "Milky Chrysalis",
+    "rarity": "Equipment",
+    "quote": "Gain temporary flight.",
+    "description": "Sprout wings and {{Color|u|fly for 15 seconds}}. Gain {{Color|u|+20% movement speed}} for the duration.",
+    "internalName": "Jetpack",
+    "localizationInternalName": "EQUIPMENT_JETPACK",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 15,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Milky Chrysalis.png"
+  },
+  {
+    "name": "Royal Capacitor",
+    "rarity": "Equipment",
+    "quote": "Call down a lightning strike on a targeted monster.",
+    "description": "Call down a lightning strike on a targeted monster, dealing {{Color|d|3000% damage}} and {{Color|d|stunning}} nearby monsters.",
+    "internalName": "Lightning",
+    "localizationInternalName": "EQUIPMENT_LIGHTNING",
+    "unlock": "Ascendant",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 20,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Royal Capacitor.png"
+  },
+  {
+    "name": "The Crowdfunder",
+    "rarity": "Equipment",
+    "quote": "Toggle to fire. Costs gold per bullet.",
+    "description": "Fires a continuous barrage that deals {{Color|d|100% damage per bullet}}. Costs $1 per bullet. Cost increases over time.",
+    "internalName": "GoldGat",
+    "localizationInternalName": "EQUIPMENT_GOLDGAT",
+    "unlock": "Funded!",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/The Crowdfunder.png"
+  },
+  {
+    "name": "Gnarled Woodsprite",
+    "rarity": "Equipment",
+    "quote": "Heal over time. Activate to send to an ally.",
+    "description": "Gain a Woodsprite follower that heals for {{Color|h|1.5% of your maximum health/second}}. Can be sent to an ally to heal them for {{Color|h|10% of their maximum health}}.",
+    "internalName": "PassiveHealing",
+    "localizationInternalName": "EQUIPMENT_PASSIVEHEALING",
+    "unlock": "One with the Woods",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 15,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Gnarled Woodsprite.png"
+  },
+  {
+    "name": "Ifrit's Distinction",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of fire.",
+    "description": "Become an aspect of fire.",
+    "internalName": "EliteFireEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXRED",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Ifrit's Distinction.png"
+  },
+  {
+    "name": "Silence Between Two Strikes",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of lightning.",
+    "description": "Become an aspect of lightning.",
+    "internalName": "EliteLightningEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXBLUE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Silence Between Two Strikes.png"
+  },
+  {
+    "name": "Her Biting Embrace",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of ice.",
+    "description": "Become an aspect of ice.",
+    "internalName": "EliteIceEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXWHITE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Her Biting Embrace.png"
+  },
+  {
+    "name": "N'kuhana's Retort",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of corruption.",
+    "description": "Become an aspect of corruption.",
+    "internalName": "ElitePoisonEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXPOISON",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/N'kuhana's Retort.png"
+  },
+  {
+    "name": "Spectral Circlet",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of incorporeality.",
+    "description": "Become an aspect of incorporeality.",
+    "internalName": "EliteHauntedEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXHAUNTED",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Spectral Circlet.png"
+  },
+  {
+    "name": "Shared Design",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of perfection.",
+    "description": "Become an aspect of perfection.",
+    "internalName": "EliteLunarEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXLUNAR",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Shared Design.png"
+  },
+  {
+    "name": "Helfire Tincture",
+    "rarity": "Lunar Equipment",
+    "quote": "Burn everything nearby... {{Color|#FF7F7F|including you and allies.}}",
+    "description": "Ignite ALL characters within 15m for 12s. Deal {{Color|d|5% of your maximum health/second as burning}} as damage. The burn is {{Color|d|0.5x}} stronger on yourself, {{Color|d|0.25x}} stronger on allies, and {{Color|d|24x}} stronger on enemies.",
+    "internalName": "BurnNearby",
+    "localizationInternalName": "EQUIPMENT_BURNNEARBY",
+    "unlock": "Multikill!",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 12,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Helfire Tincture.png"
+  },
+  {
+    "name": "Radar Scanner",
+    "rarity": "Equipment",
+    "quote": "Reveal all nearby interactables.",
+    "description": "{{Color|u|Reveal}} all interactables within 500m for {{Color|u|10 seconds}}.",
+    "internalName": "Scanner",
+    "localizationInternalName": "EQUIPMENT_SCANNER",
+    "unlock": "Bookworm",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 10,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Radar Scanner.png"
+  },
+  {
+    "name": "Effigy of Grief",
+    "rarity": "Lunar Equipment",
+    "quote": "Drop a permanent effigy that cripples ALL characters inside. Can place up to 5.",
+    "description": "ALL characters within are {{Color|u|slowed by 50%}} and have their {{Color|d|armor reduced by 20}}. Can place up to {{Color|u|5}}.",
+    "internalName": "CrippleWard",
+    "localizationInternalName": "EQUIPMENT_CRIPPLEWARD",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 15,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Effigy of Grief.png"
+  },
+  {
+    "name": "Eccentric Vase",
+    "rarity": "Equipment",
+    "quote": "Create a quantum tunnel between two locations.",
+    "description": "Create a {{Color|u|quantum tunnel}} of up to {{Color|u|1000m}} in length. Lasts 30 seconds.",
+    "internalName": "Gateway",
+    "localizationInternalName": "EQUIPMENT_GATEWAY",
+    "unlock": "Blackout",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Eccentric Vase.png"
+  },
+  {
+    "name": "Spinel Tonic",
+    "rarity": "Lunar Equipment",
+    "quote": "Gain a massive boost to ALL stats. {{Color|#FF7F7F|Chance to gain an affliction that reduces ALL stats.}}",
+    "description": "Drink the Tonic, gaining a boost for 20 seconds. Increases {{Color|d|damage}} by {{Color|d|+100%}}. Increases {{Color|d|attack speed}} by {{Color|d|+70%}}. Increases {{Color|d|armor}} by {{Color|d|+20}}. Increases {{Color|h|maximum health}} by {{Color|h|+50%}}. Increases {{Color|h|passive health regeneration}} by {{Color|h|+300%}}. Increases {{Color|u|movespeed}} by {{Color|u|+30%}}.\r\n\r\nWhen the Tonic wears off, you have a {{Color|hp|20%}} chance to gain a {{Color|hp|Tonic Affliction, reducing all of your stats}} by {{Color|hp|-5%}} {{Stack|(-5% per stack)}}.",
+    "internalName": "Tonic",
+    "localizationInternalName": "EQUIPMENT_TONIC",
+    "unlock": "Cosmic Explorer",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 20,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Spinel Tonic.png"
+  },
+  {
+    "name": "Fuel Array",
+    "rarity": "Equipment",
+    "quote": "Looks like it could power something. {{Color|#FF7F7F|EXTREMELY unstable...}}",
+    "description": "Looks like it could power something. {{Color|#FF7F7F|EXTREMELY unstable...}}",
+    "internalName": "QuestVolatileBattery",
+    "localizationInternalName": "EQUIPMENT_QUESTVOLATILEBATTERY",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Fuel Array.png"
+  },
+  {
+    "name": "Blast Shower",
+    "rarity": "Equipment",
+    "quote": "Cleanse all negative effects.",
+    "description": "{{Color|u|Cleanse}} all negative effects. Includes debuffs, damage over time, and nearby projectiles.",
+    "internalName": "Cleanse",
+    "localizationInternalName": "EQUIPMENT_CLEANSE",
+    "unlock": "Warm For Life",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 20,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Blast Shower.png"
+  },
+  {
+    "name": "Volcanic Egg",
+    "rarity": "Equipment",
+    "quote": "Transform into a speeding draconic fireball, dealing damage as you pass through enemies.",
+    "description": "Turn into a {{Color|d|draconic fireball}} for {{Color|d|5}} seconds. Deal {{Color|d|500% damage}} on impact. Detonates at the end for {{Color|d|800% damage}}.",
+    "internalName": "FireballDash",
+    "localizationInternalName": "EQUIPMENT_FIREBALLDASH",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 30,
+    "duration": 5,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Volcanic Egg.png"
+  },
+  {
+    "name": "Jade Elephant",
+    "rarity": "Equipment",
+    "quote": "Gain massive armor for 5 seconds.",
+    "description": "Gain {{Color|d|500 armor}} for {{Color|u|5 seconds}}.",
+    "internalName": "GainArmor",
+    "localizationInternalName": "EQUIPMENT_GAINARMOR",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 5,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Jade Elephant.png"
+  },
+  {
+    "name": "Sawmerang",
+    "rarity": "Equipment",
+    "quote": "Throw a fan of buzzing saws that come back to you.",
+    "description": "Throw {{Color|d|three large saw blades}} that slice through enemies for {{Color|d|3x400%}} damage. Also deals an additional {{Color|d|3x100% damage per second}} while {{Color|d|bleeding}} enemies. Can {{Color|d|strike}} enemies again on the way back.",
+    "internalName": "Saw",
+    "localizationInternalName": "EQUIPMENT_SAWMERANG",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Sawmerang.png"
+  },
+  {
+    "name": "Recycler",
+    "rarity": "Equipment",
+    "quote": "Transform an Item or Equipment into a different one. Can only recycle once.",
+    "description": "{{Color|u|Transform}} an Item or Equipment into a different one. {{Color|u|Can only be converted into the same tier one time}}.",
+    "internalName": "Recycle",
+    "localizationInternalName": "EQUIPMENT_RECYCLER",
+    "unlock": "Cleanup Duty",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Recycler.png"
+  },
+  {
+    "name": "Super Massive Leech",
+    "rarity": "Equipment",
+    "quote": "Heal for a percentage of the damage you deal for 8 seconds.",
+    "description": "{{Color|h|Heal}} for {{Color|h|20%}} of the {{Color|d|damage}} you deal. Lasts {{Color|h|8}} seconds.",
+    "internalName": "LifestealOnHit",
+    "localizationInternalName": "EQUIPMENT_LIFESTEALONHIT",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 8,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Super Massive Leech.png"
+  },
+  {
+    "name": "Gorag's Opus",
+    "rarity": "Equipment",
+    "quote": "You and all your allies enter a frenzy.",
+    "description": "All allies enter a {{Color|d|frenzy}} for {{Color|u|7}} seconds. Increases {{Color|u|movement speed}} by {{Color|u|50%}} and {{Color|d|attack speed}} by {{Color|d|100%}}.",
+    "internalName": "TeamWarCry",
+    "localizationInternalName": "EQUIPMENT_TEAMWARCRY",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 7,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Gorag's Opus.png"
+  },
+  {
+    "name": "Forgive Me Please",
+    "rarity": "Equipment",
+    "quote": "Throw a cursed doll that repeatedly triggers your 'On Kill' effects.",
+    "description": "Throw a cursed doll out that {{Color|d|triggers}} any {{Color|d|On-Kill}} effects you have every {{Color|u|1}} second for {{Color|u|8}} seconds.",
+    "internalName": "DeathProjectile",
+    "localizationInternalName": "EQUIPMENT_DEATHPROJECTILE",
+    "unlock": "I Love Dying!",
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 8,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Forgive Me Please.png"
+  },
+  {
+    "name": "Trophy Hunter's Tricorn",
+    "rarity": "Equipment",
+    "quote": "Execute a large monster and claim its {{Color|d|trophy.}} Consumed on use.",
+    "description": "{{Color|d|Execute}} any enemy capable of spawning a {{Color|d|unique reward}}, and it will drop that {{Color|d|item}}. Equipment is {{Color|u|consumed}} on use.",
+    "internalName": "BossHunter",
+    "localizationInternalName": "EQUIPMENT_BOSSHUNTER",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Trophy Hunter's Tricorn.png"
+  },
+  {
+    "name": "Trophy Hunter's Tricorn (Consumed)",
+    "rarity": "Equipment",
+    "quote": "",
+    "description": "Looks kinda cool, but that's about it.",
+    "internalName": "BossHunterConsumed",
+    "localizationInternalName": "EQUIPMENT_BOSSHUNTERCONSUMED",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Trophy Hunter's Tricorn (Consumed).png"
+  },
+  {
+    "name": "Goobo Jr.",
+    "rarity": "Equipment",
+    "quote": "Create a clone of you for 30 seconds.",
+    "description": "Spawn a gummy clone that has {{Color|d|300% damage}} and {{Color|h|300% health}}. Expires in {{Color|u|30}} seconds.",
+    "internalName": "GummyClone",
+    "localizationInternalName": "EQUIPMENT_GUMMYCLONE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 100,
+    "duration": 30,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Goobo Jr..png"
+  },
+  {
+    "name": "Molotov (6-Pack)",
+    "rarity": "Equipment",
+    "quote": "Throw 6 flaming molotovs that ignite enemies upon shattering.",
+    "description": "Throw {{Color|d|6}} molotov cocktails that {{Color|d|ignites}} enemies for {{Color|d|500% base damage}}. Each molotov leaves a burning area for {{Color|d|200% damage per second}}.",
+    "internalName": "Molotov",
+    "localizationInternalName": "EQUIPMENT_MOLOTOV",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 45,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Molotov (6-Pack).png"
+  },
+  {
+    "name": "Executive Card",
+    "rarity": "Equipment",
+    "quote": "Gain 10% cash back on all purchases. Multishops remain open.",
+    "description": "Whenever you make a gold purchase, get {{Color|u|10%}} of the spent gold back. If the purchase is a {{Color|u|multishop}} terminal, the other terminals will {{Color|u|remain open}}.",
+    "internalName": "MultiShopCard",
+    "localizationInternalName": "EQUIPMENT_MULTISHOPCARD",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0.1,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Executive Card.png"
+  },
+  {
+    "name": "Remote Caffeinator",
+    "rarity": "Equipment",
+    "quote": "Request a healing soda machine.",
+    "description": "Request an {{Color|d|Eclipse Zero Vending Machine}} from the {{Color|d|UES Safe Travels}}. Delivery guaranteed in {{Color|u|5 seconds}}, dealing {{Color|d|2000% damage}}. {{Color|h|Heal}} up to 3 targets for {{Color|h|25% of their maximum health}}.",
+    "internalName": "VendingMachine",
+    "localizationInternalName": "EQUIPMENT_VENDINGMACHINE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Remote Caffeinator.png"
+  },
+  {
+    "name": "His Reassurance",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of earth.",
+    "description": "Become an aspect of earth.",
+    "internalName": "EliteEarthEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXEARTH",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/His Reassurance.png"
+  },
+  {
+    "name": "Seed of Life",
+    "rarity": "Equipment",
+    "quote": "Revives the user when killed or dead allies on activation. Consumed on use.",
+    "description": "Revives the user when killed or dead allies on activation. Consumed on use.",
+    "internalName": "HealAndRevive",
+    "localizationInternalName": "EQUIPMENT_HEALANDREVIVE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Seed of Life.png"
+  },
+  {
+    "name": "Seed of Life (Consumed)",
+    "rarity": "Equipment",
+    "quote": "On activation places a sprout that drops healing orbs.",
+    "description": "On activation places a sprout that drops healing orbs.",
+    "internalName": "HealAndReviveConsumed",
+    "localizationInternalName": "EQUIPMENT_HEALANDREVIVECONSUMED",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 15,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Seed of Life (Consumed).png"
+  },
+  {
+    "name": "Aurelionite's Blessing",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of radiance.",
+    "description": "Become an aspect of radiance.",
+    "internalName": "EliteAurelioniteEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXAURELIONITE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 25,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Aurelionite's Blessing.png"
+  },
+  {
+    "name": "His Spiteful Boon",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of spite.",
+    "description": "Become an aspect of spite.",
+    "internalName": "EliteBeadEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXBEAD",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/His Spiteful Boon.png"
+  },
+  {
+    "name": "Deus Ex Machina",
+    "rarity": "Equipment",
+    "quote": "Counter any damage. Successful counters {{Color|#E6CA65|bless}} your next attack, ensuring your on-hit effects ALWAYS activate.",
+    "description": "Briefly enter a countering stance that lets you parry {{Color|u|any and ALL}} damage. A successful parry {{Color|h|nullifies incoming damage}}, reduces your equipment cooldown by {{Color|d|75%}}, and grants {{Color|#E6CA65|Blessing}}, causing your next attack to ALWAYS activate your on-hit effects.",
+    "internalName": "Parry",
+    "localizationInternalName": "EQUIPMENT_PARRY",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 60,
+    "duration": 0,
+    "droppable": true,
+    "type": "equipment",
+    "icon": "/icons/Deus Ex Machina.png"
+  },
+  {
+    "name": "Of One Mind",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of the Collective.",
+    "description": "Become an aspect of the Collective.",
+    "internalName": "EliteCollectiveEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXCOLLECTIVE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": false,
+    "type": "equipment",
+    "icon": "/icons/Of One Mind.png"
   }
 ]

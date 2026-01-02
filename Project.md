@@ -106,7 +106,7 @@
 ### Icons
 
 * 图标存放在 `/public/icons/`
-* **已实现：** `grep_icons.py` 从 wiki 批量下载 icons 并生成映射 `public/items-assets.json`
+* **已实现：** `fetch-items-data.mjs` 从 wiki 批量下载 icons（Items + Equipment）并生成映射 `public/items-assets.json`
   * 支持：
     * 从 `Category:Item_Icons` 拉取全量文件
     * 从 `public/data/items.json` 读取 item name，并尝试补齐缺失图标（File: 直连 + 搜索兜底）

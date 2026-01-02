@@ -714,5 +714,181 @@
   "TransferDebuffOnHit": {
     "name": "中子素重锤",
     "description": "战斗中你的属性降低，但命中敌人时会将该物品转移给目标。目标死亡后，该物品会转移给其击杀者。伤害降低 30%（每层 +10%），攻击速度降低 30%（每层 +10%），移动速度降低 30%（每层 +10%），护甲降低 35（每层 +15）。"
+  },
+  "eq:EliteAurelioniteEquipment": {
+    "name": "奥雷利奥尼特的祝福",
+    "description": "化身光辉之躯。"
+  },
+  "eq:Cleanse": {
+    "name": "爆破淋浴",
+    "description": "净化所有负面效果，包括减益、持续伤害以及附近的飞行道具。"
+  },
+  "eq:Parry": {
+    "name": "机械降神",
+    "description": "短暂进入格挡姿态，可格挡任何伤害。成功格挡会抵消来袭伤害，使装备冷却时间减少 75%，并赋予「祝福」，让你的下一次攻击必定触发所有命中效果。"
+  },
+  "eq:CommandMissile": {
+    "name": "一次性导弹发射器",
+    "description": "发射 12 枚导弹的齐射，每枚造成 300% 伤害。"
+  },
+  "eq:Gateway": {
+    "name": "古怪花瓶",
+    "description": "制造一条最长 1000 米的量子隧道，持续 30 秒。"
+  },
+  "eq:CrippleWard": {
+    "name": "悲伤雕像",
+    "description": "范围内所有角色移动速度降低 50%，护甲降低 20。最多可同时放置 5 个。"
+  },
+  "eq:MultiShopCard": {
+    "name": "行政卡",
+    "description": "每次用金币购买都会返还 10% 花费金币。如果购买的是多重商店终端，其余终端会保持开启。"
+  },
+  "eq:Fruit": {
+    "name": "异域水果",
+    "description": "立即恢复最大生命值的 50%。"
+  },
+  "eq:DeathProjectile": {
+    "name": "请原谅我",
+    "description": "丢出一个诅咒娃娃，在 8 秒内每 1 秒触发一次你拥有的所有「击杀触发」效果。"
+  },
+  "eq:QuestVolatileBattery": {
+    "name": "燃料阵列",
+    "description": "看起来可以给某个东西供电。极其不稳定……"
+  },
+  "eq:Meteor": {
+    "name": "发光的陨石",
+    "description": "召唤陨石雨，轰炸所有角色，每次爆炸造成 600% 伤害。持续 20 秒。"
+  },
+  "eq:PassiveHealing": {
+    "name": "扭结林精",
+    "description": "获得一个林精跟随者，每秒治疗你最大生命值的 1.5%。可将其派给队友，为其恢复最大生命值的 10%。"
+  },
+  "eq:GummyClone": {
+    "name": "古博 Jr.",
+    "description": "生成一个软糖分身，拥有 300% 伤害与 300% 生命值，持续 30 秒。"
+  },
+  "eq:TeamWarCry": {
+    "name": "戈拉格的乐章",
+    "description": "所有队友进入狂热状态 7 秒：移动速度 +50%，攻击速度 +100%。"
+  },
+  "eq:BurnNearby": {
+    "name": "地狱火酊剂",
+    "description": "点燃 15 米内所有角色 12 秒，每秒造成相当于你最大生命值 5% 的灼烧伤害。该灼烧对自己为 0.5 倍、对队友为 0.25 倍、对敌人为 24 倍。"
+  },
+  "eq:EliteIceEquipment": {
+    "name": "她的噬咬拥抱",
+    "description": "化身冰霜之躯。"
+  },
+  "eq:EliteEarthEquipment": {
+    "name": "他的慰藉",
+    "description": "化身大地之躯。"
+  },
+  "eq:EliteBeadEquipment": {
+    "name": "他的恶毒恩赐",
+    "description": "化身怨恨之躯。"
+  },
+  "eq:EliteFireEquipment": {
+    "name": "伊芙利特的卓越",
+    "description": "化身烈焰之躯。"
+  },
+  "eq:GainArmor": {
+    "name": "翡翠大象",
+    "description": "获得 500 点护甲，持续 5 秒。"
+  },
+  "eq:Jetpack": {
+    "name": "乳白色茧",
+    "description": "长出翅膀并飞行 15 秒。期间移动速度 +20%。"
+  },
+  "eq:Molotov": {
+    "name": "莫洛托夫鸡尾酒（六连装）",
+    "description": "投掷 6 瓶燃烧瓶，点燃敌人造成 500% 基础伤害。每瓶会留下燃烧区域，每秒造成 200% 伤害。"
+  },
+  "eq:ElitePoisonEquipment": {
+    "name": "恩库哈娜的反击",
+    "description": "化身腐化之躯。"
+  },
+  "eq:CritOnUse": {
+    "name": "眼部 HUD",
+    "description": "获得 +100% 暴击率，持续 8 秒。"
+  },
+  "eq:EliteCollectiveEquipment": {
+    "name": "同心同念",
+    "description": "化身集体之躯。"
+  },
+  "eq:BFG": {
+    "name": "普雷昂蓄能器",
+    "description": "发射普雷昂触手，电击 35 米内敌人，最多造成 600% 伤害/秒。命中后在 20 米范围内爆炸，造成 4000% 伤害。"
+  },
+  "eq:Blackhole": {
+    "name": "原初立方体",
+    "description": "发射一个黑洞，将 30 米内敌人拉向中心。持续 10 秒。"
+  },
+  "eq:Scanner": {
+    "name": "雷达扫描仪",
+    "description": "揭示 500 米内所有可交互物体，持续 10 秒。"
+  },
+  "eq:Recycle": {
+    "name": "回收器",
+    "description": "将一件物品或装备转化为另一件。每件物品/装备只能转化一次，并且只能转化为同一阶层。"
+  },
+  "eq:VendingMachine": {
+    "name": "远程咖啡机",
+    "description": "呼叫一台「日蚀零号自动售货机」。5 秒后送达并造成 2000% 伤害；治疗最多 3 个目标，恢复其最大生命值的 25%。"
+  },
+  "eq:Lightning": {
+    "name": "皇家电容器",
+    "description": "对目标怪物召唤闪电，造成 3000% 伤害，并眩晕附近怪物。"
+  },
+  "eq:Saw": {
+    "name": "锯刃回旋镖",
+    "description": "投掷三片大型锯刃，穿透敌人造成 3×400% 伤害；对流血敌人还会额外造成每秒 3×100% 伤害。回程时可再次命中。"
+  },
+  "eq:HealAndRevive": {
+    "name": "生命之种",
+    "description": "使用时复活你（若你死亡）或复活已死亡的队友。使用后消耗。"
+  },
+  "eq:HealAndReviveConsumed": {
+    "name": "生命之种（已消耗）",
+    "description": "激活时放置一株幼芽，会掉落治疗球。"
+  },
+  "eq:EliteLunarEquipment": {
+    "name": "共同的设计",
+    "description": "化身完美之躯。"
+  },
+  "eq:EliteLightningEquipment": {
+    "name": "两次打击之间的寂静",
+    "description": "化身雷电之躯。"
+  },
+  "eq:EliteHauntedEquipment": {
+    "name": "幽魂头环",
+    "description": "化身无形之躯。"
+  },
+  "eq:Tonic": {
+    "name": "尖晶强心剂",
+    "description": "饮用强心剂，获得 20 秒增益：伤害 +100%，攻击速度 +70%，护甲 +20，最大生命值 +50%，生命值自然恢复 +300%，移动速度 +30%。效果结束后，有 20% 概率获得「强心剂副作用」，使所有属性 -5%（每层 -5%）。"
+  },
+  "eq:LifestealOnHit": {
+    "name": "超巨型水蛭",
+    "description": "在 8 秒内，造成伤害的 20% 转化为治疗。"
+  },
+  "eq:DroneBackUp": {
+    "name": "后援呼叫",
+    "description": "呼叫 4 架打击无人机为你作战，持续 25 秒。"
+  },
+  "eq:GoldGat": {
+    "name": "众筹枪",
+    "description": "持续扫射，每发子弹造成 100% 伤害。每发消耗 $1，花费会随时间增加。"
+  },
+  "eq:BossHunter": {
+    "name": "战利品猎人的三角帽",
+    "description": "处决任何会掉落独特奖励的敌人，并使其掉落该物品。使用后消耗该装备。"
+  },
+  "eq:BossHunterConsumed": {
+    "name": "战利品猎人的三角帽（已消耗）",
+    "description": "看起来挺酷，但也就这样。"
+  },
+  "eq:FireballDash": {
+    "name": "火山蛋",
+    "description": "化身为龙裔火球 5 秒。撞击造成 500% 伤害；结束时爆炸造成 800% 伤害。"
   }
 }

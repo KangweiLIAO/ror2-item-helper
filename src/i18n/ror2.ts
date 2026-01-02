@@ -7,6 +7,9 @@ const ZH_RARITY: Record<string, string> = {
   Boss: "Boss",
   Lunar: "月球",
   Void: "虚空",
+  Equipment: "装备",
+  "Lunar Equipment": "月球装备",
+  "Elite Equipment": "精英装备",
   Unknown: "未知",
 }
 

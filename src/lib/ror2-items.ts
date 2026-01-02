@@ -7,6 +7,10 @@ export type Ror2ItemRaw = {
   localizationInternalName?: string | null
   unlock?: string | null
   corrupt?: string | null
+  type?: "item" | "equipment" | null
+  cooldown?: number | null
+  duration?: number | null
+  droppable?: boolean | null
   categories?: string[] | null
   stats?: Array<{ stat: string; value: string; stack?: string; add?: string }> | null
   icon: string | null
@@ -15,11 +19,15 @@ export type Ror2ItemRaw = {
 export type UiItem = {
   /** Stable unique id. Prefer `internalName`, fallback to localization/name/index. */
   id: string
+  type: "item" | "equipment"
   name: string
   rarity: string
   description: string
   internalName: string | null
   localizationInternalName?: string | null
+  cooldown?: number | null
+  duration?: number | null
+  droppable?: boolean | null
   categories: string[]
   icon: string
 }
@@ -31,6 +39,10 @@ export const RARITY_ORDER = [
   "Boss",
   "Lunar",
   "Void",
+  // Equipment categories (wiki uses these as "rarity" labels in the Lua module)
+  "Equipment",
+  "Lunar Equipment",
+  "Elite Equipment",
 ] as const
 
 export function normalizeText(input: string) {
@@ -98,6 +110,24 @@ export function rarityStyle(rarity: string): { ring: string; glow: string; text:
         glow: "shadow-[0_0_18px_rgba(139,92,246,0.30)]",
         text: "text-violet-600",
       }
+    case "Equipment":
+      return {
+        ring: "ring-orange-500/70",
+        glow: "shadow-[0_0_18px_rgba(249,115,22,0.30)]",
+        text: "text-orange-600",
+      }
+    case "Lunar Equipment":
+      return {
+        ring: "ring-sky-500/70",
+        glow: "shadow-[0_0_18px_rgba(14,165,233,0.30)]",
+        text: "text-sky-600",
+      }
+    case "Elite Equipment":
+      return {
+        ring: "ring-fuchsia-500/70",
+        glow: "shadow-[0_0_18px_rgba(217,70,239,0.30)]",
+        text: "text-fuchsia-600",
+      }
     default:
       return {
         ring: "ring-zinc-400/70",
@@ -117,19 +147,26 @@ export function normalizeItems(raw: Ror2ItemRaw[]): UiItem[] {
     .map(({ r, idx, description }) => {
     const internalName = r.internalName ?? null
     const localizationInternalName = r.localizationInternalName ?? null
+    const type: UiItem["type"] = r.type === "equipment" ? "equipment" : "item"
     const name = (r.name ?? "").trim() || "(Unknown item)"
-    const id =
+    const baseId =
       (typeof internalName === "string" && internalName.trim()) ||
       (typeof localizationInternalName === "string" && localizationInternalName.trim()) ||
       name ||
       `item_${idx}`
+    // Keep existing item ids stable; only prefix equipments to avoid collisions.
+    const id = type === "equipment" ? `eq:${baseId}` : baseId
     return {
       id,
+      type,
       name,
       rarity: (r.rarity ?? "Unknown").trim() || "Unknown",
       description,
       internalName,
       localizationInternalName,
+      cooldown: typeof r.cooldown === "number" ? r.cooldown : null,
+      duration: typeof r.duration === "number" ? r.duration : null,
+      droppable: typeof r.droppable === "boolean" ? r.droppable : null,
       categories: Array.isArray(r.categories) ? r.categories.filter(Boolean) : [],
       icon: r.icon ?? "/file.svg",
     }

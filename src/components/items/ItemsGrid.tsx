@@ -17,7 +17,7 @@ export function ItemsGrid({
   onOpenDetails: (id: string) => void
 }) {
   return (
-    <div className="grid grid-cols-6 gap-2 sm:grid-cols-8 sm:gap-3 md:grid-cols-10 lg:grid-cols-12">
+    <div className="grid grid-cols-8 gap-1.5 sm:grid-cols-9 sm:gap-2 md:grid-cols-12 lg:grid-cols-14">
       {items.map((it) => {
         const selected = selectedIds.has(it.id)
         return (

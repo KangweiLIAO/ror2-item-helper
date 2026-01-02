@@ -1,0 +1,44 @@
+{"id":"eq:EliteAurelioniteEquipment","name":"Aurelionite's Blessing","rarity":"Elite Equipment","desc":"Become an aspect of radiance."}
+{"id":"eq:Cleanse","name":"Blast Shower","rarity":"Equipment","desc":"{{Color|u|Cleanse}} all negative effects. Includes debuffs, damage over time, and nearby projectiles."}
+{"id":"eq:Parry","name":"Deus Ex Machina","rarity":"Equipment","desc":"Briefly enter a countering stance that lets you parry {{Color|u|any and ALL}} damage. A successful parry {{Color|h|nullifies incoming damage}}, reduces your equipment cooldown by {{Color|d|75%}}, and grants {{Color|#E6CA65|Blessing}}, causing your next attack to ALWAYS activate your on-hit effects."}
+{"id":"eq:CommandMissile","name":"Disposable Missile Launcher","rarity":"Equipment","desc":"Fire a swarm of {{Color|d|12}} missiles that deal {{Color|d|12x300% damage}}."}
+{"id":"eq:Gateway","name":"Eccentric Vase","rarity":"Equipment","desc":"Create a {{Color|u|quantum tunnel}} of up to {{Color|u|1000m}} in length. Lasts 30 seconds."}
+{"id":"eq:CrippleWard","name":"Effigy of Grief","rarity":"Lunar Equipment","desc":"ALL characters within are {{Color|u|slowed by 50%}} and have their {{Color|d|armor reduced by 20}}. Can place up to {{Color|u|5}}."}
+{"id":"eq:MultiShopCard","name":"Executive Card","rarity":"Equipment","desc":"Whenever you make a gold purchase, get {{Color|u|10%}} of the spent gold back. If the purchase is a {{Color|u|multishop}} terminal, the other terminals will {{Color|u|remain open}}."}
+{"id":"eq:Fruit","name":"Foreign Fruit","rarity":"Equipment","desc":"Instantly heal for {{Color|h|50% of your maximum health}}."}
+{"id":"eq:DeathProjectile","name":"Forgive Me Please","rarity":"Equipment","desc":"Throw a cursed doll out that {{Color|d|triggers}} any {{Color|d|On-Kill}} effects you have every {{Color|u|1}} second for {{Color|u|8}} seconds."}
+{"id":"eq:QuestVolatileBattery","name":"Fuel Array","rarity":"Equipment","desc":"Looks like it could power something. {{Color|#FF7F7F|EXTREMELY unstable...}}"}
+{"id":"eq:Meteor","name":"Glowing Meteorite","rarity":"Lunar Equipment","desc":"{{Color|d|Rain meteors}} from the sky, damaging ALL characters for {{Color|d|600% damage per blast}}. Lasts 20 seconds."}
+{"id":"eq:PassiveHealing","name":"Gnarled Woodsprite","rarity":"Equipment","desc":"Gain a Woodsprite follower that heals for {{Color|h|1.5% of your maximum health/second}}. Can be sent to an ally to heal them for {{Color|h|10% of their maximum health}}."}
+{"id":"eq:GummyClone","name":"Goobo Jr.","rarity":"Equipment","desc":"Spawn a gummy clone that has {{Color|d|300% damage}} and {{Color|h|300% health}}. Expires in {{Color|u|30}} seconds."}
+{"id":"eq:TeamWarCry","name":"Gorag's Opus","rarity":"Equipment","desc":"All allies enter a {{Color|d|frenzy}} for {{Color|u|7}} seconds. Increases {{Color|u|movement speed}} by {{Color|u|50%}} and {{Color|d|attack speed}} by {{Color|d|100%}}."}
+{"id":"eq:BurnNearby","name":"Helfire Tincture","rarity":"Lunar Equipment","desc":"Ignite ALL characters within 15m for 12s. Deal {{Color|d|5% of your maximum health/second as burning}} as damage. The burn is {{Color|d|0.5x}} stronger on yourself, {{Color|d|0.25x}} stronger on allies, and {{Color|d|24x}} stronger on enemies."}
+{"id":"eq:EliteIceEquipment","name":"Her Biting Embrace","rarity":"Elite Equipment","desc":"Become an aspect of ice."}
+{"id":"eq:EliteEarthEquipment","name":"His Reassurance","rarity":"Elite Equipment","desc":"Become an aspect of earth."}
+{"id":"eq:EliteBeadEquipment","name":"His Spiteful Boon","rarity":"Elite Equipment","desc":"Become an aspect of spite."}
+{"id":"eq:EliteFireEquipment","name":"Ifrit's Distinction","rarity":"Elite Equipment","desc":"Become an aspect of fire."}
+{"id":"eq:GainArmor","name":"Jade Elephant","rarity":"Equipment","desc":"Gain {{Color|d|500 armor}} for {{Color|u|5 seconds}}."}
+{"id":"eq:Jetpack","name":"Milky Chrysalis","rarity":"Equipment","desc":"Sprout wings and {{Color|u|fly for 15 seconds}}. Gain {{Color|u|+20% movement speed}} for the duration."}
+{"id":"eq:Molotov","name":"Molotov (6-Pack)","rarity":"Equipment","desc":"Throw {{Color|d|6}} molotov cocktails that {{Color|d|ignites}} enemies for {{Color|d|500% base damage}}. Each molotov leaves a burning area for {{Color|d|200% damage per second}}."}
+{"id":"eq:ElitePoisonEquipment","name":"N'kuhana's Retort","rarity":"Elite Equipment","desc":"Become an aspect of corruption."}
+{"id":"eq:CritOnUse","name":"Ocular HUD","rarity":"Equipment","desc":"Gain {{Color|d|+100% Critical Strike Chance}} for 8 seconds."}
+{"id":"eq:EliteCollectiveEquipment","name":"Of One Mind","rarity":"Elite Equipment","desc":"Become an aspect of the Collective."}
+{"id":"eq:BFG","name":"Preon Accumulator","rarity":"Equipment","desc":"Fires preon tendrils, zapping enemies within 35m for up to {{Color|d|600% damage/second}}. On contact, detonate in an enormous 20m explosion for {{Color|d|4000% damage}}."}
+{"id":"eq:Blackhole","name":"Primordial Cube","rarity":"Equipment","desc":"Fire a black hole that {{Color|u|draws enemies within 30m into its center}}. Lasts 10 seconds"}
+{"id":"eq:Scanner","name":"Radar Scanner","rarity":"Equipment","desc":"{{Color|u|Reveal}} all interactables within 500m for {{Color|u|10 seconds}}."}
+{"id":"eq:Recycle","name":"Recycler","rarity":"Equipment","desc":"{{Color|u|Transform}} an Item or Equipment into a different one. {{Color|u|Can only be converted into the same tier one time}}."}
+{"id":"eq:VendingMachine","name":"Remote Caffeinator","rarity":"Equipment","desc":"Request an {{Color|d|Eclipse Zero Vending Machine}} from the {{Color|d|UES Safe Travels}}. Delivery guaranteed in {{Color|u|5 seconds}}, dealing {{Color|d|2000% damage}}. {{Color|h|Heal}} up to 3 targets for {{Color|h|25% of their maximum health}}."}
+{"id":"eq:Lightning","name":"Royal Capacitor","rarity":"Equipment","desc":"Call down a lightning strike on a targeted monster, dealing {{Color|d|3000% damage}} and {{Color|d|stunning}} nearby monsters."}
+{"id":"eq:Saw","name":"Sawmerang","rarity":"Equipment","desc":"Throw {{Color|d|three large saw blades}} that slice through enemies for {{Color|d|3x400%}} damage. Also deals an additional {{Color|d|3x100% damage per second}} while {{Color|d|bleeding}} enemies. Can {{Color|d|strike}} enemies again on the way back."}
+{"id":"eq:HealAndRevive","name":"Seed of Life","rarity":"Equipment","desc":"Revives the user when killed or dead allies on activation. Consumed on use."}
+{"id":"eq:HealAndReviveConsumed","name":"Seed of Life (Consumed)","rarity":"Equipment","desc":"On activation places a sprout that drops healing orbs."}
+{"id":"eq:EliteLunarEquipment","name":"Shared Design","rarity":"Elite Equipment","desc":"Become an aspect of perfection."}
+{"id":"eq:EliteLightningEquipment","name":"Silence Between Two Strikes","rarity":"Elite Equipment","desc":"Become an aspect of lightning."}
+{"id":"eq:EliteHauntedEquipment","name":"Spectral Circlet","rarity":"Elite Equipment","desc":"Become an aspect of incorporeality."}
+{"id":"eq:Tonic","name":"Spinel Tonic","rarity":"Lunar Equipment","desc":"Drink the Tonic, gaining a boost for 20 seconds. Increases {{Color|d|damage}} by {{Color|d|+100%}}. Increases {{Color|d|attack speed}} by {{Color|d|+70%}}. Increases {{Color|d|armor}} by {{Color|d|+20}}. Increases {{Color|h|maximum health}} by {{Color|h|+50%}}. Increases {{Color|h|passive health regeneration}} by {{Color|h|+300%}}. Increases {{Color|u|movespeed}} by {{Color|u|+30%}}.\r\n\r\nWhen the Tonic wears off, you have a {{Color|hp|20%}} chance to gain a {{Color|hp|Tonic Affliction, reducing all of your stats}} by {{Color|hp|-5%}} {{Stack|(-5% per stack)}}."}
+{"id":"eq:LifestealOnHit","name":"Super Massive Leech","rarity":"Equipment","desc":"{{Color|h|Heal}} for {{Color|h|20%}} of the {{Color|d|damage}} you deal. Lasts {{Color|h|8}} seconds."}
+{"id":"eq:DroneBackUp","name":"The Back-up","rarity":"Equipment","desc":"Call {{Color|d|4 Strike Drones}} to fight for you. Lasts 25 seconds."}
+{"id":"eq:GoldGat","name":"The Crowdfunder","rarity":"Equipment","desc":"Fires a continuous barrage that deals {{Color|d|100% damage per bullet}}. Costs $1 per bullet. Cost increases over time."}
+{"id":"eq:BossHunter","name":"Trophy Hunter's Tricorn","rarity":"Equipment","desc":"{{Color|d|Execute}} any enemy capable of spawning a {{Color|d|unique reward}}, and it will drop that {{Color|d|item}}. Equipment is {{Color|u|consumed}} on use."}
+{"id":"eq:BossHunterConsumed","name":"Trophy Hunter's Tricorn (Consumed)","rarity":"Equipment","desc":"Looks kinda cool, but that's about it."}
+{"id":"eq:FireballDash","name":"Volcanic Egg","rarity":"Equipment","desc":"Turn into a {{Color|d|draconic fireball}} for {{Color|d|5}} seconds. Deal {{Color|d|500% damage}} on impact. Detonates at the end for {{Color|d|800% damage}}."}

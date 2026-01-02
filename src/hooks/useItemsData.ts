@@ -34,7 +34,10 @@ export function useItemsData(locale: Locale = "en") {
       try {
         setLoading(true)
         setError(null)
-        const res = await fetch("/data/items.json", { cache: "force-cache" })
+        // We want data pipeline updates (items+equipments) to reflect without requiring a hard refresh.
+        // In dev, `force-cache` can make the UI appear "stuck" on an older items.json.
+        const cache = process.env.NODE_ENV === "development" ? "no-store" : "force-cache"
+        const res = await fetch("/data/items.json", { cache })
         if (!res.ok) throw new Error(`Failed to load items.json (${res.status})`)
         const data = (await res.json()) as Ror2ItemRaw[]
         if (cancelled) return

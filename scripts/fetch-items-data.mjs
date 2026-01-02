@@ -8,13 +8,14 @@ const __dirname = dirname(__filename);
 const PROJECT_ROOT = join(__dirname, "..");
 
 const RAW_URL = "https://riskofrain2.fandom.com/wiki/Module:Items/Data?action=raw";
+const EQUIPMENT_RAW_URL = "https://riskofrain2.fandom.com/wiki/Module:Equipment/Data?action=raw";
 
 const WIKI = "https://riskofrain2.fandom.com";
 const API = `${WIKI}/api.php`;
 const DEFAULT_OUT_DIR = "public/icons";
 const DEFAULT_MAPPING_FILE = "public/items-assets.json";
 const DEFAULT_ITEMS_JSON = "public/data/items.json";
-const DEFAULT_CATEGORY = "Category:Item_Icons";
+const DEFAULT_CATEGORIES = ["Category:Item_Icons", "Category:Equipment_Icons"];
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
@@ -30,7 +31,7 @@ function parseArgs(argv) {
     outDir: DEFAULT_OUT_DIR,
     mappingFile: DEFAULT_MAPPING_FILE,
     itemsJson: DEFAULT_ITEMS_JSON,
-    category: DEFAULT_CATEGORY,
+    categories: [...DEFAULT_CATEGORIES],
     onlyMissing: true,
     overwrite: false,
     rate: 0.2,
@@ -45,7 +46,7 @@ function parseArgs(argv) {
     if (a === "--out-dir") args.outDir = argv[++i];
     else if (a === "--mapping-file") args.mappingFile = argv[++i];
     else if (a === "--items-json") args.itemsJson = argv[++i];
-    else if (a === "--category") args.category = argv[++i];
+    else if (a === "--category") args.categories.push(argv[++i]);
     else if (a === "--rate") args.rate = Number(argv[++i]);
     else if (a === "--overwrite") args.overwrite = true;
     else if (a === "--only-missing") args.onlyMissing = true;
@@ -66,7 +67,7 @@ Options:
   --out-dir <dir>           Icon output dir (default: ${DEFAULT_OUT_DIR})
   --mapping-file <file>     Icon mapping JSON (default: ${DEFAULT_MAPPING_FILE})
   --items-json <file>       Output items JSON path (default: ${DEFAULT_ITEMS_JSON})
-  --category <title>        Wiki category for bulk icon crawl (default: ${DEFAULT_CATEGORY})
+  --category <title>        Wiki category for bulk icon crawl (repeatable; defaults: ${DEFAULT_CATEGORIES.join(", ")})
   --rate <seconds>          Sleep between requests (default: 0.2)
   --overwrite               Re-download icons even if file exists
   --only-missing / --no-only-missing
@@ -229,10 +230,34 @@ function luaStackToJsString(L, idx) {
   return to_jsstring(luaStr);
 }
 
+function luaStackToJsNumber(L, idx) {
+  const { lua } = fengari;
+  const n = lua.lua_tonumber(L, idx);
+  if (typeof n !== "number" || Number.isNaN(n)) return null;
+  return n;
+}
+
 function luaGetStringField(L, tableIdx, fieldName) {
   const { lua, to_luastring } = fengari;
   lua.lua_getfield(L, tableIdx, to_luastring(fieldName));
   const v = luaStackToJsString(L, -1);
+  lua.lua_pop(L, 1);
+  return v;
+}
+
+function luaGetNumberField(L, tableIdx, fieldName) {
+  const { lua, to_luastring } = fengari;
+  lua.lua_getfield(L, tableIdx, to_luastring(fieldName));
+  const v = luaStackToJsNumber(L, -1);
+  lua.lua_pop(L, 1);
+  return v;
+}
+
+function luaGetBooleanField(L, tableIdx, fieldName) {
+  const { lua, to_luastring } = fengari;
+  lua.lua_getfield(L, tableIdx, to_luastring(fieldName));
+  const isBool = lua.lua_isboolean(L, -1);
+  const v = isBool ? Boolean(lua.lua_toboolean(L, -1)) : null;
   lua.lua_pop(L, 1);
   return v;
 }
@@ -293,7 +318,7 @@ function luaGetStatsField(L, tableIdx) {
 /**
  * Parse Lua module using fengari
  */
-function parseLuaTable(luaText) {
+function parseLuaModuleTable(luaText, rootFieldName) {
   const { lua, lauxlib, lualib, to_luastring } = fengari;
   
   const L = lauxlib.luaL_newstate();
@@ -309,18 +334,18 @@ function parseLuaTable(luaText) {
     throw new Error(`Lua execution error: ${error}`);
   }
   
-  // The module should return a table 'p' with p.items
+  // The module should return a table 'p' with p[rootFieldName]
   // Get the returned value from the stack (should be at -1)
   if (!lua.lua_istable(L, -1)) {
     lua.lua_close(L);
     throw new Error("Lua module did not return a table");
   }
   
-  // Access p.items
-  lua.lua_getfield(L, -1, to_luastring("items"));
+  // Access p[rootFieldName]
+  lua.lua_getfield(L, -1, to_luastring(rootFieldName));
   if (!lua.lua_istable(L, -1)) {
     lua.lua_close(L);
-    throw new Error("Module table does not contain 'items' field");
+    throw new Error(`Module table does not contain '${rootFieldName}' field`);
   }
   
   // Iterate the items table and extract fields we care about (avoid deep lua_next recursion)
@@ -340,15 +365,14 @@ function parseLuaTable(luaText) {
     const quote = luaGetStringField(L, itemTableIdx, "Quote");
     const desc = luaGetStringField(L, itemTableIdx, "Desc");
     const internalName = luaGetStringField(L, itemTableIdx, "InternalName");
-    const localizationInternalName = luaGetStringField(
-      L,
-      itemTableIdx,
-      "LocalizationInternalName"
-    );
+    const localizationInternalName = luaGetStringField(L, itemTableIdx, "LocalizationInternalName");
     const unlock = luaGetStringField(L, itemTableIdx, "Unlock");
     const corrupt = luaGetStringField(L, itemTableIdx, "Corrupt");
     const categories = luaGetStringArrayField(L, itemTableIdx, "Category");
     const stats = luaGetStatsField(L, itemTableIdx);
+    const cooldown = luaGetNumberField(L, itemTableIdx, "Cooldown");
+    const duration = luaGetNumberField(L, itemTableIdx, "Duration");
+    const droppable = luaGetBooleanField(L, itemTableIdx, "Droppable");
 
     items.push({
       name: itemName,
@@ -361,6 +385,9 @@ function parseLuaTable(luaText) {
       corrupt,
       categories,
       stats,
+      cooldown,
+      duration,
+      droppable,
     });
 
     lua.lua_pop(L, 1); // pop value, keep key for lua_next
@@ -371,6 +398,15 @@ function parseLuaTable(luaText) {
 
   lua.lua_close(L);
   return items;
+}
+
+function parseItems(luaText) {
+  return parseLuaModuleTable(luaText, "items").map((x) => ({ ...x, type: "item" }));
+}
+
+function parseEquipment(luaText) {
+  // The equipment module returns p.equipment
+  return parseLuaModuleTable(luaText, "equipment").map((x) => ({ ...x, type: "equipment" }));
 }
 
 /**
@@ -425,18 +461,29 @@ async function main() {
   );
   console.log("✓ Downloaded Lua module to data/items_data.lua");
 
+  console.log("Fetching equipment data from wiki...");
+  const eqRes = await fetch(EQUIPMENT_RAW_URL, { headers: { "user-agent": userAgent } });
+  if (!eqRes.ok) throw new Error(`Equipment fetch failed: ${eqRes.status} ${eqRes.statusText}`);
+  const eqLuaText = await eqRes.text();
+  await fs.writeFile(join(PROJECT_ROOT, "data/equipment_data.lua"), eqLuaText, "utf8");
+  console.log("✓ Downloaded Lua module to data/equipment_data.lua");
+
   // Parse Lua data
   console.log("Parsing Lua data...");
   let items;
+  let equipment;
   try {
-    items = parseLuaTable(luaText);
-    console.log(`✓ Parsed ${items.length} items from Lua`);
+    items = parseItems(luaText);
+    equipment = parseEquipment(eqLuaText);
+    console.log(`✓ Parsed ${items.length} items + ${equipment.length} equipment entries`);
   } catch (error) {
     console.error("Error parsing Lua:", error.message);
     console.log("\nNote: If parsing fails, you may need to use fengari for full Lua support.");
     console.log("Install: npm install --save-dev fengari");
     throw error;
   }
+
+  const merged = [...items, ...equipment];
 
   // Load icon mapping (and optionally refresh it)
   const iconMapPath = join(PROJECT_ROOT, args.mappingFile);
@@ -447,31 +494,35 @@ async function main() {
     const outDirAbs = join(PROJECT_ROOT, args.outDir);
 
     if (args.categoryCrawl) {
-      console.log(`Refreshing icons from wiki category: ${args.category}`);
-      const files = await listCategoryFiles(args.category, {
-        userAgent,
-        rateSeconds: args.rate,
-      });
-      console.log(`✓ Found ${files.length} files in category`);
+      const cats = (Array.isArray(args.categories) ? args.categories : []).filter(Boolean);
+      const finalCats = cats.length ? cats : [...DEFAULT_CATEGORIES];
+      for (const cat of finalCats) {
+        console.log(`Refreshing icons from wiki category: ${cat}`);
+        const files = await listCategoryFiles(cat, {
+          userAgent,
+          rateSeconds: args.rate,
+        });
+        console.log(`✓ Found ${files.length} files in category`);
 
-      let crawled = 0;
-      for (const title of files) {
-        const url = await getImageUrl(title, { userAgent });
-        if (!url) continue;
-        const filename = title.replace(/^File:/, "");
-        const outPath = join(outDirAbs, filename);
-        await download(url, outPath, { overwrite: args.overwrite, userAgent });
-        iconMap[filename] = normalizeFsPath(join(args.outDir, filename));
-        crawled++;
-        await sleep(args.rate * 1000);
+        let crawled = 0;
+        for (const title of files) {
+          const url = await getImageUrl(title, { userAgent });
+          if (!url) continue;
+          const filename = title.replace(/^File:/, "");
+          const outPath = join(outDirAbs, filename);
+          await download(url, outPath, { overwrite: args.overwrite, userAgent });
+          iconMap[filename] = normalizeFsPath(join(args.outDir, filename));
+          crawled++;
+          await sleep(args.rate * 1000);
+        }
+        console.log(`✓ Category refresh complete for ${cat} (${crawled} icons updated/confirmed)`);
       }
-      console.log(`✓ Category refresh complete (${crawled} icons updated/confirmed)`);
     }
 
     if (args.fillMissing) {
-      console.log("Filling missing icons by item name...");
+      console.log("Filling missing icons by name (items + equipment)...");
       let resolvedCount = 0;
-      for (const item of items) {
+      for (const item of merged) {
         const name = item?.name;
         if (typeof name !== "string" || !name.trim()) continue;
 
@@ -499,7 +550,7 @@ async function main() {
   // Match items with icons
   console.log("Matching items with icons...");
   let matchedCount = 0;
-  for (const item of items) {
+  for (const item of merged) {
     const iconPath = findIconForItem(item.name, iconMap);
     if (iconPath) {
       item.icon = iconPath;
@@ -508,17 +559,17 @@ async function main() {
       console.warn(`⚠ No icon found for: ${item.name}`);
     }
   }
-  console.log(`✓ Matched ${matchedCount}/${items.length} items with icons`);
+  console.log(`✓ Matched ${matchedCount}/${merged.length} entries with icons`);
 
   // Write JSON output
   const outputPath = join(PROJECT_ROOT, args.itemsJson);
   await fs.mkdir(dirname(outputPath), { recursive: true });
   await fs.writeFile(
     outputPath,
-    JSON.stringify(items, null, 2),
+    JSON.stringify(merged, null, 2),
     "utf8"
   );
-  console.log(`✓ Wrote ${items.length} items to ${outputPath}`);
+  console.log(`✓ Wrote ${merged.length} entries to ${outputPath}`);
   console.log("\nDone! Items data is ready to use.");
 }
 

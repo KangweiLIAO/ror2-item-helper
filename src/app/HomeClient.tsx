@@ -200,7 +200,7 @@ function HomeInner() {
         />
 
         {/* Main grid */}
-        <div className="mx-auto w-full max-w-[1100px] px-3 pb-28 pt-4 sm:px-4">
+        <div className="mx-auto w-full max-w-[1200px] px-3 pb-28 pt-4 sm:px-4">
           {itemsError ? (
             <div className="rounded-md border bg-destructive/10 p-4 text-sm text-destructive">{itemsError}</div>
           ) : loading ? (

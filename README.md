@@ -46,8 +46,9 @@ npm run fetch-items
 
 This will:
 - Download the wiki Lua module to `data/items_data.lua`
+- Download the wiki Lua module to `data/equipment_data.lua`
 - Refresh local icons in `public/icons/` and update `public/items-assets.json`
-- Generate `public/data/items.json` with `icon` paths
+- Generate `public/data/items.json` with `icon` paths (items + equipments)
 
 Useful flags (passed after `--`):
 
