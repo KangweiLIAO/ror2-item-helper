@@ -1,7 +1,3 @@
-下面是一份**简短、工程导向、可直接丢给 Coding Agent 开工的项目需求（PRD-lite）**。我刻意写成“可执行指令 + 明确边界”，避免歧义。
-
----
-
 # Project: RoR2 Items Preset Browser
 
 ## Goal
@@ -119,12 +115,15 @@
 #### 更新 icons / 映射（命令）
 
 ```bash
-python grep_icons.py --only-missing
+npm run fetch-items
 ```
 
 可选参数：
-* `--overwrite`：强制重新下载
-* `--rate 0.2`：请求间隔（避免触发站点限流）
+- 传参需要加 `--`，例如：
+  - `npm run fetch-items -- --overwrite`：强制重新下载
+  - `npm run fetch-items -- --rate 0.2`：请求间隔（避免触发站点限流）
+  - `npm run fetch-items -- --no-category`：跳过全量 category crawl（更快）
+  - `npm run fetch-items -- --no-icons`：完全跳过图标下载/更新（只生成 items.json 并从现有映射补 icon）
 
 ---
 
@@ -162,9 +161,9 @@ python grep_icons.py --only-missing
   * 使用 `fengari` 执行 Lua 并提取 `p.items`
   * 生成 `public/data/items.json`
   * 根据 `public/items-assets.json` 为条目补充 `icon` 路径（如 `/icons/Foo.png`）
-* `grep_icons.py`
-  * 下载 `Category:Item_Icons` 图标到 `public/icons/`
-  * 更新/补齐 `public/items-assets.json`
+  * 负责 icon pipeline：
+    * 下载 `Category:Item_Icons` 图标到 `public/icons/`
+    * 更新/补齐 `public/items-assets.json`
 
 ### 已完成（前端 UI：MVP 主流程）
 

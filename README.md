@@ -35,3 +35,26 @@ https://riskofrain2.fandom.com/
 
 Wiki content is community-contributed and licensed under CC BY-NC-SA, unless otherwise noted.
 This is a non-commercial, fan-made project and is not affiliated with Fandom or the game’s developers.
+
+### Updating item data + icons (pipeline)
+
+Run:
+
+```bash
+npm run fetch-items
+```
+
+This will:
+- Download the wiki Lua module to `data/items_data.lua`
+- Refresh local icons in `public/icons/` and update `public/items-assets.json`
+- Generate `public/data/items.json` with `icon` paths
+
+Useful flags (passed after `--`):
+
+```bash
+# Faster: skip bulk category crawl, only try resolving missing icons by item name
+npm run fetch-items -- --no-category
+
+# Skip all icon network work (still attaches icons from existing mapping)
+npm run fetch-items -- --no-icons
+```
