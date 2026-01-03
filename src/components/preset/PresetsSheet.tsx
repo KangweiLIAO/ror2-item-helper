@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 import { useI18n } from "@/i18n/LocaleProvider"
+import { buildShareSearch } from "@/lib/share"
 
 // VisuallyHidden component for accessibility (Radix pattern)
 const VisuallyHidden = ({ children }: { children: React.ReactNode }) => (
@@ -200,10 +201,8 @@ function PresetCard({
 function buildShareUrl(itemIds: string[]) {
   const origin = typeof window !== "undefined" ? window.location.origin : ""
   const pathname = typeof window !== "undefined" ? window.location.pathname : "/"
-  const sp = new URLSearchParams()
-  for (const id of itemIds) sp.append("share", id)
-  const qs = sp.toString()
-  return `${origin}${pathname}${qs ? `?${qs}` : ""}`
+  const search = buildShareSearch(itemIds)
+  return `${origin}${pathname}${search}`
 }
 
 async function copyToClipboard(text: string) {

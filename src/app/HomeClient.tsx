@@ -18,6 +18,7 @@ import { RARITY_ORDER, isProbablyDesktop, normalizeText, rarityStyle, uniq } fro
 import { LocaleProvider, useI18n } from "@/i18n/LocaleProvider"
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils"
+import { getShareIds, stripShareFromSearchParams } from "@/lib/share"
 
 function HomeInner() {
   const { t, locale } = useI18n()
@@ -151,8 +152,7 @@ function HomeInner() {
   const detailsSelected = detailsItem ? currentItemIds.has(detailsItem.id) : false
 
   const shareIds = React.useMemo(() => {
-    const raw = searchParams.getAll("share")
-    return raw.map((s) => s.trim()).filter(Boolean)
+    return getShareIds(searchParams)
   }, [searchParams])
 
   const shareKey = React.useMemo(() => (shareIds.length ? shareIds.join("\u0001") : ""), [shareIds])
@@ -170,8 +170,7 @@ function HomeInner() {
   const sharedUnknownCount = React.useMemo(() => shareIds.length - sharedKnownIds.length, [shareIds.length, sharedKnownIds.length])
 
   function removeShareFromUrl() {
-    const sp = new URLSearchParams(searchParams)
-    sp.delete("share")
+    const sp = stripShareFromSearchParams(new URLSearchParams(searchParams))
     const qs = sp.toString()
     router.replace(`${pathname}${qs ? `?${qs}` : ""}`)
   }

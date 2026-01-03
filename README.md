@@ -14,7 +14,7 @@ A fast, shareable **Risk of Rain 2 item browser** that lets you pick items, save
   - Edit preset items directly (remove items)
   - Desktop: drag items from grid onto a preset card to add
 - **Share presets via URL (no backend)**:
-  - Format: `/?share=<itemId>&share=<itemId>...`
+  - Format: `/?share=<id1>&<id2>&...`
   - Opening a share link shows a preview dialog; user can import into local presets
   - After import, the app removes `share` params to avoid repeated popups
 - **Localization**:

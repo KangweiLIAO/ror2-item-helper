@@ -6,6 +6,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import type { Locale } from "@/i18n/locales"
 import { inferBrowserLocale, normalizeLocale } from "@/i18n/locales"
 import { MESSAGES, formatMessage } from "@/i18n/messages"
+import { getShareIds } from "@/lib/share"
 
 type I18nContextValue = {
   locale: Locale
@@ -42,7 +43,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
   React.useEffect(() => {
     // IMPORTANT: For share links, we do NOT auto-write ?lang= into the URL.
     // Otherwise a user opening a share link would "language-lock" it when they copy the URL.
-    if (searchParams.getAll("share").length > 0) return
+    if (getShareIds(searchParams).length > 0) return
     const fromQuery = normalizeLocale(searchParams.get("lang"))
     if (fromQuery) return
     const inferred = inferBrowserLocale()
