@@ -158,22 +158,33 @@ function HomeInner() {
   const shareKey = React.useMemo(() => (shareIds.length ? shareIds.join("\u0001") : ""), [shareIds])
   const [sharedOpen, setSharedOpen] = React.useState(false)
   const [sharedLastKey, setSharedLastKey] = React.useState("")
+  const [sharedIds, setSharedIds] = React.useState<string[]>([])
+
+  const removeShareFromUrl = React.useCallback(() => {
+    const sp = stripShareFromSearchParams(new URLSearchParams(searchParams.toString()))
+    const qs = sp.toString()
+    router.replace(`${pathname}${qs ? `?${qs}` : ""}`, { scroll: false })
+  }, [pathname, router, searchParams])
+
+  const closeSharedDialog = React.useCallback(() => {
+    setSharedOpen(false)
+    setSharedIds([])
+    setSharedLastKey("")
+    removeShareFromUrl()
+  }, [removeShareFromUrl])
 
   React.useEffect(() => {
     if (!shareKey) return
     if (shareKey === sharedLastKey) return
     setSharedLastKey(shareKey)
+    setSharedIds(shareIds)
     setSharedOpen(true)
-  }, [shareKey, sharedLastKey])
+    // Consume share params immediately so refresh doesn't reopen the shared dialog.
+    removeShareFromUrl()
+  }, [removeShareFromUrl, shareIds, shareKey, sharedLastKey])
 
-  const sharedKnownIds = React.useMemo(() => shareIds.filter((id) => itemsById.has(id)), [shareIds, itemsById])
-  const sharedUnknownCount = React.useMemo(() => shareIds.length - sharedKnownIds.length, [shareIds.length, sharedKnownIds.length])
-
-  function removeShareFromUrl() {
-    const sp = stripShareFromSearchParams(new URLSearchParams(searchParams))
-    const qs = sp.toString()
-    router.replace(`${pathname}${qs ? `?${qs}` : ""}`)
-  }
+  const sharedKnownIds = React.useMemo(() => sharedIds.filter((id) => itemsById.has(id)), [sharedIds, itemsById])
+  const sharedUnknownCount = React.useMemo(() => sharedIds.length - sharedKnownIds.length, [sharedIds.length, sharedKnownIds.length])
 
   return (
     <DndContext sensors={sensors} onDragStart={onDragStart} onDragEnd={onDragEnd} onDragCancel={() => setActiveItemId(null)}>
@@ -272,8 +283,14 @@ function HomeInner() {
         />
 
         {/* Shared preset preview (import-only; does not touch current selection) */}
-        <Dialog open={sharedOpen && shareIds.length > 0} onOpenChange={setSharedOpen}>
-          <DialogContent className="max-w-xl">
+        <Dialog
+          open={sharedOpen && sharedIds.length > 0}
+          onOpenChange={(next) => {
+            if (next) setSharedOpen(true)
+            else closeSharedDialog()
+          }}
+        >
+          <DialogContent className="max-w-[calc(100%-3rem)] sm:max-w-xl">
             <DialogHeader>
               <DialogTitle>{t("shared.title")}</DialogTitle>
               <DialogDescription>{t("shared.desc")}</DialogDescription>
@@ -320,15 +337,14 @@ function HomeInner() {
             </div>
 
             <DialogFooter>
-              <Button variant="default" onClick={() => setSharedOpen(false)}>
+              <Button variant="default" onClick={closeSharedDialog}>
                 {t("shared.close")}
               </Button>
               <Button
                 onClick={() => {
                   const name = nextDefaultPresetName(presets, t("presets.defaultPrefix"))
                   createPreset(name, sharedKnownIds)
-                  setSharedOpen(false)
-                  removeShareFromUrl()
+                  closeSharedDialog()
                 }}
                 disabled={sharedKnownIds.length === 0}
               >

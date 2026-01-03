@@ -36,7 +36,7 @@ export function PresetDock({
   const showPlaceholder = !!activeItemId && isOver && !currentIds.includes(activeItemId)
 
   return (
-    <div className="fixed inset-x-0 py-3 bottom-0 z-40 border-t bg-background/92 backdrop-blur">
+    <div className="fixed inset-x-0 lg:py-3 bottom-0 z-40 border-t bg-background/92 backdrop-blur">
       <div className="mx-auto w-full max-w-[1100px] px-3 py-2 sm:px-4">
         <div className="flex items-stretch gap-2">
           <div className="min-w-0 flex-1">

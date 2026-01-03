@@ -127,9 +127,9 @@ export function ItemsFiltersBar({
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="text-sm font-medium text-muted-foreground">{t("filters.filter")}:</div>
-              <div className="flex flex-nowrap gap-2 overflow-x-auto pb-1 -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible">
+            <div className="flex flex-nowrap items-center gap-3 overflow-x-auto pb-1 -mx-1 px-1 sm:mx-0 sm:px-0">
+              <div className="text-sm font-medium text-muted-foreground flex-shrink-0">{t("filters.filter")}:</div>
+              <div className="flex flex-nowrap gap-2">
                 {allRarities.map((r) => {
                   const checked = rarities.has(r);
                   const style = rarityStyle(r);

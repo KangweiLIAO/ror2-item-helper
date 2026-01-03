@@ -95,7 +95,7 @@ export function ItemDetailsSheet({
   const { t, locale } = useI18n()
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent side="bottom" className="h-[70vh]">
+      <SheetContent side="bottom" className="h-[50vh]">
         <SheetHeader>
           <SheetTitle>{item?.name ?? t("details.fallbackTitle")}</SheetTitle>
           <SheetDescription>{item ? rarityLabel(locale, item.rarity) : ""}</SheetDescription>

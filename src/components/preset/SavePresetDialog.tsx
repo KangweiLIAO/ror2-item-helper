@@ -31,7 +31,7 @@ export function SavePresetDialog({
   const { t } = useI18n()
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
+      <DialogContent className="max-w-[calc(100%-3rem)] sm:max-w-md">
         <DialogHeader>
           <DialogTitle>{t("saveDialog.title")}</DialogTitle>
           <DialogDescription>{t("saveDialog.desc", { count: selectedCount })}</DialogDescription>
