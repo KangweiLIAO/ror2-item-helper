@@ -1,7 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { SearchIcon } from "lucide-react";
+import { MoonIcon, SearchIcon, SunIcon } from "lucide-react";
+import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -32,8 +33,13 @@ export function ItemsFiltersBar({
   currentSelectedCount: number;
 }) {
   const { locale, setLocale, t } = useI18n();
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
 
   const brandHref = `/?lang=${encodeURIComponent(locale)}`;
+  const isDark = resolvedTheme === "dark";
 
   return (
     <div className="sticky top-0 z-30 border-b bg-background/85 backdrop-blur">
@@ -97,6 +103,26 @@ export function ItemsFiltersBar({
                   {t("filters.lang.zh-CN")}
                 </button>
               </div>
+
+              <Button
+                type="button"
+                variant="outline"
+                className="h-10 w-10 p-0"
+                onClick={() => setTheme(isDark ? "light" : "dark")}
+                aria-label={t("theme.toggle")}
+                title={t("theme.toggle")}
+                disabled={!mounted}
+              >
+                {mounted ? (
+                  isDark ? (
+                    <SunIcon className="size-4" />
+                  ) : (
+                    <MoonIcon className="size-4" />
+                  )
+                ) : (
+                  <span className="size-4" />
+                )}
+              </Button>
             </div>
           </div>
 
