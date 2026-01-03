@@ -72,67 +72,82 @@ export function isProbablyDesktop() {
   return window.matchMedia("(hover: hover) and (pointer: fine)").matches
 }
 
-export function rarityStyle(rarity: string): { ring: string; glow: string; text: string } {
+export function rarityStyle(rarity: string): {
+  ring: string
+  glow: string
+  text: string
+  overlayFrom: string
+} {
   switch (rarity) {
     case "Common":
       return {
-        ring: "ring-zinc-400/70",
-        glow: "shadow-[0_0_16px_rgba(161,161,170,0.28)]",
-        text: "text-zinc-600",
+        ring: "ring-zinc-300/70",
+        glow: "shadow-[0_0_16px_rgba(212,212,216,0.35)]",
+        text: "text-zinc-400",
+        overlayFrom: "from-zinc-400/20",
       }
     case "Uncommon":
       return {
         ring: "ring-emerald-500/70",
         glow: "shadow-[0_0_18px_rgba(16,185,129,0.30)]",
         text: "text-emerald-600",
+        overlayFrom: "from-emerald-500/18",
       }
     case "Legendary":
       return {
         ring: "ring-rose-500/70",
         glow: "shadow-[0_0_18px_rgba(244,63,94,0.30)]",
         text: "text-rose-600",
+        overlayFrom: "from-rose-500/18",
       }
     case "Boss":
       return {
         ring: "ring-amber-500/70",
         glow: "shadow-[0_0_18px_rgba(245,158,11,0.30)]",
         text: "text-amber-600",
+        overlayFrom: "from-amber-500/18",
       }
     case "Lunar":
       return {
         ring: "ring-sky-500/70",
         glow: "shadow-[0_0_18px_rgba(14,165,233,0.30)]",
         text: "text-sky-600",
+        overlayFrom: "from-sky-500/18",
       }
     case "Void":
       return {
         ring: "ring-violet-500/70",
         glow: "shadow-[0_0_18px_rgba(139,92,246,0.30)]",
         text: "text-violet-600",
+        overlayFrom: "from-violet-500/18",
       }
     case "Equipment":
       return {
         ring: "ring-orange-500/70",
         glow: "shadow-[0_0_18px_rgba(249,115,22,0.30)]",
         text: "text-orange-600",
+        overlayFrom: "from-orange-500/18",
       }
     case "Lunar Equipment":
       return {
         ring: "ring-sky-500/70",
         glow: "shadow-[0_0_18px_rgba(14,165,233,0.30)]",
         text: "text-sky-600",
+        overlayFrom: "from-sky-500/18",
       }
     case "Elite Equipment":
       return {
         ring: "ring-fuchsia-500/70",
         glow: "shadow-[0_0_18px_rgba(217,70,239,0.30)]",
         text: "text-fuchsia-600",
+        overlayFrom: "from-fuchsia-500/18",
       }
     default:
       return {
         ring: "ring-zinc-400/70",
         glow: "shadow-[0_0_16px_rgba(161,161,170,0.25)]",
         text: "text-zinc-600",
+        overlayFrom: "from-zinc-400/18",
       }
   }
 }

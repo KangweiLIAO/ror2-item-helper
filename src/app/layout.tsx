@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sharky's RoR2 Items",
+  title: "Sharky's RoR2 Tool",
   description: "Browse Risk of Rain 2 items and save/share presets quickly.",
 };
 

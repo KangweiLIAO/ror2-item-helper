@@ -42,9 +42,10 @@ export function ItemIcon({
         style.glow,
         selected && "ring-4 ring-inset ring-primary/70",
         desktop && "cursor-grab",
+        desktop && "hover:scale-[1.06]",
         // We use DragOverlay for the moving preview; keep the original tile in place.
         // When dragging, make it mostly transparent so it looks like a placeholder.
-        isDragging && "cursor-grabbing opacity-20"
+        isDragging && "cursor-grabbing opacity-20 scale-[1.03]"
       )}
       {...attributes}
       {...listeners}
@@ -66,9 +67,7 @@ export function ItemIcon({
         alt={item.name}
         className={cn(
           "h-full w-full object-contain p-1",
-          "transition-transform duration-150 ease-out",
-          desktop && "group-hover:scale-[1.06]",
-          isDragging && "scale-[1.03]"
+          "transition-transform duration-150 ease-out"
         )}
         loading="lazy"
         draggable={false}
@@ -79,7 +78,7 @@ export function ItemIcon({
         </div>
       )}
       <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent" />
+        <div className={cn("absolute inset-0 bg-gradient-to-t to-transparent", style.overlayFrom)} />
       </div>
     </button>
   )

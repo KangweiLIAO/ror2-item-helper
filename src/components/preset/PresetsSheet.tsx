@@ -14,6 +14,7 @@ import {
   SheetContent,
   SheetTrigger,
   SheetTitle,
+  SheetHeader,
 } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 import { useI18n } from "@/i18n/LocaleProvider"
@@ -52,12 +53,13 @@ function DraggablePresetItem({
     <div
       ref={setNodeRef}
       className={cn(
-        "group relative size-12 rounded-xl bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset",
+        "group relative size-12 rounded-xl bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset transition-transform duration-150 ease-out",
         style.ring,
         style.glow,
         desktop && "cursor-grab",
+        desktop && "hover:scale-[1.06]",
         // We use DragOverlay for the moving preview; keep the original tile in place.
-        isDragging && "cursor-grabbing opacity-20"
+        isDragging && "cursor-grabbing opacity-20 scale-[1.03]"
       )}
       title={item.name}
       {...attributes}
@@ -68,9 +70,7 @@ function DraggablePresetItem({
         alt={item.name}
         className={cn(
           "h-full w-full object-contain p-1.5",
-          "transition-transform duration-150 ease-out",
-          desktop && "group-hover:scale-[1.06]",
-          isDragging && "scale-[1.03]"
+          "transition-transform duration-150 ease-out"
         )}
         draggable={false}
       />
@@ -131,8 +131,16 @@ function PresetCard({
             <div className="mt-1 text-xs text-muted-foreground">
               {t("presets.meta", {
                 count: preset.itemIds.length,
-                date: new Date(preset.createdAt).toLocaleDateString(
-                  locale === "zh-CN" ? "zh-CN" : "en"
+                date: new Date(preset.createdAt).toLocaleString(
+                  locale === "zh-CN" ? "zh-CN" : "en",
+                  {
+                    year: "numeric",
+                    month: "numeric",
+                    day: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                  }
                 ),
               })}
             </div>
@@ -234,7 +242,7 @@ export function PresetsSheet({
       <SheetTrigger asChild>{trigger}</SheetTrigger>
       <SheetContent
         side="bottom"
-        className="h-[85vh]"
+        className="h-[50vh] rounded-t-xl"
         onOpenAutoFocus={(e) => {
           // Prevent Radix from auto-focusing the first input (preset name) when opening the sheet.
           e.preventDefault();
@@ -244,12 +252,13 @@ export function PresetsSheet({
         <VisuallyHidden>
           <SheetTitle>{t("app.presets")}</SheetTitle>
         </VisuallyHidden>
-        <div className="flex flex-col gap-6 overflow-auto px-4 py-14">
+        <SheetHeader className="flex-row items-center justify-between pr-12">
+          <div className="flex items-center gap-2">
+            <div className="font-semibold">{t("presets.savedTitle") + " (" + presets.length + ")"}</div>
+          </div>
+        </SheetHeader>
+        <div className="flex flex-col gap-6 overflow-auto px-4 pb-4">
           <div className="flex flex-col gap-3">
-            <div className="flex items-center justify-between">
-              <div className="font-semibold">{t("presets.savedTitle")}</div>
-              <div className="text-sm text-muted-foreground">{presets.length}</div>
-            </div>
 
             {presets.length === 0 ? (
               <div className="rounded-lg border p-4 text-sm text-muted-foreground">
