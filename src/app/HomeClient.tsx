@@ -3,6 +3,7 @@
 import * as React from "react"
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import { DndContext, DragOverlay, PointerSensor, useSensor, useSensors, type DragEndEvent, type DragStartEvent } from "@dnd-kit/core"
+import { arrayMove } from "@dnd-kit/sortable"
 
 import { Button } from "@/components/ui/button"
 import { ItemDetailsDialog, ItemDetailsSheet } from "@/components/items/ItemDetails"
@@ -28,8 +29,9 @@ function HomeInner() {
   const { items, error: itemsError, loading } = useItemsData(locale)
   const [query, setQuery] = React.useState("")
   const [rarities, setRarities] = React.useState<Set<string>>(new Set())
+  const [showSelectedOnly, setShowSelectedOnly] = React.useState(false)
 
-  const [currentItemIds, setCurrentItemIds] = React.useState<Set<string>>(new Set())
+  const [currentItemIds, setCurrentItemIds] = React.useState<string[]>([])
   const { presets, createPreset, renamePreset, deletePreset, addItemToPreset, removeItemFromPreset } = usePresets()
 
   const [detailsOpen, setDetailsOpen] = React.useState(false)
@@ -61,14 +63,23 @@ function HomeInner() {
     return ordered
   }, [items])
 
+  const currentItemIdSet = React.useMemo(() => new Set(currentItemIds), [currentItemIds])
+
   const filtered = React.useMemo(() => {
     const q = normalizeText(query)
     const list = items.filter((it) => {
+      if (showSelectedOnly && !currentItemIdSet.has(it.id)) return false
       if (rarities.size > 0 && !rarities.has(it.rarity)) return false
       if (!q) return true
       const hay = `${it.name} ${it.description}`.toLowerCase()
       return hay.includes(q)
     })
+
+    if (showSelectedOnly) {
+      const order = new Map<string, number>(currentItemIds.map((id, idx) => [id, idx]))
+      list.sort((a, b) => (order.get(a.id) ?? 0) - (order.get(b.id) ?? 0))
+      return list
+    }
 
     const rarityRank = new Map<string, number>(RARITY_ORDER.map((r, idx) => [r, idx]))
     list.sort((a, b) => {
@@ -79,7 +90,7 @@ function HomeInner() {
     })
 
     return list
-  }, [items, rarities, query])
+  }, [items, rarities, query, showSelectedOnly, currentItemIdSet, currentItemIds])
 
   const itemsById = React.useMemo(() => {
     const map = new Map<string, (typeof items)[number]>()
@@ -87,52 +98,64 @@ function HomeInner() {
     return map
   }, [items])
 
-  const currentIds = React.useMemo(() => Array.from(currentItemIds), [currentItemIds])
-
   const openDetails = React.useCallback((id: string) => {
     setDetailsItemId(id)
     setDetailsOpen(true)
   }, [])
 
   const toggleCurrent = React.useCallback((id: string) => {
-    setCurrentItemIds((prev) => {
-      const next = new Set(prev)
-      if (next.has(id)) next.delete(id)
-      else next.add(id)
-      return next
-    })
+    setCurrentItemIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
+    )
   }, [])
 
   const addToCurrent = React.useCallback((id: string) => {
-    setCurrentItemIds((prev) => new Set(prev).add(id))
+    setCurrentItemIds((prev) => (prev.includes(id) ? prev : [...prev, id]))
   }, [])
 
   const removeFromCurrent = React.useCallback((id: string) => {
-    setCurrentItemIds((prev) => {
-      const next = new Set(prev)
-      next.delete(id)
-      return next
-    })
+    setCurrentItemIds((prev) => prev.filter((x) => x !== id))
   }, [])
 
   const clearCurrent = React.useCallback(() => {
-    setCurrentItemIds(new Set())
+    setCurrentItemIds([])
+  }, [])
+
+  const reorderCurrent = React.useCallback((activeId: string, overId: string) => {
+    setCurrentItemIds((prev) => {
+      const oldIndex = prev.indexOf(activeId)
+      const newIndex = prev.indexOf(overId)
+      if (oldIndex === -1 || newIndex === -1 || oldIndex === newIndex) return prev
+      return arrayMove(prev, oldIndex, newIndex)
+    })
   }, [])
 
   function onDragStart(e: DragStartEvent) {
     const id = String(e.active.id)
-    if (!id.startsWith("item:")) return
-    setActiveItemId(id.slice("item:".length))
+    if (id.startsWith("item:")) {
+      setActiveItemId(id.slice("item:".length))
+      return
+    }
+    if (id.startsWith("dockitem:")) {
+      setActiveItemId(id.slice("dockitem:".length))
+    }
   }
 
   function onDragEnd(e: DragEndEvent) {
     const active = String(e.active.id)
     const over = e.over ? String(e.over.id) : null
-    const itemId = active.startsWith("item:") ? active.slice("item:".length) : null
     setActiveItemId(null)
+
+    if (active.startsWith("dockitem:")) {
+      if (!over || !over.startsWith("dockitem:")) return
+      reorderCurrent(active.slice("dockitem:".length), over.slice("dockitem:".length))
+      return
+    }
+
+    const itemId = active.startsWith("item:") ? active.slice("item:".length) : null
     if (!desktop) return
     if (!itemId || !over) return
-    if (over === "dock") {
+    if (over === "dock" || over.startsWith("dockitem:")) {
       addToCurrent(itemId)
       return
     }
@@ -145,11 +168,11 @@ function HomeInner() {
   function loadPresetIntoCurrent(presetId: string) {
     const p = presets.find((x) => x.id === presetId)
     if (!p) return
-    setCurrentItemIds(new Set(p.itemIds))
+    setCurrentItemIds(Array.from(new Set(p.itemIds)))
   }
 
   const detailsItem = detailsItemId ? (itemsById.get(detailsItemId) ?? null) : null
-  const detailsSelected = detailsItem ? currentItemIds.has(detailsItem.id) : false
+  const detailsSelected = detailsItem ? currentItemIdSet.has(detailsItem.id) : false
 
   const shareIds = React.useMemo(() => {
     return getShareIds(searchParams)
@@ -206,7 +229,9 @@ function HomeInner() {
           }}
           showingCount={filtered.length}
           totalCount={items.length}
-          currentSelectedCount={currentItemIds.size}
+          currentSelectedCount={currentItemIds.length}
+          showSelectedOnly={showSelectedOnly}
+          onToggleShowSelectedOnly={setShowSelectedOnly}
         />
 
         {/* Main grid */}
@@ -218,7 +243,7 @@ function HomeInner() {
           ) : (
             <ItemsGrid
               items={filtered}
-              selectedIds={currentItemIds}
+              selectedIds={currentItemIdSet}
               onToggleSelected={toggleCurrent}
               onOpenDetails={openDetails}
             />
@@ -228,7 +253,7 @@ function HomeInner() {
         {/* Preset dock (always visible) */}
         <PresetDock
           itemsById={itemsById}
-          currentIds={currentIds}
+          currentIds={currentItemIds}
           activeItemId={activeItemId}
           onClear={clearCurrent}
           onSave={() => setSaveDialogOpen(true)}
@@ -275,9 +300,9 @@ function HomeInner() {
           onOpenChange={setSaveDialogOpen}
           name={saveName}
           onNameChange={setSaveName}
-          selectedCount={currentItemIds.size}
+          selectedCount={currentItemIds.length}
           onSave={() => {
-            createPreset(saveName, Array.from(currentItemIds))
+            createPreset(saveName, currentItemIds)
             setSaveDialogOpen(false)
           }}
         />

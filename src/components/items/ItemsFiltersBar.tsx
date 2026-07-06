@@ -21,6 +21,8 @@ export function ItemsFiltersBar({
   showingCount,
   totalCount,
   currentSelectedCount,
+  showSelectedOnly,
+  onToggleShowSelectedOnly,
 }: {
   query: string;
   onQueryChange: (next: string) => void;
@@ -31,6 +33,8 @@ export function ItemsFiltersBar({
   showingCount: number;
   totalCount: number;
   currentSelectedCount: number;
+  showSelectedOnly: boolean;
+  onToggleShowSelectedOnly: (checked: boolean) => void;
 }) {
   const { locale, setLocale, t } = useI18n();
   const { resolvedTheme, setTheme } = useTheme();
@@ -129,6 +133,21 @@ export function ItemsFiltersBar({
           <div className="flex flex-col gap-2">
             <div className="flex flex-nowrap items-center gap-3 overflow-x-auto pb-1 -mx-1 px-1 sm:mx-0 sm:px-0">
               <div className="text-sm font-medium text-muted-foreground flex-shrink-0">{t("filters.filter")}:</div>
+              <label
+                className={cn(
+                  "flex shrink-0 cursor-pointer items-center gap-2 rounded-md px-2 py-1 text-sm transition",
+                  "select-none ring-2 ring-inset ring-border",
+                  showSelectedOnly ? "bg-accent" : "bg-background"
+                )}
+              >
+                <Checkbox
+                  checked={showSelectedOnly}
+                  onCheckedChange={(v) => onToggleShowSelectedOnly(v === true)}
+                />
+                <span className="text-sm">
+                  {t("filters.showSelectedOnly")} ({currentSelectedCount})
+                </span>
+              </label>
               <div className="flex flex-nowrap gap-2">
                 {allRarities.map((r) => {
                   const checked = rarities.has(r);

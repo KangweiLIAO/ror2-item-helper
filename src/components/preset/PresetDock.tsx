@@ -3,12 +3,59 @@
 import * as React from "react"
 import { XIcon } from "lucide-react"
 import { useDroppable } from "@dnd-kit/core"
+import { SortableContext, horizontalListSortingStrategy, useSortable } from "@dnd-kit/sortable"
+import { CSS } from "@dnd-kit/utilities"
 
 import type { UiItem } from "@/lib/ror2-items"
 import { isProbablyDesktop, rarityStyle } from "@/lib/ror2-items"
 import { Button } from "@/components/ui/button"
 import { useI18n } from "@/i18n/LocaleProvider"
 import { cn } from "@/lib/utils"
+
+function SortableDockItem({
+  id,
+  item,
+  desktop,
+  onRemove,
+}: {
+  id: string
+  item: UiItem
+  desktop: boolean
+  onRemove: () => void
+}) {
+  const style = rarityStyle(item.rarity)
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
+    id: `dockitem:${id}`,
+    disabled: !desktop,
+  })
+
+  return (
+    <div
+      ref={setNodeRef}
+      style={{ transform: CSS.Transform.toString(transform), transition }}
+      className={cn(
+        "relative size-10 shrink-0 rounded-lg bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset",
+        style.ring,
+        style.glow,
+        desktop && "cursor-grab",
+        isDragging && "cursor-grabbing opacity-40 z-10"
+      )}
+      title={item.name}
+      {...attributes}
+      {...listeners}
+    >
+      <img src={item.icon} alt={item.name} className="h-full w-full object-contain p-1" draggable={false} />
+      <button
+        type="button"
+        className="absolute -top-1 -right-1 grid size-5 place-items-center rounded-full bg-background/90 text-foreground shadow"
+        onPointerDown={(e) => e.stopPropagation()}
+        onClick={onRemove}
+      >
+        <XIcon className="size-3" />
+      </button>
+    </div>
+  )
+}
 
 export function PresetDock({
   itemsById,
@@ -59,31 +106,24 @@ export function PresetDock({
                     </div>
                   ) : (
                     <div className="flex items-center gap-2 overflow-x-auto pb-1">
-                      {currentIds.map((id) => {
-                        const it = itemsById.get(id)
-                        if (!it) return null
-                        const style = rarityStyle(it.rarity)
-                        return (
-                          <div
-                            key={id}
-                            className={cn(
-                              "relative size-10 shrink-0 rounded-lg bg-zinc-950/5 dark:bg-white/5 ring-2 ring-inset",
-                              style.ring,
-                              style.glow
-                            )}
-                            title={it.name}
-                          >
-                            <img src={it.icon} alt={it.name} className="h-full w-full object-contain p-1" />
-                            <button
-                              type="button"
-                              className="absolute -top-1 -right-1 grid size-5 place-items-center rounded-full bg-background/90 text-foreground shadow"
-                              onClick={() => onRemoveOne(id)}
-                            >
-                              <XIcon className="size-3" />
-                            </button>
-                          </div>
-                        )
-                      })}
+                      <SortableContext
+                        items={currentIds.map((id) => `dockitem:${id}`)}
+                        strategy={horizontalListSortingStrategy}
+                      >
+                        {currentIds.map((id) => {
+                          const it = itemsById.get(id)
+                          if (!it) return null
+                          return (
+                            <SortableDockItem
+                              key={id}
+                              id={id}
+                              item={it}
+                              desktop={desktop}
+                              onRemove={() => onRemoveOne(id)}
+                            />
+                          )
+                        })}
+                      </SortableContext>
                       {showPlaceholder ? (
                         <div className="size-10 shrink-0 rounded-lg border-2 border-dashed border-primary/60 bg-background/60" />
                       ) : null}
