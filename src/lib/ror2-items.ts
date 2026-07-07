@@ -39,6 +39,7 @@ export const RARITY_ORDER = [
   "Boss",
   "Lunar",
   "Void",
+  "Meal",
   // Equipment categories (wiki uses these as "rarity" labels in the Lua module)
   "Equipment",
   "Lunar Equipment",
@@ -120,6 +121,13 @@ export function rarityStyle(rarity: string): {
         glow: "shadow-[0_0_18px_rgba(139,92,246,0.30)]",
         text: "text-violet-600",
         overlayFrom: "from-violet-500/18",
+      }
+    case "Meal":
+      return {
+        ring: "ring-[#FF8001]/70",
+        glow: "shadow-[0_0_18px_rgba(255,128,1,0.30)]",
+        text: "text-[#FF8001]",
+        overlayFrom: "from-[#FF8001]/18",
       }
     case "Equipment":
       return {

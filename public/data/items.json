@@ -88,7 +88,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage"
+      "Damage",
+      "Technology"
     ],
     "stats": [
       {
@@ -96,6 +97,12 @@
         "value": "4m",
         "stack": "Linear",
         "add": "+2.5m"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -122,6 +129,12 @@
         "value": "300%",
         "stack": "Linear",
         "add": "+300%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -155,6 +168,12 @@
         "value": "12m",
         "stack": "Linear",
         "add": "+2.4m"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -254,7 +273,8 @@
     "unlock": "\"Is This Bugged?\"",
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -281,7 +301,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist"
+      "AIBlacklist",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -321,6 +342,12 @@
         "value": "20m",
         "stack": "Linear",
         "add": "+2m"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.2",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -374,6 +401,12 @@
         "value": "18m",
         "stack": "Linear",
         "add": "+12m"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.2",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -537,7 +570,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -563,9 +597,11 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage",
       "Utility",
-      "AIBlacklist"
+      "Damage",
+      "AIBlacklist",
+      "MobilityRelated",
+      "Technology"
     ],
     "stats": [
       {
@@ -573,6 +609,12 @@
         "value": "10s",
         "stack": "Reciprocal",
         "add": "+1"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -593,7 +635,8 @@
     "categories": [
       "Utility",
       "AIBlacklist",
-      "TurretBlacklist"
+      "TurretBlacklist",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -620,7 +663,8 @@
     "corrupt": null,
     "categories": [
       "Damage",
-      "OnKillEffect"
+      "OnKillEffect",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -647,7 +691,9 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "LowHealth"
+      "LowHealth",
+      "MobilityRelated",
+      "Technology"
     ],
     "stats": [
       {
@@ -732,7 +778,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "SprintRelated"
+      "SprintRelated",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -758,7 +805,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "Technology"
     ],
     "stats": [
       {
@@ -792,6 +840,12 @@
         "value": "100%",
         "stack": "Linear",
         "add": "+100%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.2",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -837,8 +891,9 @@
     "corrupt": "Lysate Cell",
     "categories": [
       "Utility",
+      "EquipmentRelated",
       "AIBlacklist",
-      "EquipmentRelated"
+      "Technology"
     ],
     "stats": [
       {
@@ -905,7 +960,8 @@
     "corrupt": null,
     "categories": [
       "Damage",
-      "AIBlacklist"
+      "AIBlacklist",
+      "Technology"
     ],
     "stats": [
       {
@@ -913,6 +969,12 @@
         "value": "3",
         "stack": "Linear",
         "add": "+2"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.3",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -946,6 +1008,12 @@
         "value": "12m",
         "stack": "Linear",
         "add": "+4m"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -1016,7 +1084,8 @@
     "unlock": "Deja Vu?",
     "corrupt": null,
     "categories": [
-      "Damage"
+      "Damage",
+      "Technology"
     ],
     "stats": [
       {
@@ -1030,6 +1099,12 @@
         "value": "10",
         "stack": "Linear",
         "add": "+5"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.33",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -1058,6 +1133,12 @@
         "value": "8",
         "stack": "Linear",
         "add": "+4"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -1077,7 +1158,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "OnKillEffect"
+      "OnKillEffect",
+      "Technology"
     ],
     "stats": [
       {
@@ -1104,7 +1186,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist"
+      "AIBlacklist",
+      "Technology"
     ],
     "stats": [
       {
@@ -1130,7 +1213,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage"
+      "Damage",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -1162,7 +1246,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -1194,7 +1279,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -1247,9 +1333,9 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist",
       "OnKillEffect",
-      "EquipmentRelated"
+      "EquipmentRelated",
+      "AIBlacklist"
     ],
     "stats": [
       {
@@ -1309,7 +1395,8 @@
     "corrupt": "Newly Hatched Zoea",
     "categories": [
       "Utility",
-      "TurretBlacklist"
+      "TurretBlacklist",
+      "ExtractorUnitBlacklist"
     ],
     "stats": [
       {
@@ -1330,7 +1417,7 @@
     "rarity": "Untiered",
     "quote": null,
     "description": null,
-    "internalName": null,
+    "internalName": "BurnNearby",
     "localizationInternalName": null,
     "unlock": null,
     "corrupt": null,
@@ -1348,7 +1435,7 @@
     "rarity": "Untiered",
     "quote": null,
     "description": null,
-    "internalName": null,
+    "internalName": "CritHeal",
     "localizationInternalName": null,
     "unlock": null,
     "corrupt": null,
@@ -1374,7 +1461,7 @@
     "rarity": "Untiered",
     "quote": null,
     "description": null,
-    "internalName": null,
+    "internalName": "CrippleWardOnLevel",
     "localizationInternalName": null,
     "unlock": null,
     "corrupt": null,
@@ -1406,8 +1493,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist",
-      "SprintRelated"
+      "SprintRelated",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -1433,7 +1520,8 @@
     "unlock": "Flawless",
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "Technology"
     ],
     "stats": [
       {
@@ -1467,6 +1555,12 @@
         "value": "5%",
         "stack": "Linear",
         "add": "+5%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -1507,7 +1601,8 @@
     "corrupt": null,
     "categories": [
       "Damage",
-      "AIBlacklist"
+      "AIBlacklist",
+      "Technology"
     ],
     "stats": [
       {
@@ -1534,8 +1629,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist",
-      "SprintRelated"
+      "SprintRelated",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -1575,6 +1670,12 @@
         "value": "250%",
         "stack": "Linear",
         "add": "+250%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -1601,6 +1702,12 @@
         "value": "300%",
         "stack": "Linear",
         "add": "+300%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -1645,7 +1752,8 @@
     "unlock": "The Lone Survivor",
     "corrupt": "Pluripotent Larva",
     "categories": [
-      "Utility"
+      "Utility",
+      "ExtractorUnitBlacklist"
     ],
     "stats": [
       {
@@ -1690,7 +1798,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "Technology"
     ],
     "stats": [
       {
@@ -1716,8 +1825,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage",
       "Utility",
+      "Damage",
       "AIBlacklist",
       "OnKillEffect"
     ],
@@ -1740,7 +1849,7 @@
     "rarity": "Legendary",
     "quote": "Skills have NO cooldowns for a short period after killing an elite.",
     "description": "Upon killing an elite monster, {{Color|d|enter a frenzy}} for {{Color|d|4s}} {{Stack|(+4s per stack)}} where {{Color|u|skills have 0.5s cooldowns}}.",
-    "internalName": "KillerEliteFrenzy",
+    "internalName": "KillEliteFrenzy",
     "localizationInternalName": "ITEM_KILLELITEFRENZY",
     "unlock": "Deicide",
     "corrupt": null,
@@ -1799,7 +1908,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Healing"
+      "Healing",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -1832,7 +1942,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "EquipmentRelated"
+      "EquipmentRelated",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -1853,7 +1964,7 @@
     "rarity": "Uncommon",
     "quote": "Instantly kill low health Elite monsters.",
     "description": "Instantly kill Elite monsters below {{Color|hp|13% {{Stack|(+13% per stack)}} health}}.",
-    "internalName": "ExecuteOnLowHealthElite",
+    "internalName": "ExecuteLowHealthElite",
     "localizationInternalName": "ITEM_EXECUTELOWHEALTHELITE",
     "unlock": "Cut Down",
     "corrupt": null,
@@ -1886,8 +1997,8 @@
     "corrupt": null,
     "categories": [
       "Damage",
-      "AIBlacklist",
-      "EquipmentRelated"
+      "EquipmentRelated",
+      "AIBlacklist"
     ],
     "stats": [
       {
@@ -1934,7 +2045,7 @@
     "name": "DrizzlePlayerHelper",
     "rarity": "Untiered",
     "quote": null,
-    "description": null,
+    "description": "",
     "internalName": "DrizzlePlayerHelper",
     "localizationInternalName": null,
     "unlock": null,
@@ -1965,7 +2076,7 @@
     "name": "Ghost",
     "rarity": "Untiered",
     "quote": null,
-    "description": null,
+    "description": "",
     "internalName": "Ghost",
     "localizationInternalName": null,
     "unlock": null,
@@ -1984,7 +2095,7 @@
     "name": "HealthDecay",
     "rarity": "Untiered",
     "quote": null,
-    "description": null,
+    "description": "",
     "internalName": "HealthDecay",
     "localizationInternalName": null,
     "unlock": null,
@@ -2010,7 +2121,7 @@
     "rarity": "Untiered",
     "quote": null,
     "description": null,
-    "internalName": null,
+    "internalName": "MageAttunement",
     "localizationInternalName": null,
     "unlock": null,
     "corrupt": null,
@@ -2063,7 +2174,8 @@
       "WorldUnique",
       "CannotSteal",
       "TurretBlacklist",
-      "HoldoutZoneRelated"
+      "HoldoutZoneRelated",
+      "SimulacrumBlacklist"
     ],
     "stats": [
       {
@@ -2096,7 +2208,8 @@
     "corrupt": "Newly Hatched Zoea",
     "categories": [
       "Damage",
-      "SprintRelated"
+      "SprintRelated",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -2104,6 +2217,12 @@
         "value": "300%",
         "stack": "Linear",
         "add": "+300%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -2233,7 +2352,8 @@
     "categories": [
       "Utility",
       "AIBlacklist",
-      "CannotSteal"
+      "CannotSteal",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -2259,7 +2379,7 @@
     "name": "MonsoonPlayerHelper",
     "rarity": "Untiered",
     "quote": null,
-    "description": null,
+    "description": "",
     "internalName": "MonsoonPlayerHelper",
     "localizationInternalName": null,
     "unlock": null,
@@ -2305,6 +2425,12 @@
         "value": "25m",
         "stack": "Linear",
         "add": "+10m"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.5",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -2379,7 +2505,8 @@
       "Damage",
       "Healing",
       "Utility",
-      "WorldUnique"
+      "WorldUnique",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -2419,7 +2546,7 @@
         "add": "+10%"
       },
       {
-        "stat": "Armor Multiplier",
+        "stat": "Base Armor Multiplier",
         "value": "10%",
         "stack": "Linear",
         "add": "+10%"
@@ -2469,7 +2596,8 @@
     "corrupt": null,
     "categories": [
       "Damage",
-      "OnKillEffect"
+      "OnKillEffect",
+      "Technology"
     ],
     "stats": [
       {
@@ -2503,7 +2631,8 @@
     "categories": [
       "Damage",
       "AIBlacklist",
-      "CannotSteal"
+      "CannotSteal",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -2517,6 +2646,12 @@
         "value": "2s",
         "stack": "Linear",
         "add": "+2s"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -2529,7 +2664,7 @@
     "name": "Genesis Loop",
     "rarity": "Boss",
     "quote": "Fire an electric nova at low health.",
-    "description": "Falling below {{Color|hp|25% health}} causes you to explode, dealing {{Color|d|6000% base damage}}. Recharges every {{Color|u|30 / (2 {{Stack|+1 per stack}}) seconds}} .",
+    "description": "Falling below {{Color|hp|25% health}} causes you to explode, dealing {{Color|d|6000% base damage}}. Recharges every {{Color|u|30 / (2 {{Stack|+1 per stack}}) seconds}}.",
     "internalName": "NovaOnLowHealth",
     "localizationInternalName": "ITEM_NOVAONLOWHEALTH",
     "unlock": null,
@@ -2544,6 +2679,12 @@
         "value": "100%",
         "stack": "Linear",
         "add": "+50%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -2561,7 +2702,11 @@
     "localizationInternalName": "ITEM_LUNARTRINKET",
     "unlock": null,
     "corrupt": null,
-    "categories": [],
+    "categories": [
+      "ObliterationRelated",
+      "TemporaryBlacklist",
+      "SimulacrumBlacklist"
+    ],
     "stats": [],
     "cooldown": 0,
     "duration": 0,
@@ -2579,7 +2724,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "WorldUnique"
+      "WorldUnique",
+      "ObjectiveRelated"
     ],
     "stats": [],
     "cooldown": 0,
@@ -2598,7 +2744,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "Technology"
     ],
     "stats": [
       {
@@ -2684,7 +2831,7 @@
     "stats": [
       {
         "stat": "Radius",
-        "value": "5m",
+        "value": "10m",
         "stack": "Linear",
         "add": "+5m"
       }
@@ -2694,39 +2841,6 @@
     "droppable": null,
     "type": "item",
     "icon": "/icons/Interstellar Desk Plant.png"
-  },
-  {
-    "name": "Ancestral Incubator",
-    "rarity": "Untiered",
-    "quote": "Chance on kill to summon an Ancestral Pod.",
-    "description": "{{Color|d|7%}} chance {{Stack|(+1% per stack)}} on kill to {{Color|u|summon an Ancestral Pod}} that distracts enemies.\r\n\r\nOnce it fully grows, it will hatch into an allied {{Color|d|Parent}} with {{Color|h|100% health}} {{Stack|(+100% per stack)}}.",
-    "internalName": "Incubator",
-    "localizationInternalName": "ITEM_ANCESTRALINCUBATOR",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [
-      "Utility",
-      "OnKillEffect"
-    ],
-    "stats": [
-      {
-        "stat": "Chance",
-        "value": "7%",
-        "stack": "Linear",
-        "add": "+1%"
-      },
-      {
-        "stat": "Parent Health",
-        "value": "100%",
-        "stack": "Linear",
-        "add": "+100%"
-      }
-    ],
-    "cooldown": 0,
-    "duration": 0,
-    "droppable": null,
-    "type": "item",
-    "icon": "/icons/Ancestral Incubator.png"
   },
   {
     "name": "Focused Convergence",
@@ -2741,7 +2855,9 @@
       "Utility",
       "AIBlacklist",
       "TurretBlacklist",
-      "HoldoutZoneRelated"
+      "HoldoutZoneRelated",
+      "TemporaryBlacklist",
+      "SimulacrumBlacklist"
     ],
     "stats": [
       {
@@ -2781,6 +2897,12 @@
         "value": "300%",
         "stack": "Linear",
         "add": "+300%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.7",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -2807,6 +2929,12 @@
         "value": "500%",
         "stack": "Linear",
         "add": "+500%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -2845,6 +2973,12 @@
         "value": "5%",
         "stack": "None",
         "add": ""
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -2872,6 +3006,12 @@
         "value": "1",
         "stack": "Linear",
         "add": "+1"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -2891,7 +3031,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist"
+      "AIBlacklist",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -2917,7 +3058,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -2938,14 +3080,15 @@
     "rarity": "Legendary",
     "quote": "Shoot down nearby projectiles. Recharge rate scales with attack speed.",
     "description": "Shoot down {{Color|d|1}} {{Stack|(+1 per stack)}} projectiles within {{Color|d|20m}} every {{Color|d|0.5 seconds}}. {{Color|u|Recharge rate scales with attack speed}}.",
-    "internalName": "CaptainDefensiveMatrix",
+    "internalName": "CaptainDefenseMatrix",
     "localizationInternalName": "ITEM_CAPTAINDEFENSEMATRIX",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Utility",
       "WorldUnique",
-      "RebirthBlacklist"
+      "RebirthBlacklist",
+      "Technology"
     ],
     "stats": [
       {
@@ -2972,7 +3115,8 @@
     "corrupt": null,
     "categories": [
       "WorldUnique",
-      "Scrap"
+      "Scrap",
+      "TemporaryBlacklist"
     ],
     "stats": [],
     "cooldown": 0,
@@ -2992,7 +3136,8 @@
     "corrupt": null,
     "categories": [
       "WorldUnique",
-      "Scrap"
+      "Scrap",
+      "TemporaryBlacklist"
     ],
     "stats": [],
     "cooldown": 0,
@@ -3012,7 +3157,8 @@
     "corrupt": null,
     "categories": [
       "WorldUnique",
-      "Scrap"
+      "Scrap",
+      "TemporaryBlacklist"
     ],
     "stats": [],
     "cooldown": 0,
@@ -3032,7 +3178,8 @@
     "corrupt": "Newly Hatched Zoea",
     "categories": [
       "WorldUnique",
-      "Scrap"
+      "Scrap",
+      "TemporaryBlacklist"
     ],
     "stats": [],
     "cooldown": 0,
@@ -3051,7 +3198,8 @@
     "unlock": "The Calm",
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -3085,7 +3233,8 @@
     "categories": [
       "Damage",
       "AIBlacklist",
-      "CannotSteal"
+      "CannotSteal",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -3099,6 +3248,12 @@
         "value": "5s",
         "stack": "Linear",
         "add": "+5s"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.2 + 1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -3118,7 +3273,9 @@
     "corrupt": "Newly Hatched Zoea",
     "categories": [
       "Utility",
-      "TurretBlacklist"
+      "TurretBlacklist",
+      "ExtractorUnitBlacklist",
+      "Technology"
     ],
     "stats": [
       {
@@ -3172,7 +3329,8 @@
     "categories": [
       "Damage",
       "AIBlacklist",
-      "CannotSteal"
+      "CannotSteal",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -3186,6 +3344,12 @@
         "value": "8s",
         "stack": "Linear",
         "add": "+8s"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -3198,14 +3362,15 @@
     "name": "Mocha",
     "rarity": "Common",
     "quote": "Slightly increase attack speed and movement speed.",
-    "description": "Increases {{Color|d|attack speed}} by {{Color|d|7.5%}} {{Stack|(+7.5 per stack)}} and {{Color|u|movement speed}} by {{Color|u|7%}} {{Stack|(+7% per stack)}}.",
+    "description": "Increases {{Color|d|attack speed}} by {{Color|d|7.5%}} {{Stack|(+7.5% per stack)}} and {{Color|u|movement speed}} by {{Color|u|7%}} {{Stack|(+7% per stack)}}.",
     "internalName": "AttackSpeedAndMoveSpeed",
     "localizationInternalName": "ITEM_ATTACKSPEEDANDMOVESPEED",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Damage",
-      "Utility"
+      "Utility",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -3237,7 +3402,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage"
+      "Damage",
+      "Technology"
     ],
     "stats": [
       {
@@ -3245,6 +3411,12 @@
         "value": "40%",
         "stack": "Linear",
         "add": "+40%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.2",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -3257,7 +3429,7 @@
     "name": "Safer Spaces",
     "rarity": "Void",
     "quote": "Block the next source of damage. {{Color|v|Corrupts all Tougher Times}}.",
-    "description": "{{Color|h|Blocks}} incoming damage once. Recharges after {{Color|u|15 seconds}} {{Stack|(-10% per stack)}} {{Color|v|Corrupts all Tougher Times}}.",
+    "description": "{{Color|h|Blocks}} incoming damage once. Recharges after {{Color|u|13.5 seconds}} {{Stack|(-10% per stack)}} {{Color|v|Corrupts all Tougher Times}}.",
     "internalName": "BearVoid",
     "localizationInternalName": "ITEM_BEARVOID",
     "unlock": null,
@@ -3269,7 +3441,7 @@
     "stats": [
       {
         "stat": "Recharge",
-        "value": "15s",
+        "value": "13.5s",
         "stack": "Exponential",
         "add": "-10%"
       }
@@ -3304,6 +3476,12 @@
         "value": "3",
         "stack": "Linear",
         "add": "+1"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -3322,7 +3500,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage"
+      "Damage",
+      "Technology"
     ],
     "stats": [
       {
@@ -3342,23 +3521,30 @@
     "name": "Spare Drone Parts",
     "rarity": "Legendary",
     "quote": "Your drones fire faster, have less cooldowns, shoot missiles, and gain a bonus chaingun.",
-    "description": "Gain {{Color|d|Col. Droneman}}. Drones gain {{Color|d|+50%}} {{Stack|(+50% per stack)}} attack speed and cooldown reduction. Drones gain {{Color|d|10%}} chance to fire a {{Color|d|missile}} on hit, dealing {{Color|d|300%}} TOTAL damage. Drones gain an {{Color|d|automatic chain gun}} that deals {{Color|d|6x100%}} damage, bouncing to {{Color|d|2}} enemies.",
+    "description": "Gain {{Color|d|Col. Droneman}}. Drones gain {{Color|d|+25%}} {{Stack|(+25% per stack)}} attack speed and cooldown reduction. Drones gain {{Color|d|10%}} chance to fire a {{Color|d|missile}} on hit, dealing {{Color|d|150%}} TOTAL damage. Drones gain an {{Color|d|automatic chain gun}} that deals {{Color|d|6x50%}} damage, bouncing to {{Color|d|2}} enemies.",
     "internalName": "DroneWeapons",
     "localizationInternalName": "ITEM_DRONEWEAPONS",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Damage",
-      "AIBlacklist",
       "TurretBlacklist",
-      "BrotherBlacklist"
+      "AIBlacklist",
+      "Technology",
+      "SimulacrumBlacklist"
     ],
     "stats": [
       {
         "stat": "Attack Speed",
-        "value": "50%",
+        "value": "25%",
         "stack": "Linear",
-        "add": "+50%"
+        "add": "+25%"
+      },
+      {
+        "stat": "Cooldown Reduction",
+        "value": "25%",
+        "stack": "Exponential",
+        "add": "+25%"
       }
     ],
     "cooldown": 0,
@@ -3378,7 +3564,8 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "OnKillEffect"
+      "OnKillEffect",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -3490,13 +3677,14 @@
     "name": "Pocket I.C.B.M.",
     "rarity": "Legendary",
     "quote": "All Missile items deal more damage and fire an additional two missiles.",
-    "description": "All missile items and equipment fire an additional {{Color|d|2}} {{Color|d|missiles}}. Increase missile damage by {{Color|d|0%}} {{Stack|(+50% per stack)}}",
+    "description": "All missile items and equipment fire an additional {{Color|d|2}} {{Color|d|missiles}}. Increase missile damage by {{Color|d|0%}} {{Stack|(+50% per stack)}}.",
     "internalName": "MoreMissile",
     "localizationInternalName": "ITEM_MOREMISSILE",
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage"
+      "Damage",
+      "Technology"
     ],
     "stats": [
       {
@@ -3529,7 +3717,8 @@
     "corrupt": null,
     "categories": [
       "Healing",
-      "SprintRelated"
+      "SprintRelated",
+      "MobilityRelated"
     ],
     "stats": [
       {
@@ -3555,7 +3744,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Healing",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -3587,7 +3777,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -3620,7 +3811,9 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "BrotherBlacklist"
+      "BrotherBlacklist",
+      "RebirthBlacklist",
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -3680,9 +3873,10 @@
     "corrupt": null,
     "categories": [
       "Utility",
+      "PrinterBlacklist",
+      "OnStageBeginEffect",
       "AIBlacklist",
-      "CannotDuplicate",
-      "OnStageBeginEffect"
+      "TemporaryBlacklist"
     ],
     "stats": [],
     "cooldown": 0,
@@ -3761,6 +3955,12 @@
         "value": "12m",
         "stack": "Linear",
         "add": "+2.4m"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -3787,6 +3987,12 @@
         "value": "10%",
         "stack": "Linear",
         "add": "+10%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -3813,6 +4019,12 @@
         "value": "3",
         "stack": "Linear",
         "add": "+3"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.2",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -3937,7 +4149,8 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Utility"
+      "Utility",
+      "ExtractorUnitBlacklist"
     ],
     "stats": [
       {
@@ -3956,9 +4169,9 @@
   {
     "name": "Pluripotent Larva (Consumed)",
     "rarity": "Untiered",
-    "quote": "",
+    "quote": "ExtraLifeVoidConsumed",
     "description": "A spent item with no remaining power.",
-    "internalName": "ExtraLifeVoidConsumed",
+    "internalName": "",
     "localizationInternalName": "ITEM_EXTRALIFEVOIDCONSUMED",
     "unlock": null,
     "corrupt": null,
@@ -3983,7 +4196,8 @@
     "corrupt": null,
     "categories": [
       "Damage",
-      "LowHealth"
+      "LowHealth",
+      "ExtractorUnitBlacklist"
     ],
     "stats": [
       {
@@ -4080,7 +4294,6 @@
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist",
       "EquipmentRelated"
     ],
     "stats": [
@@ -4144,6 +4357,12 @@
         "value": "100%",
         "stack": "Linear",
         "add": "+100%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -4163,7 +4382,7 @@
     "corrupt": null,
     "categories": [
       "Damage",
-      "Utility"
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
@@ -4177,6 +4396,12 @@
         "value": "3",
         "stack": "Linear",
         "add": "+1"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -4222,8 +4447,9 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage",
-      "TurretBlacklist"
+      "Utility",
+      "TurretBlacklist",
+      "ExtractorUnitBlacklist"
     ],
     "stats": [
       {
@@ -4246,21 +4472,60 @@
     "icon": "/icons/Newly Hatched Zoea.png"
   },
   {
+    "name": "Warped Echo",
+    "rarity": "Common",
+    "quote": "Incoming damage is reduced and dealt over time.",
+    "description": "The next source of damage is {{Color|d|reduced}} by {{Color|d|10%}} and {{Color|d|spread}} into {{Color|u|3}} {{Stack|(+1 per stack)}} {{Color|u|hits}}. All echoed damage is {{Color|u|non-lethal}} except for the final hit. Recharges every {{Color|u|15s}}.",
+    "internalName": "DelayedDamage",
+    "localizationInternalName": "ITEM_DELAYEDDAMAGE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Utility",
+      "Technology"
+    ],
+    "stats": [
+      {
+        "stat": "Spread hits",
+        "value": "3",
+        "stack": "Linear",
+        "add": "+1"
+      },
+      {
+        "stat": "Cooldown",
+        "value": "15s",
+        "stack": "None",
+        "add": ""
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Warped Echo.png"
+  },
+  {
     "name": "Growth Nectar",
     "rarity": "Legendary",
     "quote": "Your buffs grant an increase to ALL of your stats.",
-    "description": "Grants 4% increase to {{Color|u|ALL stats}} for each buff, up to a maximum of {{Color|u|4}} {{Stack|(+4 per stack)}}.",
+    "description": "Grants {{Color|u|4%}} increase to {{Color|u|ALL stats}} for each buff, up to a maximum of {{Color|u|4}} {{Stack|(+4 per stack)}}.",
     "internalName": "BoostAllStats",
     "localizationInternalName": "ITEM_BOOSTALLSTATS",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Utility",
-      "HalcyoniteShrine"
+      "MobilityRelated"
     ],
     "stats": [
       {
-        "stat": "Maximum Buffs",
+        "stat": "Health, Health Regen, Movement Speed, Damage, Attack Speed, Crit Chance, Armor",
+        "value": "4%",
+        "stack": "Linear",
+        "add": ""
+      },
+      {
+        "stat": "Buff stacks",
         "value": "4",
         "stack": "Linear",
         "add": "+4"
@@ -4275,22 +4540,21 @@
   {
     "name": "Chance Doll",
     "rarity": "Uncommon",
-    "quote": "Gain 40% chance to increase item rarity at Shrines of Chance.",
-    "description": "On Shrine of Chance success, {{Color|u|40%}} {{Stack|(+10% per stack)}} chance to get higher rarity items.",
+    "quote": "Chance to increase item rarity at Shrines of Chance.",
+    "description": "{{Color|u|40%}} {{Stack|(+10% per stack)}} chance to get higher rarity items from chance shrines on success.",
     "internalName": "ExtraShrineItem",
     "localizationInternalName": "ITEM_EXTRASHRINEITEM",
     "unlock": null,
     "corrupt": null,
     "categories": [
+      "PrinterBlacklist",
       "Utility",
       "AIBlacklist",
-      "CannotDuplicate",
-      "HalcyoniteShrine",
       "SacrificeBlacklist"
     ],
     "stats": [
       {
-        "stat": "Chance",
+        "stat": "Higher rarity chance",
         "value": "40%",
         "stack": "Linear",
         "add": "+10%"
@@ -4305,22 +4569,21 @@
   {
     "name": "Breaching Fin",
     "rarity": "Uncommon",
-    "quote": "Grounded enemies hit with any skill are launched and take bonus damage.",
-    "description": "Grounded enemies hit with any {{Color|u|skill}} are {{Color|u|launched}} and {{Color|u|stunned}}. Enemies hit while airborne are {{Color|u|launched}} again up to {{Color|u|2 times}} {{Stack|(+1 per stack)}}. Launched enemies take increased damage by {{Color|d|10%}} from all sources per launch. Recharges after {{Color|u|15s}}.",
+    "quote": "Grounded enemies hit by any skill are launched and take bonus damage.",
+    "description": "Grounded enemies hit with any {{Color|u|skill}} are {{Color|u|launched}} and {{Color|u|stunned}}. Enemies hit while airborne are {{Color|u|launched}} again up to {{Color|u|2 times}} {{Stack|(+1 per stack)}}. Launched enemies take increased damage by {{Color|d|10%}} from all sources per launch.",
     "internalName": "KnockBackHitEnemies",
     "localizationInternalName": "ITEM_KNOCKBACKHITENEMIES",
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage",
       "Utility",
       "AIBlacklist",
-      "HalcyoniteShrine",
+      "Damage",
       "DevotionBlacklist"
     ],
     "stats": [
       {
-        "stat": "Max Launches",
+        "stat": "Airborne launches",
         "value": "2",
         "stack": "Linear",
         "add": "+1"
@@ -4338,12 +4601,12 @@
     "quote": "Increases your attack speed for every nearby enemy and ally.",
     "description": "Increase your {{Color|d|attack speed}} by {{Color|d|10%}} {{Stack|(+3.5% per stack)}} for up to {{Color|u|3}} {{Stack|(+1 per stack)}} enemies and allies within {{Color|u|20}} meters.",
     "internalName": "AttackSpeedPerNearbyAllyOrEnemy",
-    "localizationInternalName": "ITEM_ATTACKSPEEDPERNEARBYALLYORENEMY",
+    "localizationInternalName": "ITEM_LOWERHEALTHHIGHERDAMAGE",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Damage",
-      "HalcyoniteShrine"
+      "Utility"
     ],
     "stats": [
       {
@@ -4353,7 +4616,7 @@
         "add": "+3.5%"
       },
       {
-        "stat": "Max Buff Stacks",
+        "stat": "Buff Stacks",
         "value": "3",
         "stack": "Linear",
         "add": "+1"
@@ -4377,22 +4640,28 @@
     "categories": [
       "Damage",
       "Utility",
+      "DevotionBlacklist",
       "AIBlacklist",
-      "HalcyoniteShrine",
-      "DevotionBlacklist"
+      "Technology"
     ],
     "stats": [
       {
-        "stat": "Damage per Charge",
-        "value": "175%",
+        "stat": "Bonus damage",
+        "value": "+175%",
         "stack": "Linear",
         "add": "+50%"
       },
       {
-        "stat": "Max Charge",
+        "stat": "Max charges",
         "value": "5",
         "stack": "Linear",
         "add": "+1"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -4411,15 +4680,15 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
+      "PrinterBlacklist",
       "Utility",
       "AIBlacklist",
-      "CannotDuplicate",
-      "HalcyoniteShrine"
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
-        "stat": "Extra Item Count",
-        "value": "+100%",
+        "stat": "Extra item chance",
+        "value": "0%",
         "stack": "Linear",
         "add": "+5%"
       }
@@ -4433,7 +4702,7 @@
   {
     "name": "Sale Star (Consumed)",
     "rarity": "Untiered",
-    "quote": "At the start of each stage, it transforms into Sale Star.",
+    "quote": "",
     "description": "At the start of each stage, it transforms into Sale Star.",
     "internalName": "LowerPricedChestsConsumed",
     "localizationInternalName": "ITEM_LOWERPRICEDCHESTSCONSUMED",
@@ -4462,17 +4731,17 @@
     "categories": [
       "Utility",
       "AIBlacklist",
-      "HalcyoniteShrine"
+      "MobilityRelated"
     ],
     "stats": [
       {
-        "stat": "Orb Frequency",
-        "value": "10s",
-        "stack": "Hyperbolic",
+        "stat": "Energy Orb Spawn Cooldown",
+        "value": "10 seconds",
+        "stack": "Special",
         "add": "-10%"
       },
       {
-        "stat": "Max Stacks",
+        "stat": "Energy Orb Stacks",
         "value": "3",
         "stack": "Linear",
         "add": "+3"
@@ -4488,20 +4757,19 @@
     "name": "Sonorous Whispers",
     "rarity": "Legendary",
     "quote": "Upon large or elite monster kill chance to drop items.",
-    "description": "When a large monster is killed it will always drop an item. All elites have a {{Color|u|4%}} chance of dropping an item {{Stack|(+1% per stack)}}.",
+    "description": "When a large monster is killed it will always drop an item. All elites have a {{Color|u|5%}} chance of dropping an item {{Stack|(+1% per item stack)}}.",
     "internalName": "ItemDropChanceOnKill",
-    "localizationInternalName": "ITEM_ITEMDROPCHANCEONKILL",
+    "localizationInternalName": "ITEM_RESETCHESTS",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist",
-      "CannotDuplicate",
-      "HalcyoniteShrine"
+      "PrinterBlacklist",
+      "AIBlacklist"
     ],
     "stats": [
       {
-        "stat": "Chance",
+        "stat": "Elite drop chance",
         "value": "5%",
         "stack": "Linear",
         "add": "+1%"
@@ -4517,21 +4785,33 @@
     "name": "Electric Boomerang",
     "rarity": "Legendary",
     "quote": "On hit chance to throw a stunning boomerang.",
-    "description": "{{Color|d|15%}} chance on hit to fire an electric boomerang that slices through enemies dealing {{Color|d|120% base damage}} {{Stack|(+120% per stack)}} and deals an additional {{Color|d|120% base damage per second}} and {{Color|d|stuns}} all enemies hit. Can {{Color|d|strike}} enemies on the way back.",
+    "description": "{{Color|d|15%}} chance on hit to fire an electric boomerang that travels a short distance before returning, dealing {{Color|d|120%}} {{Stack|(+120% per stack)}} damage and stunning all enemies hit. Also deals an additional {{Color|d|42%}} {{Stack|(+42% per stack)}} per second. Can {{Color|d|strike}} enemies on the way back.",
     "internalName": "StunAndPierce",
     "localizationInternalName": "ITEM_STUNANDPIERCE",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Damage",
-      "HalcyoniteShrine"
+      "Technology"
     ],
     "stats": [
       {
-        "stat": "Damage",
-        "value": "124%",
+        "stat": "Initial Damage",
+        "value": "120%",
         "stack": "Linear",
-        "add": "+124%"
+        "add": "+120%"
+      },
+      {
+        "stat": "Damage per second",
+        "value": "42%",
+        "stack": "Linear",
+        "add": "+42%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0 / 0.2",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -4544,16 +4824,27 @@
     "name": "Noxious Thorn",
     "rarity": "Uncommon",
     "quote": "Killing an enemy transfers debuffs to a nearby enemy.",
-    "description": "Gain {{Color|d|10%}} chance to {{Color|d|bleed}} an enemy. On killing an enemy, {{Color|d|transfer 33%}} of every debuff stack to {{Color|d|1 enemy}} {{Stack|(+1 per stack)}} within 20m {{Stack|(+5m per stack)}}.",
+    "description": "Gain {{Color|d|10% chance}} to {{Color|d|bleed}} an enemy. On killing an enemy, {{Color|d|transfer 33%}} of every debuff stack to {{Color|d|1 enemy}} {{Stack|(+1 per stack)}} within {{Color|u|20m}} {{Stack|(+5m per stack)}}.",
     "internalName": "TriggerEnemyDebuffs",
     "localizationInternalName": "ITEM_TRIGGERENEMYDEBUFFS",
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage",
-      "HalcyoniteShrine"
+      "Damage"
     ],
     "stats": [
+      {
+        "stat": "Bleed Chance",
+        "value": "10%",
+        "stack": "None",
+        "add": ""
+      },
+      {
+        "stat": "Debuff Stacks Transferred",
+        "value": "33%",
+        "stack": "None",
+        "add": ""
+      },
       {
         "stat": "Targets",
         "value": "1",
@@ -4576,16 +4867,15 @@
   {
     "name": "Chronic Expansion",
     "rarity": "Common",
-    "quote": "Deal bonus damage for each enemy killed",
-    "description": "Killing an enemy increase your damage by {{Color|d|3.5}} {{Stack|(+1% per stack)}}, up to {{Color|u|10}} {{Stack|(+5 per stack)}}, for {{Color|u|7s}}. Dealing damage refreshes the timer.",
+    "quote": "Deal bonus damage for each enemy killed.",
+    "description": "Killing an enemy increases your damage by {{Color|d|3.5%}} {{Stack|(+1% per stack)}}, up to {{Color|u|10}} {{Stack|(+5 per stack)}}, for  {{Color|u|7s}}. Dealing damage refreshes the timer.",
     "internalName": "IncreaseDamageOnMultiKill",
     "localizationInternalName": "ITEM_INCREASEDAMAGEONMULTIKILL",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Damage",
-      "OnKillEffect",
-      "HalcyoniteShrine"
+      "OnKillEffect"
     ],
     "stats": [
       {
@@ -4595,7 +4885,7 @@
         "add": "+1%"
       },
       {
-        "stat": "Max Buff",
+        "stat": "Buff Stacks",
         "value": "10",
         "stack": "Linear",
         "add": "+5"
@@ -4611,20 +4901,20 @@
     "name": "War Bonds",
     "rarity": "Legendary",
     "quote": "Bombard boss events with missiles. The more gold earned, the more UES support is granted.",
-    "description": "During boss events, {{Color|u|5}} missiles bombard the area, dealing {{Color|d|2.5%}} {{Stack|(+2.5% per stack)}} {{Color|d|of boss' Max Health in damage}}. Before the boss event, gain additional missiles, up to a maximum of {{Color|u|20}} {{Stack|(+5 per stack)}}, per {{Color|u|50}} gold gained. {{Color|u|Gold requirement scales over time.}}",
+    "description": "During boss events, {{Color|u|5}} missiles bombard the area, dealing {{Color|d|2.5%}} {{Stack|(+2.5 per stack)}} {{Color|d|of bosses' Max Health in damage}}. Before the boss event, gain additional missiles, up to a maximum of {{Color|u|20}} {{Stack|(+5 per stack)}}, per {{Color|u|50}} gold gained. {{Color|u|Gold requirement scales with time}}.",
     "internalName": "BarrageOnBoss",
-    "localizationInternalName": "ITEM_BARRAGEONBOSS",
+    "localizationInternalName": "ITEM_GOLDONSTAGESTART",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Damage",
       "AIBlacklist",
-      "HalcyoniteShrine"
+      "Technology"
     ],
     "stats": [
       {
         "stat": "Damage",
-        "value": "2.5%",
+        "value": "2.5% Max Health",
         "stack": "Linear",
         "add": "+2.5%"
       },
@@ -4633,6 +4923,12 @@
         "value": "20",
         "stack": "Linear",
         "add": "+5"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -4642,55 +4938,21 @@
     "icon": "/icons/War Bonds.png"
   },
   {
-    "name": "Warped Echo",
-    "rarity": "Common",
-    "quote": "Incoming damage is reduced and dealt over time.",
-    "description": "The next source of damage is {{Color|h|reduced}} by {{Color|h|20%}} and {{Color|h|spread}} into {{Color|u|3}} {{Stack|(+1 per stack)}} {{Color|u|hits}}. All echoed damage is {{Color|u|non-lethal}} except for the final hit. Recharges every {{Color|u|15s}}.",
-    "internalName": "DelayedDamage",
-    "localizationInternalName": "ITEM_DELAYEDDAMAGE",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [
-      "Utility",
-      "HalcyoniteShrine"
-    ],
-    "stats": [
-      {
-        "stat": "Damage Spread",
-        "value": "3",
-        "stack": "Linear",
-        "add": "+1"
-      }
-    ],
-    "cooldown": 0,
-    "duration": 0,
-    "droppable": null,
-    "type": "item",
-    "icon": "/icons/Warped Echo.png"
-  },
-  {
     "name": "Unstable Transmitter",
     "rarity": "Uncommon",
     "quote": "Gain a temporary barrier and a dimensional aura on low health.",
-    "description": "Falling below {{Color|hp|25% health}} gives you {{Color|h|temporary barrier}} and a dimensional aura that {{Color|d|bleeds}} and {{Color|u|teleports}} away enemies for {{Color|u|8s}}. {{Color|d|Enemies killed}} by the aura {{Color|u|extend}} the duration by 1s. At the start of each stage, it regenerates",
+    "description": "Falling below {{Color|hp|25% health}} gives you {{Color|h|60%}} of your {{Color|h|maximum health}} as a {{Color|h|temporary barrier}}. Gain a dimensional aura for {{Color|u|8s}} that {{Color|d|bleeds}} and {{Color|u|teleports}} away enemies. {{Color|d|Enemies killed}} by the aura {{Color|u|extend}} the duration by 1s. At the start of each stage, it regenerates.",
     "internalName": "TeleportOnLowHealth",
     "localizationInternalName": "ITEM_TELEPORTONLOWHEALTH",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Utility",
-      "AIBlacklist",
       "LowHealth",
-      "HalcyoniteShrine"
+      "AIBlacklist",
+      "Technology"
     ],
-    "stats": [
-      {
-        "stat": "Uses per Stage",
-        "value": "1",
-        "stack": "Linear",
-        "add": "+1"
-      }
-    ],
+    "stats": [],
     "cooldown": 0,
     "duration": 0,
     "droppable": null,
@@ -4721,20 +4983,20 @@
     "name": "Prayer Beads",
     "rarity": "Uncommon",
     "quote": "Gains experience alongside you. Upon removal, grants bonus stats.",
-    "description": "Grows by gaining experience, storing {{Color|u|20%}} {{Stack|(+5% per item stack)}} bonus stats ({{Color|h|health}}, {{Color|h|regeneration}}, and {{Color|d|damage}}). On removal, gain all stored stats.",
+    "description": "Grows by gaining experience, storing {{Color|u|20%}} {{Stack|(+5% per stack)}} bonus stats ({{Color|h|health}}, {{Color|h|regeneration}}, and {{Color|d|damage}}). On removal, gain all stored stats.",
     "internalName": "ExtraStatsOnLevelUp",
     "localizationInternalName": "ITEM_EXTRASTATSONLEVELUP",
     "unlock": null,
     "corrupt": null,
     "categories": [
       "Utility",
+      "PrinterBlacklist",
       "AIBlacklist",
-      "CannotDuplicate",
-      "HalcyoniteShrine"
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
-        "stat": "Stored Stats",
+        "stat": "Stats stored",
         "value": "20%",
         "stack": "Linear",
         "add": "+5%"
@@ -4750,27 +5012,32 @@
     "name": "Runic Lens",
     "rarity": "Legendary",
     "quote": "Chance to call down a meteor. Damage and chance are increased with higher damage hits.",
-    "description": "{{Color|d|3%}} chance on hit to call a meteor strike, dealing {{Color|d|2000%}} base damage. Every {{Color|d|100%}} attack damage dealt increase the activation chance by {{Color|d|3%}} {{Stack|(+3% per stack)}} and damage by {{Color|d|150%}} {{Stack|(+50% per stack)}}.",
+    "description": "{{Color|d|3%}} chance on hit to call down a meteor, dealing {{Color|d|2000%}} base damage. Every {{Color|d|100%}} attack damage dealt increases the activation chance by {{Color|d|3%}} {{Stack|(+3% per stack)}} and damage by {{Color|d|150%}} {{Stack|(+50% per stack)}}.",
     "internalName": "MeteorAttackOnHighDamage",
     "localizationInternalName": "ITEM_METEORATTACKONHIGHDAMAGE",
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage",
-      "HalcyoniteShrine"
+      "Damage"
     ],
     "stats": [
       {
-        "stat": "Chance",
+        "stat": "Meteor chance per 100% damage",
         "value": "3%",
         "stack": "Linear",
         "add": "+3%"
       },
       {
-        "stat": "Damage",
+        "stat": "Meteor bonus damage per 100% damage",
         "value": "150%",
         "stack": "Linear",
         "add": "+50%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.5",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
@@ -4782,8 +5049,8 @@
   {
     "name": "Longstanding Solitude",
     "rarity": "Lunar",
-    "quote": "Free purchases on Level Up. {{Color|#FF7F7F|Gold converts to Experience.}}",
-    "description": "{{Color|u|On level up}} gain a free unlock for the next purchase {{Stack|(+1 free unlock per item stack)}} but {{Color|#FF7F7F|all gold is converted to experience}}. Anything that costs gold is increased by 50% {{Stack|(+50% per item stack)}}",
+    "quote": "Free purchases on level up... {{Color|#FF7F7F|BUT gold converts to experience.}}",
+    "description": "{{Color|u|On level up}} gain a free unlock for the next purchase {{Stack|(+1 per stack)}} but all gold is converted to experience. Anything that costs gold is {{Color|u|increased by 50%}} {{Stack|(+50% per stack)}}.",
     "internalName": "OnLevelUpFreeUnlock",
     "localizationInternalName": "ITEM_ONLEVELUPFREEUNLOCK",
     "unlock": null,
@@ -4791,26 +5058,26 @@
     "categories": [
       "Utility",
       "Damage",
-      "HalcyoniteShrine"
+      "TemporaryBlacklist"
     ],
     "stats": [
       {
-        "stat": "Free Purchases",
+        "stat": "Free unlock",
         "value": "1",
         "stack": "Linear",
         "add": "+1"
       },
       {
-        "stat": "Experience",
-        "value": "12%",
-        "stack": "Linear",
-        "add": "+1.25%"
-      },
-      {
-        "stat": "Cost Increase",
+        "stat": "Cost increase",
         "value": "50%",
         "stack": "Linear",
         "add": "+50%"
+      },
+      {
+        "stat": "Experience received",
+        "value": "12%",
+        "stack": "Linear",
+        "add": "+1.25%"
       }
     ],
     "cooldown": 0,
@@ -4820,31 +5087,231 @@
     "icon": "/icons/Longstanding Solitude.png"
   },
   {
-    "name": "Eclipse Lite",
-    "rarity": "Common",
-    "quote": "Gain a small temporary barrier when a skill comes off cooldown.",
-    "description": "When a skill comes off cooldown, gain a {{Color|d|temporary barrier}} for {{Color|h|1%}} {{Stack|(+0.25% per stack)}} of your maximum health per second of the skill's base cooldown.",
-    "internalName": "BarrierOnCooldown",
-    "localizationInternalName": "ITEM_BARRIERONCOOLDOWN",
+    "name": "Substandard Duplicator",
+    "rarity": "Legendary",
+    "quote": "Picking up an item grants a temporary copy.",
+    "description": "{{Color|u|Picking up an item}} gives you a {{Color|temp|temporary copy}} of itself. Temporary items last an additional {{Color|d|10}} {{Stack|(+10 per stack)}} {{Color|d|seconds}}",
+    "internalName": "Duplicator",
+    "localizationInternalName": "ITEM_DUPLICATOR",
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage",
-      "Shield"
+      "Utility",
+      "Technology",
+      "AIBlacklist",
+      "DevotionBlacklist"
     ],
     "stats": [
       {
-        "stat": "Shield",
-        "value": "1%",
+        "stat": "Temporary item duration increase",
+        "value": "10",
         "stack": "Linear",
-        "add": "+0.25%"
+        "add": "+10"
       }
     ],
     "cooldown": 0,
     "duration": 0,
     "droppable": null,
     "type": "item",
-    "icon": "/icons/Eclipse Lite.png"
+    "icon": "/icons/Substandard Duplicator.png"
+  },
+  {
+    "name": "Orphaned Core",
+    "rarity": "Legendary",
+    "quote": "Gain a buddy who launches itself at enemies to deal damage. Inherits your movement-related items.",
+    "description": "Gain a {{Color|h|friendly Solus unit}} that launches itself at enemies for {{Color|d|400%}} {{Stack|(+400% per stack)}}. The unit inherits your {{Color|u|movement speed items}} and deals {{Color|d|more damage the faster it moves}}. The unit can be pet to {{Color|h|cleanse negative effects}}. Recharges after 15 seconds.",
+    "internalName": "PhysicsProjectile",
+    "localizationInternalName": "ITEM_PHYSICSPROJECTILE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Damage",
+      "AIBlacklist",
+      "CannotSteal",
+      "TurretBlacklist",
+      "Technology"
+    ],
+    "stats": [
+      {
+        "stat": "Solus Unit Damage",
+        "value": "400%",
+        "stack": "Linear",
+        "add": "+400%"
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Orphaned Core.png"
+  },
+  {
+    "name": "Networked Suffering",
+    "rarity": "Legendary",
+    "quote": "Inflict a computer virus on hit that spreads a portion of all damage dealt between infected enemies. Affects up to 4 enemies.",
+    "description": "Infect up to {{Color|u|4}} {{Stack|(+2 per stack)}} enemies with a computer virus that duplicates {{Color|d|45% of all damage taken}} and sends it to a global damage pool. Every 3 seconds, ALL infected enemies suffer {{Color|d|100% pooled damage}}.",
+    "internalName": "SharedSuffering",
+    "localizationInternalName": "ITEM_SHAREDSUFFERING",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Damage",
+      "Technology"
+    ],
+    "stats": [
+      {
+        "stat": "Maximum Enemies Infected",
+        "value": "4",
+        "stack": "Linear",
+        "add": "+2"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.0",
+        "stack": "ProcCoeff",
+        "add": ""
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Networked Suffering.png"
+  },
+  {
+    "name": "Collector's Compulsion",
+    "rarity": "Uncommon",
+    "quote": "Pickups grant a stacking bonus to all stats. Open a barrel to find a minor pick-up.",
+    "description": "Picking up {{Color|d|an item or other collectible}} increases {{Color|u|all stats}} by {{Color|u|+3%}} for 20 seconds, up to {{Color|u|3}} {{Stack|(+2 per stack)}} {{Color|u|times}}. Barrels grant minor pickups.",
+    "internalName": "SpeedOnPickup",
+    "localizationInternalName": "ITEM_SPEEDONPICKUP",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Utility",
+      "AIBlacklist",
+      "InteractableRelated",
+      "MobilityRelated"
+    ],
+    "stats": [
+      {
+        "stat": "Health, Health Regen, Movement Speed, Damage, Attack Speed, Crit Chance, Armor",
+        "value": "3%",
+        "stack": "Linear",
+        "add": ""
+      },
+      {
+        "stat": "Buff stacks",
+        "value": "3",
+        "stack": "Linear",
+        "add": "+2"
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Collector's Compulsion.png"
+  },
+  {
+    "name": "Kinetic Dampener",
+    "rarity": "Uncommon",
+    "quote": "Gain bonus armor while you have a shield. When shield breaks, release a stunning pulse that deals more damage the more shield you have.",
+    "description": "Increases armor by {{Color|u|30}} {{Stack|(+30 per stack)}} while you have a shield. When shield breaks, release a stunning pulse for {{Color|d|100% damage}} plus an amount {{Color|d|equal to 100%}} {{Stack|(+10% per stack)}} {{Color|d|of your max shield}}. Grants a shield for {{Color|h|4% of your max health}}.",
+    "internalName": "ShieldBooster",
+    "localizationInternalName": "ITEM_SHIELDBOOSTER",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Healing",
+      "Utility"
+    ],
+    "stats": [
+      {
+        "stat": "Armor",
+        "value": "30",
+        "stack": "Linear",
+        "add": "+30"
+      },
+      {
+        "stat": "Shield Break Damage",
+        "value": "100% + 100% of max shield",
+        "stack": "Linear",
+        "add": "+10% of max shield"
+      },
+      {
+        "stat": "Shield",
+        "value": "4%",
+        "stack": "None",
+        "add": ""
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Kinetic Dampener.png"
+  },
+  {
+    "name": "Faraday Spur",
+    "rarity": "Uncommon",
+    "quote": "Moving around builds up movement speed and jump height. At 25% charge or higher, jump to discharge into an electric blast.",
+    "description": "Moving around builds up {{Color|u|charge}}, granting up to {{Color|u|+160% movement speed}} and {{Color|u|+200% jump height}} at 100%. At 25% charge or higher, jumping triggers an {{Color|d|explosive discharge}} for {{Color|d|400%}} {{Stack|(+280% per stack)}} {{Color|d|damage}} in a 5m to 32.3m {{Stack|(+7.5m per stack)}} area.",
+    "internalName": "JumpDamageStrike",
+    "localizationInternalName": "ITEM_JUMPDAMAGESTRIKE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Damage",
+      "SprintRelated",
+      "MobilityRelated",
+      "Technology",
+      "AIBlacklist",
+      "DevotionBlacklist"
+    ],
+    "stats": [
+      {
+        "stat": "Explosive Discharge Damage",
+        "value": "400%",
+        "stack": "Linear",
+        "add": "+280%"
+      },
+      {
+        "stat": "Explosive Discharge Area",
+        "value": "5m to 32.3m",
+        "stack": "Linear",
+        "add": "+7.5m"
+      },
+      {
+        "stat": "Movement Speed",
+        "value": "Up to +160%",
+        "stack": "None",
+        "add": ""
+      },
+      {
+        "stat": "Jump Height",
+        "value": "Up to 200%",
+        "stack": "None",
+        "add": ""
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "1.0",
+        "stack": "ProcCoeff",
+        "add": ""
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Faraday Spur.png"
   },
   {
     "name": "Hiker's Boots",
@@ -4860,13 +5327,13 @@
     ],
     "stats": [
       {
-        "stat": "Crit Damage",
+        "stat": "Crit chance",
         "value": "1%",
         "stack": "Linear",
         "add": "+1%"
       },
       {
-        "stat": "Crit Chance",
+        "stat": "Crit damage",
         "value": "1%",
         "stack": "Linear",
         "add": "+1%"
@@ -4879,20 +5346,62 @@
     "icon": "/icons/Hiker's Boots.png"
   },
   {
+    "name": "Neutronium Weight",
+    "rarity": "Lunar",
+    "quote": "{{Color|hp|Reduces all stats while in combat}}, but can be sent to an enemy on hit.",
+    "description": "{{Color|hp|Reduces your stats while in combat}}, but {{Color|u|send this item to an enemy}} on hit. On death, this item will be sent to its holder's killer.\r\n\r\nReduces {{Color|d|damage}} by 30% {{Stack|(+10% per stack)}}, {{Color|d|attack speed}} by 30% {{Stack|(+10% per stack)}}, {{Color|u|movement speed}} by 30% {{Stack|(+10% per stack)}}, and {{Color|u|armor}} by 35 {{Stack|(+15 per stack)}}.",
+    "internalName": "TransferredDebuffOnHit",
+    "localizationInternalName": "ITEM_TRANSFERDEBUFFONHIT",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Utility",
+      "OnKillEffect",
+      "CannotSteal",
+      "TurretBlacklist",
+      "AIBlacklist",
+      "RebirthBlacklist",
+      "TemporaryBlacklist"
+    ],
+    "stats": [
+      {
+        "stat": "Attack Damage, Attack Speed, Movement Speed",
+        "value": "-30%",
+        "stack": "Exponential",
+        "add": "-10%"
+      },
+      {
+        "stat": "Armor",
+        "value": "-35",
+        "stack": "Linear",
+        "add": "-10"
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Neutronium Weight.png"
+  },
+  {
     "name": "Box of Dynamite",
     "rarity": "Uncommon",
     "quote": "Your drones periodically drop dynamite.",
-    "description": "Gain {{Color|d|Lt. Droneboy}}. While in combat, your drones drop sticks of dynamite that detonate for {{Color|d|240% damage}} {{Stack|(+85% per stack)}}, stunning enemies. Recharges after {{Color|u|10}} seconds.",
-    "internalName": "DroneDropsDynamite",
+    "description": "Gain {{Color|d|Lt. Droneboy}}. While in combat, your drones drop sticks of dynamite that detonate for {{Color|d|240% damage}} {{Stack|(+85% per stack)}}, stunning enemies. Recharges after 10 seconds.",
+    "internalName": "DronesDropDynamite",
     "localizationInternalName": "ITEM_DRONESDROPDYNAMITE",
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage"
+      "Damage",
+      "AIBlacklist",
+      "TurretBlacklist",
+      "Technology",
+      "SimulacrumBlacklist"
     ],
     "stats": [
       {
-        "stat": "Damage",
+        "stat": "Dynamite Damage",
         "value": "240%",
         "stack": "Linear",
         "add": "+85%"
@@ -4905,195 +5414,89 @@
     "icon": "/icons/Box of Dynamite.png"
   },
   {
-    "name": "Collector's Compulsion",
-    "rarity": "Uncommon",
-    "quote": "Pickups grant a stacking bonus to all stats. Open a barrel to find a minor pick-up.",
-    "description": "Picking up {{Color|d|an item or other collectible}} increases {{Color|u|all stats}} by {{Color|u|+3% for 20 seconds, up to 3}} {{Stack|(+2 per stack)}} {{Color|u|times}}. Barrels grant minor pickups.",
-    "internalName": "SpeedOnPickup",
-    "localizationInternalName": "ITEM_SPEEDONPICKUP",
+    "name": "Eclipse Lite",
+    "rarity": "Common",
+    "quote": "Gain a small temporary barrier when a skill comes off cooldown.",
+    "description": "When a skill comes off cooldown, gain a {{Color|d|temporary barrier}} for {{Color|h|1%}} {{Stack|(+0.25% per stack)}} of your maximum health per second of the skill's base cooldown.",
+    "internalName": "BarrierOnCooldown",
+    "localizationInternalName": "ITEM_BARRIERONCOOLDOWN",
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage"
-    ],
-    "stats": [
-      {
-        "stat": "Stacks",
-        "value": "3",
-        "stack": "Linear",
-        "add": "+2"
-      }
-    ],
-    "cooldown": 0,
-    "duration": 0,
-    "droppable": null,
-    "type": "item",
-    "icon": "/icons/Collector's Compulsion.png"
-  },
-  {
-    "name": "Faraday Spur",
-    "rarity": "Uncommon",
-    "quote": "Moving around builds up movement speed and jump height. At 25% charge or higher, jump to discharge into an electric blast.",
-    "description": "Moving around builds up {{Color|u|charge}}, granting up to {{Color|u|+160% movement speed}} and {{Color|u|+200% jump height}} at 100%. At 25% charge or higher, jumping triggers an {{Color|d|explosive discharge}} for {{Color|d|400%}} {{Stack|(+280% per stack)}} {{Color|d|damage}} in a 5m to 32.3m {{Stack|(+7.5m per stack)}} area.",
-    "internalName": "JumpDamageStrike",
-    "localizationInternalName": "ITEM_JUMPDAMAGESTRIKE",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [
-      "Damage",
-      "Utility"
-    ],
-    "stats": [
-      {
-        "stat": "Movement Speed",
-        "value": "160%",
-        "stack": "Linear",
-        "add": "+0"
-      },
-      {
-        "stat": "Jump Height",
-        "value": "200%",
-        "stack": "Linear",
-        "add": "+0"
-      },
-      {
-        "stat": "Damage",
-        "value": "400%",
-        "stack": "Linear",
-        "add": "+280%"
-      },
-      {
-        "stat": "Minimum Range",
-        "value": "5m",
-        "stack": "Linear",
-        "add": "+7.5m"
-      },
-      {
-        "stat": "Maximum Range",
-        "value": "32.5m",
-        "stack": "Linear",
-        "add": "+7.5m"
-      }
-    ],
-    "cooldown": 0,
-    "duration": 0,
-    "droppable": null,
-    "type": "item",
-    "icon": "/icons/Faraday Spur.png"
-  },
-  {
-    "name": "Kinetic Dampener",
-    "rarity": "Uncommon",
-    "quote": "Gain bonus armor while you have a shield. When shield breaks, release a stunning pulse that deals more damage the more shield you have.",
-    "description": "Increases armor by {{Color|u|30}} {{Stack|(+30 per stack)}} while you have a shield. When shield breaks, release a stunning pulse for {{Color|d|100% damage}} plus an amount {{Color|d|equal to 100%}} {{Stack|(+10% per stack)}} {{Color|d|of your max shield}}. Grants a shield for {{Color|h|4% of your max health}}.",
-    "internalName": "ShieldBooster",
-    "localizationInternalName": "ITEM_SHIELDBOOSTER",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [
-      "Damage",
-      "Utility",
       "Healing"
     ],
     "stats": [
       {
+        "stat": "Barrier on cooldown",
+        "value": "1%",
+        "stack": "Linear",
+        "add": "0.25%"
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Eclipse Lite.png"
+  },
+  {
+    "name": "Sentry Key",
+    "rarity": "Boss",
+    "quote": "Gain {{Color|u|+15% move speed}}. Can be placed in a Sentry Terminal.",
+    "description": "Gain {{Color|u|+15% move speed}}. Can be placed in a Sentry Terminal or used for decryption.",
+    "internalName": "PowerPyramid",
+    "localizationInternalName": "ITEM_POWERPYRAMID",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "ExtractorUnitBlacklist",
+      "WorldUnique",
+      "TurretBlacklist",
+      "ObjectiveRelated"
+    ],
+    "stats": [
+      {
+        "stat": "Movement Speed",
+        "value": "15%",
+        "stack": "None",
+        "add": ""
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Sentry Key.png"
+  },
+  {
+    "name": "Prison Matrix",
+    "rarity": "Boss",
+    "quote": "Gain {{Color|u|+50% armor}}. Can be placed in a Matrix Terminal.",
+    "description": "Gain {{Color|u|+50% armor}}. Can be placed in a Matrix Terminal.",
+    "internalName": "PowerCube",
+    "localizationInternalName": "ITEM_POWERCUBE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "WorldUnique",
+      "TurretBlacklist",
+      "AIBlacklist",
+      "ObjectiveRelated",
+      "TemporaryBlacklist"
+    ],
+    "stats": [
+      {
         "stat": "Armor",
-        "value": "30",
-        "stack": "Linear",
-        "add": "+30"
-      },
-      {
-        "stat": "Damage",
-        "value": "100%",
-        "stack": "Linear",
-        "add": "+10"
+        "value": "50%",
+        "stack": "None",
+        "add": ""
       }
     ],
     "cooldown": 0,
     "duration": 0,
     "droppable": null,
     "type": "item",
-    "icon": "/icons/Kinetic Dampener.png"
-  },
-  {
-    "name": "Networked Suffering",
-    "rarity": "Legendary",
-    "quote": "Inflict a computer virus on hit that spreads a portion of all damage dealt between infected enemies. Affects up to 4 enemies.",
-    "description": "Infect up to {{Color|u|4}} {{Stack|(+2 per stack)}} enemies with a computer virus that duplicates {{Color|d|50% of all damage taken}} and sends it to a global damage pool. Every 3 seconds, ALL infected enemies suffer {{Color|d|100% pooled damage}}.",
-    "internalName": "SharedSuffering",
-    "localizationInternalName": "ITEM_SHAREDSUFFERING",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [
-      "Damage"
-    ],
-    "stats": [
-      {
-        "stat": "Number Of Enemies Infected",
-        "value": "4",
-        "stack": "Linear",
-        "add": "+2"
-      }
-    ],
-    "cooldown": 0,
-    "duration": 0,
-    "droppable": null,
-    "type": "item",
-    "icon": "/icons/Networked Suffering.png"
-  },
-  {
-    "name": "Orphaned Core",
-    "rarity": "Legendary",
-    "quote": "Gain a buddy who launches itself at enemies to deal damage. Inherits your movement-related items.",
-    "description": "Gain a {{Color|h|friendly Solus unit}} that launches itself at enemies for {{Color|d|400%}} {{Stack|(+400% per stack)}} {{Color|d|damage}}. The unit inherits your {{Color|u|movement speed items}} and deals {{Color|d|more damage the faster it moves}}. The unit can be pet to {{Color|u|cleanse negative effects}}. Recharges after 15 seconds.",
-    "internalName": "PhysicsProjectile",
-    "localizationInternalName": "ITEM_PHYSICSPROJECTILE",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [
-      "Damage",
-      "Utility"
-    ],
-    "stats": [
-      {
-        "stat": "Damage",
-        "value": "400%",
-        "stack": "Linear",
-        "add": "+400%"
-      }
-    ],
-    "cooldown": 0,
-    "duration": 0,
-    "droppable": null,
-    "type": "item",
-    "icon": "/icons/Orphaned Core.png"
-  },
-  {
-    "name": "Substandard Duplicator",
-    "rarity": "Legendary",
-    "quote": "Picking up an item grants a temporary copy.",
-    "description": "{{Color|u|Picking up an item}} gives you a {{Color|t|temporary copy}} of itself. Temporary items last an additional {{Color|d|10}} {{Stack|(+10 per stack)}} {{Color|d|seconds}}.",
-    "internalName": "Duplicator",
-    "localizationInternalName": "ITEM_DUPLICATOR",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [
-      "Damage",
-      "Utility"
-    ],
-    "stats": [
-      {
-        "stat": "Duration",
-        "value": "10s",
-        "stack": "Linear",
-        "add": "+10s"
-      }
-    ],
-    "cooldown": 0,
-    "duration": 0,
-    "droppable": null,
-    "type": "item",
-    "icon": "/icons/Substandard Duplicator.png"
+    "icon": "/icons/Prison Matrix.png"
   },
   {
     "name": "Encrypted Cerebellum",
@@ -5105,7 +5508,12 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "WorldUnique"
+      "CannotSteal",
+      "WorldUnique",
+      "TurretBlacklist",
+      "AIBlacklist",
+      "ObjectiveRelated",
+      "TemporaryBlacklist"
     ],
     "stats": [],
     "cooldown": 0,
@@ -5124,7 +5532,13 @@
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "WorldUnique"
+      "CannotSteal",
+      "WorldUnique",
+      "TurretBlacklist",
+      "AIBlacklist",
+      "ObjectiveRelated",
+      "RebirthBlacklist",
+      "TemporaryBlacklist"
     ],
     "stats": [],
     "cooldown": 0,
@@ -5134,47 +5548,22 @@
     "icon": "/icons/Exposed Cerebellum.png"
   },
   {
-    "name": "Faulty Conductor",
-    "rarity": "Boss",
-    "quote": "Occasionally release a pulse of electricity that energizes allies and makes enemies more susceptible to electric damage.",
-    "description": "Every {{Color|u|15}} {{Stack|(-20% per stack)}} {{Color|u|seconds}}, release a wave of electricity that {{Color|h|energizes}} nearby allies for {{Color|u|7}} seconds. Energized allies gain {{Color|d|+30% attack and movement speed}}, and ALWAYS land {{Color|d|critical strikes}} with {{Color|u|electric}} items and attacks.",
-    "internalName": "ShockDamageAura",
-    "localizationInternalName": "ITEM_SHOCKDAMAGEAURA",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [
-      "Damage",
-      "Utility"
-    ],
-    "stats": [
-      {
-        "stat": "Cooldown",
-        "value": "15s",
-        "stack": "Linear",
-        "add": "-20%"
-      }
-    ],
-    "cooldown": 0,
-    "duration": 0,
-    "droppable": null,
-    "type": "item",
-    "icon": "/icons/Faulty Conductor.png"
-  },
-  {
     "name": "Functional Coupler",
     "rarity": "Boss",
-    "quote": "Hold an additional equipment.",
+    "quote": "Holds an additional equipment.",
     "description": "Hold {{Color|u|1 additional equipment}} {{Stack|(+1 per stack)}}. Press the {{Color|u|interact}} and {{Color|u|equipment}} buttons to cycle through held equipment.",
     "internalName": "ExtraEquipment",
     "localizationInternalName": "ITEM_EXTRAEQUIPMENT",
     "unlock": null,
-    "corrupt": null,
+    "corrupt": "Newly Hatched Zoea",
     "categories": [
-      "Utility"
+      "EquipmentRelated",
+      "AIBlacklist",
+      "Technology"
     ],
     "stats": [
       {
-        "stat": "Additional Equipment Held",
+        "stat": "Extra equipment(s)",
         "value": "1",
         "stack": "Linear",
         "add": "+1"
@@ -5187,100 +5576,197 @@
     "icon": "/icons/Functional Coupler.png"
   },
   {
-    "name": "Prison Matrix",
+    "name": "Faulty Conductor",
     "rarity": "Boss",
-    "quote": "Gain {{Color|u|+50% armor}}. Can be placed in a Matrix Terminal.",
-    "description": "Gain {{Color|u|+50% armor}}. Can be placed in a Matrix Terminal.",
-    "internalName": "PowerCube",
-    "localizationInternalName": "ITEM_POWERCUBE",
+    "quote": "Occasionally release a pulse of electricity that energizes allies and makes enemies more susceptible to electric damage.",
+    "description": "Every {{Color|u|15}} {{Stack|(-20% per stack)}} {{Color|u|seconds}}, release a wave of electricity that {{Color|h|energizes}} nearby allies for {{Color|u|7}} seconds. Energized allies gain {{Color|d|+30% attack and movement speed}}, and ALWAYS land {{Color|d|critical strikes}} with {{Color|u|electric}} items and attacks.",
+    "internalName": "ShockDamageAura",
+    "localizationInternalName": "ITEM_SHOCKDAMAGEAURA",
+    "unlock": null,
+    "corrupt": "Newly Hatched Zoea",
+    "categories": [
+      "Damage",
+      "Utility",
+      "Technology"
+    ],
+    "stats": [
+      {
+        "stat": "Item cooldown",
+        "value": "15s",
+        "stack": "Hyperbolic",
+        "add": "-20%"
+      },
+      {
+        "stat": "Attack speed",
+        "value": "30%",
+        "stack": "None",
+        "add": ""
+      },
+      {
+        "stat": "Movement speed",
+        "value": "30%",
+        "stack": "None",
+        "add": ""
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Faulty Conductor.png"
+  },
+  {
+    "name": "Quick Fix",
+    "rarity": "Meal",
+    "quote": "Increases bonus health and regen gains. Does not benefit from leveling up bonuses. Full of minerals.",
+    "description": "Increases {{Color|h|bonus health and regeneration gains}} by {{Color|h|50% {{Stack|(+15% per stack)}}}}. Does not affect bonuses from leveling up.",
+    "internalName": "BonusHealthBoost",
+    "localizationInternalName": "ITEM_BONUSHEALTHBOOST",
     "unlock": null,
     "corrupt": null,
     "categories": [
+      "AIBlacklist",
+      "Healing",
+      "TurretBlacklist"
+    ],
+    "stats": [
+      {
+        "stat": "Non level Health Regen & Max Health",
+        "value": "+50%",
+        "stack": "Linear",
+        "add": "+15%"
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Quick Fix.png"
+  },
+  {
+    "name": "Seared Steak",
+    "rarity": "Meal",
+    "quote": "Gain 50 max health plus a percentage of your max health. Cooked to perfection.",
+    "description": "Increases {{Color|h|maximum health}} by {{Color|h|50 {{Stack|(+50 per stack)}}}}, plus an additional {{Color|h|5% {{Stack|(+5% per stack)}}}} of your {{Color|h|max health}}.",
+    "internalName": "CookedSteak",
+    "localizationInternalName": "ITEM_COOKEDSTEAK",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Healing",
+      "WorldUnique",
+      "AIBlacklist"
+    ],
+    "stats": [
+      {
+        "stat": "Flat Health",
+        "value": "50",
+        "stack": "Linear",
+        "add": "50"
+      },
+      {
+        "stat": "Max Health",
+        "value": "5%",
+        "stack": "Linear",
+        "add": "5%"
+      }
+    ],
+    "cooldown": 0,
+    "duration": 0,
+    "droppable": null,
+    "type": "item",
+    "icon": "/icons/Seared Steak.png"
+  },
+  {
+    "name": "Hearty Stew",
+    "rarity": "Meal",
+    "quote": "Increases health regeneration and converts it into damage at full health. A single sip leaves you feeling warm and fuzzy inside.",
+    "description": "Increases {{Color|h|regeneration}} by {{Color|h|+2.5 {{Stack|(+2.5 per stack)}} HP/s}}. At full health, your regeneration is added to your {{Color|d|base damage}}.",
+    "internalName": "Stew",
+    "localizationInternalName": "ITEM_STEW",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [
+      "Utility",
+      "Healing",
+      "AIBlacklist",
       "WorldUnique"
     ],
     "stats": [
       {
-        "stat": "Armor",
-        "value": "50%",
+        "stat": "Base Health Regen",
+        "value": "2.5",
         "stack": "Linear",
-        "add": "+0"
+        "add": "2.5"
       }
     ],
     "cooldown": 0,
     "duration": 0,
     "droppable": null,
     "type": "item",
-    "icon": "/icons/Prison Matrix.png"
+    "icon": "/icons/Hearty Stew.png"
   },
   {
-    "name": "Sentry Key",
-    "rarity": "Boss",
-    "quote": "Gain {{Color|u|+15% move speed}}. Can be placed in a Sentry Terminal.",
-    "description": "Gain {{Color|u|+15% move speed}}. Can be placed in a Sentry Terminal or used for decryption.",
-    "internalName": "PowerPyramid",
-    "localizationInternalName": "ITEM_POWERPYRAMID",
+    "name": "Ultimate Meal",
+    "rarity": "Meal",
+    "quote": "At full health, you become lucky. The pinnacle of culinary arts.",
+    "description": "At full health, all random effects are rolled {{Color|h|+2 {{Stack|(+2 per stack)}}}} extra times for a better outcome.",
+    "internalName": "UltimateMeal",
+    "localizationInternalName": "ITEM_ULTIMATEMEAL",
     "unlock": null,
     "corrupt": null,
     "categories": [
+      "Healing",
+      "AIBlacklist",
       "WorldUnique"
     ],
     "stats": [
       {
-        "stat": "Movement Speed",
-        "value": "15%",
+        "stat": "Luck",
+        "value": "2",
         "stack": "Linear",
-        "add": "+0%"
+        "add": "2"
       }
     ],
     "cooldown": 0,
     "duration": 0,
     "droppable": null,
     "type": "item",
-    "icon": "/icons/Sentry Key.png"
+    "icon": "/icons/Ultimate Meal.png"
   },
   {
-    "name": "Neutronium Weight",
-    "rarity": "Lunar",
-    "quote": "{{Color|hp|Reduces all stats while in combat}}, but can be sent to an enemy on hit.",
-    "description": "{{Color|hp|Reduces your stats while in combat}}, but {{Color|u|send this item to an enemy}} on hit. On death, this item will be sent to its holder's killer.\r\n\r\nReduces {{Color|d|damage}} by 30% {{Stack|(+10% per stack)}}, {{Color|d|attack speed}} by 30% {{Stack|(+10% per stack)}}, {{Color|u|movement speed}} by 30% {{Stack|(+10% per stack)}}, and {{Color|u|armor}} by 35 {{Stack|(+15 per stack)}}.",
-    "internalName": "TransferDebuffOnHit",
-    "localizationInternalName": "ITEM_TRANSFERDEBUFFONHIT",
+    "name": "Sautéed Worms",
+    "rarity": "Meal",
+    "quote": "Chance on hit to summon a spectral wyrm that seeks out and damages enemies. Tastes like glass frogs and starseed.",
+    "description": "On hit, {{Color|u|10% chance}} to summon a spectral wyrm that seeks out and damages and ignites enemies for {{Color|d|500% {{Stack|(+500% per stack)}} TOTAL damage per second}} for {{Color|u|10 seconds}}.",
+    "internalName": "WyrmOnHit",
+    "localizationInternalName": "ITEM_WYRMONHIT",
     "unlock": null,
     "corrupt": null,
     "categories": [
-      "Damage"
+      "Damage",
+      "AIBlacklist",
+      "WorldUnique"
     ],
     "stats": [
       {
-        "stat": "Damage",
-        "value": "-30%",
-        "stack": "Exponential",
-        "add": "-10%"
-      },
-      {
-        "stat": "Attack Speed",
-        "value": "-30%",
-        "stack": "Exponential",
-        "add": "-10%"
-      },
-      {
-        "stat": "Movement Speed",
-        "value": "-30%",
-        "stack": "Exponential",
-        "add": "-10%"
-      },
-      {
-        "stat": "Armor",
-        "value": "-35",
+        "stat": "TOTAL Damage per second",
+        "value": "500%",
         "stack": "Linear",
-        "add": "-15"
+        "add": "500%"
+      },
+      {
+        "stat": "Proc Coefficient",
+        "value": "0.5",
+        "stack": "ProcCoeff",
+        "add": ""
       }
     ],
     "cooldown": 0,
     "duration": 0,
     "droppable": null,
     "type": "item",
-    "icon": "/icons/Neutronium Weight.png"
+    "icon": "/icons/Sautéed Worms.png"
   },
   {
     "name": "Disposable Missile Launcher",
@@ -5372,7 +5858,7 @@
     "rarity": "Equipment",
     "quote": "Call drones for back up. Lasts 25 seconds.",
     "description": "Call {{Color|d|4 Strike Drones}} to fight for you. Lasts 25 seconds.",
-    "internalName": "DroneBackUp",
+    "internalName": "DroneBackup",
     "localizationInternalName": "EQUIPMENT_DRONEBACKUP",
     "unlock": "Mechanic",
     "corrupt": null,
@@ -5482,7 +5968,7 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Ifrit's Distinction.png"
   },
@@ -5499,7 +5985,7 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Silence Between Two Strikes.png"
   },
@@ -5516,7 +6002,7 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Her Biting Embrace.png"
   },
@@ -5533,7 +6019,7 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/N'kuhana's Retort.png"
   },
@@ -5550,7 +6036,7 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Spectral Circlet.png"
   },
@@ -5567,7 +6053,7 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Shared Design.png"
   },
@@ -5648,7 +6134,9 @@
     "localizationInternalName": "EQUIPMENT_TONIC",
     "unlock": "Cosmic Explorer",
     "corrupt": null,
-    "categories": [],
+    "categories": [
+      "NoBottledChaos"
+    ],
     "stats": [],
     "cooldown": 60,
     "duration": 20,
@@ -5665,11 +6153,13 @@
     "localizationInternalName": "EQUIPMENT_QUESTVOLATILEBATTERY",
     "unlock": null,
     "corrupt": null,
-    "categories": [],
+    "categories": [
+      "WorldUnique"
+    ],
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Fuel Array.png"
   },
@@ -5695,7 +6185,7 @@
     "rarity": "Equipment",
     "quote": "Transform into a speeding draconic fireball, dealing damage as you pass through enemies.",
     "description": "Turn into a {{Color|d|draconic fireball}} for {{Color|d|5}} seconds. Deal {{Color|d|500% damage}} on impact. Detonates at the end for {{Color|d|800% damage}}.",
-    "internalName": "FireballDash",
+    "internalName": "FireBallDash",
     "localizationInternalName": "EQUIPMENT_FIREBALLDASH",
     "unlock": null,
     "corrupt": null,
@@ -5839,7 +6329,7 @@
     "stats": [],
     "cooldown": 60,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Trophy Hunter's Tricorn (Consumed).png"
   },
@@ -5924,7 +6414,7 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/His Reassurance.png"
   },
@@ -5932,7 +6422,7 @@
     "name": "Seed of Life",
     "rarity": "Equipment",
     "quote": "Revives the user when killed or dead allies on activation. Consumed on use.",
-    "description": "Revives the user when killed or dead allies on activation. Consumed on use.",
+    "description": "{{Color|h|Revive}} {{Color|u|dead, friendly Survivors}} upon activation. {{Color|u|Dying}} while holding this Equipment {{Color|h|returns only you to life}}. {{Color|h|Reviving}} gives {{Color|h|3s of invulnerability}} and {{Color|u|consumes}} the equipment.",
     "internalName": "HealAndRevive",
     "localizationInternalName": "EQUIPMENT_HEALANDREVIVE",
     "unlock": null,
@@ -5949,7 +6439,7 @@
     "name": "Seed of Life (Consumed)",
     "rarity": "Equipment",
     "quote": "On activation places a sprout that drops healing orbs.",
-    "description": "On activation places a sprout that drops healing orbs.",
+    "description": "Plant a sprout at the target location which drops {{Color|h|healing orbs}} that heal for {{Color|h|2%}} {{Color|h|life (maximum health)}}.",
     "internalName": "HealAndReviveConsumed",
     "localizationInternalName": "EQUIPMENT_HEALANDREVIVECONSUMED",
     "unlock": null,
@@ -5958,26 +6448,9 @@
     "stats": [],
     "cooldown": 15,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Seed of Life (Consumed).png"
-  },
-  {
-    "name": "Aurelionite's Blessing",
-    "rarity": "Elite Equipment",
-    "quote": "Become an aspect of radiance.",
-    "description": "Become an aspect of radiance.",
-    "internalName": "EliteAurelioniteEquipment",
-    "localizationInternalName": "EQUIPMENT_AFFIXAURELIONITE",
-    "unlock": null,
-    "corrupt": null,
-    "categories": [],
-    "stats": [],
-    "cooldown": 25,
-    "duration": 0,
-    "droppable": false,
-    "type": "equipment",
-    "icon": "/icons/Aurelionite's Blessing.png"
   },
   {
     "name": "His Spiteful Boon",
@@ -5992,15 +6465,32 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/His Spiteful Boon.png"
   },
   {
+    "name": "Aurelionite's Blessing",
+    "rarity": "Elite Equipment",
+    "quote": "Become an aspect of radiance.",
+    "description": "Become an aspect of radiance.",
+    "internalName": "EliteAurelioniteEquipment",
+    "localizationInternalName": "EQUIPMENT_AFFIXAURELIONITE",
+    "unlock": null,
+    "corrupt": null,
+    "categories": [],
+    "stats": [],
+    "cooldown": 25,
+    "duration": 0,
+    "droppable": null,
+    "type": "equipment",
+    "icon": "/icons/Aurelionite's Blessing.png"
+  },
+  {
     "name": "Deus Ex Machina",
     "rarity": "Equipment",
-    "quote": "Counter any damage. Successful counters {{Color|#E6CA65|bless}} your next attack, ensuring your on-hit effects ALWAYS activate.",
-    "description": "Briefly enter a countering stance that lets you parry {{Color|u|any and ALL}} damage. A successful parry {{Color|h|nullifies incoming damage}}, reduces your equipment cooldown by {{Color|d|75%}}, and grants {{Color|#E6CA65|Blessing}}, causing your next attack to ALWAYS activate your on-hit effects.",
+    "quote": "Counter any damage. Successful counters {{Color|boss|bless}} your next attack, ensuring your on-hit effects ALWAYS activate.",
+    "description": "Briefly enter a countering stance that lets you parry {{Color|u|any and ALL}} damage. A successful parry {{Color|h|nullifies incoming damage}}, reduces your equipment cooldown by {{Color|d|75%}}, and grants {{Color|boss|Blessing}}, causing your next attack to ALWAYS activate your on-hit effects.",
     "internalName": "Parry",
     "localizationInternalName": "EQUIPMENT_PARRY",
     "unlock": null,
@@ -6009,7 +6499,7 @@
     "stats": [],
     "cooldown": 60,
     "duration": 0,
-    "droppable": true,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Deus Ex Machina.png"
   },
@@ -6026,7 +6516,7 @@
     "stats": [],
     "cooldown": 0,
     "duration": 0,
-    "droppable": false,
+    "droppable": null,
     "type": "equipment",
     "icon": "/icons/Of One Mind.png"
   }

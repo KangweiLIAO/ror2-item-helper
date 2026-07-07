@@ -7,10 +7,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PROJECT_ROOT = join(__dirname, "..");
 
-const RAW_URL = "https://riskofrain2.fandom.com/wiki/Module:Items/Data?action=raw";
-const EQUIPMENT_RAW_URL = "https://riskofrain2.fandom.com/wiki/Module:Equipment/Data?action=raw";
+const RAW_URL = "https://riskofrain2.wiki.gg/wiki/Module:Items/Data?action=raw";
+const EQUIPMENT_RAW_URL = "https://riskofrain2.wiki.gg/wiki/Module:Equipment/Data?action=raw";
 
-const WIKI = "https://riskofrain2.fandom.com";
+const WIKI = "https://riskofrain2.wiki.gg";
 const API = `${WIKI}/api.php`;
 const DEFAULT_OUT_DIR = "public/icons";
 const DEFAULT_MAPPING_FILE = "public/items-assets.json";
@@ -364,7 +364,9 @@ function parseLuaModuleTable(luaText, rootFieldName) {
     const rarity = luaGetStringField(L, itemTableIdx, "Rarity");
     const quote = luaGetStringField(L, itemTableIdx, "Quote");
     const desc = luaGetStringField(L, itemTableIdx, "Desc");
-    const internalName = luaGetStringField(L, itemTableIdx, "InternalName");
+    // wiki.gg's module uses `ID` for this; the older Fandom copy used `InternalName`.
+    const internalName =
+      luaGetStringField(L, itemTableIdx, "ID") ?? luaGetStringField(L, itemTableIdx, "InternalName");
     const localizationInternalName = luaGetStringField(L, itemTableIdx, "LocalizationInternalName");
     const unlock = luaGetStringField(L, itemTableIdx, "Unlock");
     const corrupt = luaGetStringField(L, itemTableIdx, "Corrupt");
@@ -373,6 +375,7 @@ function parseLuaModuleTable(luaText, rootFieldName) {
     const cooldown = luaGetNumberField(L, itemTableIdx, "Cooldown");
     const duration = luaGetNumberField(L, itemTableIdx, "Duration");
     const droppable = luaGetBooleanField(L, itemTableIdx, "Droppable");
+    const unused = luaGetBooleanField(L, itemTableIdx, "Unused");
 
     items.push({
       name: itemName,
@@ -388,6 +391,7 @@ function parseLuaModuleTable(luaText, rootFieldName) {
       cooldown,
       duration,
       droppable,
+      unused,
     });
 
     lua.lua_pop(L, 1); // pop value, keep key for lua_next
@@ -400,13 +404,24 @@ function parseLuaModuleTable(luaText, rootFieldName) {
   return items;
 }
 
+function dropUnused(entries) {
+  // Cut/unobtainable content shouldn't surface as real items. The wiki marks this either via an
+  // explicit `Unused = true` field (mostly items) or via the Rarity string itself (mostly equipment).
+  return entries
+    .filter((x) => x.unused !== true && !(typeof x.rarity === "string" && x.rarity.startsWith("Unused")))
+    .map((x) => {
+      delete x.unused;
+      return x;
+    });
+}
+
 function parseItems(luaText) {
-  return parseLuaModuleTable(luaText, "items").map((x) => ({ ...x, type: "item" }));
+  return dropUnused(parseLuaModuleTable(luaText, "items")).map((x) => ({ ...x, type: "item" }));
 }
 
 function parseEquipment(luaText) {
   // The equipment module returns p.equipment
-  return parseLuaModuleTable(luaText, "equipment").map((x) => ({ ...x, type: "equipment" }));
+  return dropUnused(parseLuaModuleTable(luaText, "equipment")).map((x) => ({ ...x, type: "equipment" }));
 }
 
 /**
